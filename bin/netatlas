@@ -1,0 +1,123 @@
+#!/usr/bin/env ruby
+$: << File.expand_path(File.dirname(File.realpath(__FILE__)) + '/../lib')
+$LOAD_PATH << "/Users/rmcclain/Projects/net-snmp/lib"
+require 'rubygems'
+require 'gli'
+require 'gli/app'
+require 'netatlas/client'
+require 'json'
+#require 'pp'
+
+include GLI::App
+include CommandLineReporter
+
+
+program_desc 'NetAtlas CLI'
+
+version NetAtlas::Client::VERSION
+
+desc 'Output format'
+arg_name 'format'
+default_value "table"
+flag [:f, :format]
+
+resources = [
+  [:node, :id, :label, :description],
+  [:device, :id, :hostname, :label, :description]
+]
+resources.each do |fields|
+  resource = fields.shift
+  resource_name = resource.to_s.camelize
+  resource_class = "NetAtlas::Resource::#{resource_name}".constantize
+
+desc 'Node commands'
+  command resource do |n|
+    desc 'List nodes'
+    n.command :list do |l|
+      l.action do |global_options,options,args|
+        results = resource_class.find
+        case global_options[:format]
+          when 'table'
+            puts NetAtlas::Renderer::Table.new(results, :id, :label, :description).render
+          when 'json'
+            jj results
+        else
+          exit_now! "Unknown content-type #{resource_name}"
+        end
+      end
+    end
+    n.command :show do |s|
+      s.action do |global_options, options, args|
+        result = resource_class.get(args.pop.to_i)
+        case global_options[:format]
+        when 'table'
+          puts NetAtlas::Renderer::Table.new(result).render
+        when 'json'
+          jj result
+        else
+          exit_now! "Unknown content type #{resource_name}"
+        end
+      end
+    end
+    n.command :create do |c|
+      c.action do |global_options, options, args|
+        input = STDIN.read
+        attrs = case global_options[:format]
+        when 'json'
+          JSON.parse(input)
+        else
+          exit_now! "Unknown content-type #{global_options[:format]}"
+        end
+        result = resource_class.create(attrs)
+        if result
+          jj result
+        else
+          exit_now! "Error createing #{resource_name}"
+        end
+      end
+    end
+    n.command :update do |u|
+      u.action do |global_options, options, args|
+        input = STDIN.read
+        attrs = case global_options[:format]
+        when 'json'
+          JSON.parse(input)
+        else
+          raise "Unknown content-type #{global_otions[:format]}"
+        end
+        result = resource_class.update(args[0].to_i, attrs)
+        if result
+          jj result
+        else
+          puts "Error updating #{resource_name}"
+        end
+      end
+    end
+    n.command :delete do |d|
+      d.action do |global_options, options, args|
+        result = resource_class.delete(args[0].to_i)
+        if result
+          puts "#{resource_name} successfully deleted"
+        else
+          puts "Error deleting #{resource_name}"
+        end
+      end
+    end
+  end
+end
+
+pre do |global,command,options,args|
+  # Use skips_pre before a command to skip this block
+  true
+end
+
+post do |global,command,options,args|
+  # Use skips_post before a command to skip this
+end
+
+on_error do |exception|
+  # return false to skip default error handling
+  true
+end
+
+exit run(ARGV)
