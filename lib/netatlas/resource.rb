@@ -4,9 +4,14 @@ module NetAtlas
     class Base 
       class_attribute :base_url
       class_attribute :uri
+      class_attribute :user
+      class_attribute :pass
+      
       attr_accessor :attributes
 
       self.base_url = ::CONFIG['netatlas_url']
+      self.user = ::CONFIG['netatlas_user']
+      self.pass = ::CONFIG['netatlas_pass']
       class << self
         def find(params = {})
           response = conn.get do |req|
@@ -17,7 +22,7 @@ module NetAtlas
           if response.status == 200
             response.body.map { |attrs| new(attrs)}
           else
-            raise "something went wrong"
+            raise Error.new("Failed to find resource", response)
           end
         end
 
@@ -44,7 +49,7 @@ module NetAtlas
           if response.status == 201
             new(response.body)
           else
-            raise "something went wrong"
+            raise Error.new("Failed to create resource", response)
           end
         end
 
@@ -58,7 +63,7 @@ module NetAtlas
           if response.status == 204
             new(params)
           else
-            raise "something went wrong"
+            raise Error.new("Failed to update resource #{id}", response)
           end
         end
 
@@ -71,12 +76,13 @@ module NetAtlas
           if response.status == 204
             true
           else
-            false
+            raise Error.new("Failed to delete resource #{id}", response) 
           end
         end
 
         def conn
           @conn ||= Faraday.new(base_url + self.uri) do |c|
+            c.basic_auth(self.user, self.pass)
             c.request :json
             c.response :json, :content_type => /\bjson$/
             #c.response :logger
@@ -101,9 +107,43 @@ module NetAtlas
         attributes
       end
 
+      def update(attrs)
+        response = self.class.conn.put do |req|
+          req.url uri + "/#{id}"
+          req.headers['Content-Type'] = 'application/json'
+          req.headers['Accept'] = "application/json"
+          req.body = attrs.to_json 
+        end
+        if response.status == 204 # no content
+          attrs.each do |k, v|
+            attributes[k] = v
+          end
+          true
+        else
+          raise Error.new("Failed to update resource #{id}", response)
+        end
+      end
+
+      def delete
+        response = self.class.conn.delete do |req|
+          req.url uri + "/#{id}"
+          req.headers['Content-Type'] = 'application/json'
+          req.headers['Accept'] = "application/json"
+        end
+        if response.status == 204  # no content 
+          true
+        else
+          raise Error.new("Failed to delete resource #{id}", response)
+        end
+      end
+
+      def save
+        update(attributes)
+      end
+
       def method_missing(m, *args)
         if m.to_s[-1] == '='
-          k = m.to_s[0,-1].to_sym
+          k = m.to_s[0..-2].to_sym
           if @attributes.keys.include?(k)
             @attributes[k] = args[0]
           else

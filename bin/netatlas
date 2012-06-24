@@ -21,6 +21,14 @@ arg_name 'format'
 default_value "table"
 flag [:f, :format]
 
+desc 'Username'
+arg_name 'user'
+flag [:u, :user]
+
+desc 'Password'
+arg_name 'password'
+flag [:p, :pass]
+
 resources = [
   [:node, :id, :label, :description],
   [:device, :id, :hostname, :label, :description]
@@ -108,6 +116,8 @@ end
 
 pre do |global,command,options,args|
   # Use skips_pre before a command to skip this block
+  NetAtlas::Resource::Base.user = global[:user] if global[:user]
+  NetAtlas::Resource::Base.pass = global[:pass] if global[:pass]
   true
 end
 

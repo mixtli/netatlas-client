@@ -18,7 +18,7 @@ SimpleCov.start if File.basename($0) == 'rspec'
 
 DB = Sequel.connect('postgres://postgres@localhost/netatlas_test')
 require 'netatlas/client'
-Dir['./spec/support/*.rb'].map {|f| require f}
+Dir["./spec/support/**/*.rb"].map {|f| require File.expand_path(f)}
 
 RSpec.configure do |config|
   config.treat_symbols_as_metadata_keys_with_true_values = true

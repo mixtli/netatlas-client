@@ -5,6 +5,7 @@ ENV['GLI_DEBUG'] = 'true'
 describe "CLI node", :integration do
   before do
     @aruba_timeout_seconds = 5
+    @user = Fabricate(:admin)
   end
   context "list" do
     before do
@@ -12,6 +13,7 @@ describe "CLI node", :integration do
     end
     it "should display a table" do
       netatlas "node list"
+      puts all_stdout
       all_stdout.split("\n").size.should eql(23)
     end
     it "should display valid json" do
@@ -66,7 +68,8 @@ describe "CLI node", :integration do
   end
 
   def netatlas(args, input = nil)
-    process = run_interactive("netatlas_test #{args}")
+    credentials = "-u admin@netatlas.com -p password"
+    process = run_interactive("netatlas_test #{credentials} #{args}")
     if input
       process.stdin << input
       process.stdin.close
