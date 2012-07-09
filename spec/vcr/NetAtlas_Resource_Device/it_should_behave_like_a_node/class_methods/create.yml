@@ -1,0 +1,46 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: http://test.lvh.me:3001/devices
+    body:
+      encoding: US-ASCII
+      string: ! '{"label":"foo","description":"bar","created_at":"2012-06-24T02:16:14-05:00","updated_at":"2012-06-24T02:16:14-05:00","hostname":"host0.lvh.me","type":"Device"}'
+    headers:
+      Authorization:
+      - Basic YWRtaW5AbmV0YXRsYXMuY29tOnBhc3N3b3Jk
+      Content-Type:
+      - application/json
+      Accept:
+      - application/json
+  response:
+    status:
+      code: 201
+      message: 
+    headers:
+      location:
+      - http://test.lvh.me:3001/devices/57
+      content-type:
+      - application/json; charset=utf-8
+      x-ua-compatible:
+      - IE=Edge,chrome=1
+      etag:
+      - ! '"fb98efbedd5e199554b9486130080f58"'
+      cache-control:
+      - max-age=0, private, must-revalidate
+      x-request-id:
+      - e6f7db8c63cf7b03bff8feb36c32d396
+      x-runtime:
+      - '0.191978'
+      content-length:
+      - '611'
+      connection:
+      - close
+      server:
+      - thin 1.3.1 codename Triple Espresso
+    body:
+      encoding: US-ASCII
+      string: ! '{"auth_password":null,"auth_protocol":null,"community":null,"created_at":"2012-06-24T07:16:15Z","creator_id":28,"deleted_at":null,"deleter_id":null,"description":"bar","device_id":null,"hostname":"host0.lvh.me","id":57,"ip_address":"127.0.0.1","ip_forwarding":null,"label":"foo","memory":null,"num_cpus":null,"os":null,"os_type":null,"os_vendor":null,"os_version":null,"priv_password":null,"priv_protocol":null,"snmp_index":null,"snmp_version":null,"state":"unknown","sys_contact":null,"sys_descr":null,"sys_location":null,"sys_name":null,"sys_objectid":null,"updated_at":"2012-06-24T07:16:15Z","updater_id":28}'
+    http_version: 
+  recorded_at: Sun, 24 Jun 2012 07:16:15 GMT
+recorded_with: VCR 2.2.2

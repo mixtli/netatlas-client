@@ -1,0 +1,79 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://test.lvh.me:3001/nodes/1
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Authorization:
+      - Basic YWRtaW5AbmV0YXRsYXMuY29tOnBhc3N3b3Jk
+      Content-Type:
+      - application/json
+      Accept:
+      - application/json
+  response:
+    status:
+      code: 200
+      message: 
+    headers:
+      content-type:
+      - application/json; charset=utf-8
+      x-ua-compatible:
+      - IE=Edge,chrome=1
+      etag:
+      - ! '"6dcf5c53a3a7da10e2bc5bdb9869983f"'
+      cache-control:
+      - max-age=0, private, must-revalidate
+      x-request-id:
+      - 5508506556f9de3c963d083934930a97
+      x-runtime:
+      - '0.097111'
+      content-length:
+      - '239'
+      connection:
+      - close
+      server:
+      - thin 1.3.1 codename Triple Espresso
+    body:
+      encoding: US-ASCII
+      string: ! '{"created_at":"2012-06-24T02:18:13Z","creator_id":null,"deleted_at":null,"deleter_id":null,"description":"bar","device_id":null,"id":1,"label":"foo","snmp_index":null,"state":"unknown","updated_at":"2012-06-24T02:18:13Z","updater_id":null}'
+    http_version: 
+  recorded_at: Sun, 24 Jun 2012 07:18:31 GMT
+- request:
+    method: put
+    uri: http://test.lvh.me:3001/nodes/1
+    body:
+      encoding: US-ASCII
+      string: ! '{"label":"New Label"}'
+    headers:
+      Authorization:
+      - Basic YWRtaW5AbmV0YXRsYXMuY29tOnBhc3N3b3Jk
+      Content-Type:
+      - application/json
+      Accept:
+      - application/json
+  response:
+    status:
+      code: 204
+      message: 
+    headers:
+      x-ua-compatible:
+      - IE=Edge,chrome=1
+      cache-control:
+      - no-cache
+      x-request-id:
+      - 02d3f3a51dcd9b49a9a6b9b929580ea1
+      x-runtime:
+      - '0.102704'
+      connection:
+      - close
+      server:
+      - thin 1.3.1 codename Triple Espresso
+    body:
+      encoding: US-ASCII
+      string: ''
+    http_version: 
+  recorded_at: Sun, 24 Jun 2012 07:18:31 GMT
+recorded_with: VCR 2.2.2
