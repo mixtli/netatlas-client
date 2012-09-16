@@ -90,6 +90,7 @@ module NetAtlas
             c.use FaradayMiddleware::FollowRedirects
             c.adapter  :net_http
           end
+          @conn
         end
       end
 

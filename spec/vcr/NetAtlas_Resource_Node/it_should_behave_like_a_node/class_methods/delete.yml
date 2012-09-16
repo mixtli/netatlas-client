@@ -23,9 +23,9 @@ http_interactions:
       cache-control:
       - no-cache
       x-request-id:
-      - 2eda7a972e1bd06c2e80781e21561d92
+      - cc44fd3f2765237832d6bbccc31f3813
       x-runtime:
-      - '0.071090'
+      - '0.075018'
       connection:
       - close
       server:
@@ -34,7 +34,7 @@ http_interactions:
       encoding: US-ASCII
       string: ''
     http_version: 
-  recorded_at: Sun, 22 Jul 2012 20:43:51 GMT
+  recorded_at: Sun, 16 Sep 2012 20:05:27 GMT
 - request:
     method: get
     uri: http://test.lvh.me:3001/nodes/1
@@ -56,11 +56,11 @@ http_interactions:
       content-type:
       - text/html; charset=utf-8
       content-length:
-      - '14696'
+      - '14688'
       x-request-id:
-      - d45e18d6fffa70d8f09ea29cfa2eda6a
+      - e4be0e52d17f5b7d103b7bdc3010e6c4
       x-runtime:
-      - '0.083747'
+      - '0.089052'
       connection:
       - close
       server:
@@ -88,7 +88,7 @@ http_interactions:
         `find'\nactiverecord (3.2.5) lib/active_record/querying.rb:5:in `find'\ndeclarative_authorization
         (0.5.5) lib/declarative_authorization/in_controller.rb:143:in `load_controller_object'\ndeclarative_authorization
         (0.5.5) lib/declarative_authorization/in_controller.rb:527:in `block in filter_resource_access'\nactivesupport
-        (3.2.5) lib/active_support/callbacks.rb:462:in `_run__2149870749063707477__process_action__697358525930001362__callbacks'\nactivesupport
+        (3.2.5) lib/active_support/callbacks.rb:451:in `_run__4179325405479073859__process_action__3908404088479820310__callbacks'\nactivesupport
         (3.2.5) lib/active_support/callbacks.rb:405:in `__run_callback'\nactivesupport
         (3.2.5) lib/active_support/callbacks.rb:385:in `_run_process_action_callbacks'\nactivesupport
         (3.2.5) lib/active_support/callbacks.rb:81:in `run_callbacks'\nactionpack
@@ -111,7 +111,7 @@ http_interactions:
         `call'\njourney (1.0.4) lib/journey/router.rb:68:in `block in call'\njourney
         (1.0.4) lib/journey/router.rb:56:in `each'\njourney (1.0.4) lib/journey/router.rb:56:in
         `call'\nactionpack (3.2.5) lib/action_dispatch/routing/route_set.rb:600:in
-        `call'\nsass (3.1.20) lib/sass/plugin/rack.rb:54:in `call'\nwarden (1.2.1)
+        `call'\nsass (3.2.1) lib/sass/plugin/rack.rb:54:in `call'\nwarden (1.2.1)
         lib/warden/manager.rb:35:in `block in call'\nwarden (1.2.1) lib/warden/manager.rb:34:in
         `catch'\nwarden (1.2.1) lib/warden/manager.rb:34:in `call'\nactionpack (3.2.5)
         lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'\nrack
@@ -125,7 +125,7 @@ http_interactions:
         (3.2.5) lib/active_record/connection_adapters/abstract/connection_pool.rb:473:in
         `call'\nactionpack (3.2.5) lib/action_dispatch/middleware/callbacks.rb:28:in
         `block in call'\nactivesupport (3.2.5) lib/active_support/callbacks.rb:405:in
-        `_run__3311676825989509118__call__2080196147372406816__callbacks'\nactivesupport
+        `_run__2283012725456568784__call__2823763339468302654__callbacks'\nactivesupport
         (3.2.5) lib/active_support/callbacks.rb:405:in `__run_callback'\nactivesupport
         (3.2.5) lib/active_support/callbacks.rb:385:in `_run_call_callbacks'\nactivesupport
         (3.2.5) lib/active_support/callbacks.rb:81:in `run_callbacks'\nactionpack
@@ -145,8 +145,8 @@ http_interactions:
         lib/thin/connection.rb:80:in `block in pre_process'\nthin (1.4.1) lib/thin/connection.rb:78:in
         `catch'\nthin (1.4.1) lib/thin/connection.rb:78:in `pre_process'\nthin (1.4.1)
         lib/thin/connection.rb:53:in `process'\nthin (1.4.1) lib/thin/connection.rb:38:in
-        `receive_data'\neventmachine (0.12.10) lib/eventmachine.rb:256:in `run_machine'\neventmachine
-        (0.12.10) lib/eventmachine.rb:256:in `run'\nthin (1.4.1) lib/thin/backends/base.rb:63:in
+        `receive_data'\neventmachine (1.0.0) lib/eventmachine.rb:187:in `run_machine'\neventmachine
+        (1.0.0) lib/eventmachine.rb:187:in `run'\nthin (1.4.1) lib/thin/backends/base.rb:63:in
         `start'\nthin (1.4.1) lib/thin/server.rb:159:in `start'\nrack (1.4.1) lib/rack/handler/thin.rb:13:in
         `run'\nrack (1.4.1) lib/rack/server.rb:265:in `start'\nrailties (3.2.5) lib/rails/commands/server.rb:70:in
         `start'\nrailties (3.2.5) lib/rails/commands.rb:55:in `block in &lt;top (required)&gt;'\nrailties
@@ -159,7 +159,7 @@ http_interactions:
         (3.2.5) lib/active_record/querying.rb:5:in `find'\ndeclarative_authorization
         (0.5.5) lib/declarative_authorization/in_controller.rb:143:in `load_controller_object'\ndeclarative_authorization
         (0.5.5) lib/declarative_authorization/in_controller.rb:527:in `block in filter_resource_access'\nactivesupport
-        (3.2.5) lib/active_support/callbacks.rb:462:in `_run__2149870749063707477__process_action__697358525930001362__callbacks'\nactivesupport
+        (3.2.5) lib/active_support/callbacks.rb:451:in `_run__4179325405479073859__process_action__3908404088479820310__callbacks'\nactivesupport
         (3.2.5) lib/active_support/callbacks.rb:405:in `__run_callback'\nactivesupport
         (3.2.5) lib/active_support/callbacks.rb:385:in `_run_process_action_callbacks'\nactivesupport
         (3.2.5) lib/active_support/callbacks.rb:81:in `run_callbacks'\nactionpack
@@ -182,7 +182,7 @@ http_interactions:
         `call'\njourney (1.0.4) lib/journey/router.rb:68:in `block in call'\njourney
         (1.0.4) lib/journey/router.rb:56:in `each'\njourney (1.0.4) lib/journey/router.rb:56:in
         `call'\nactionpack (3.2.5) lib/action_dispatch/routing/route_set.rb:600:in
-        `call'\nsass (3.1.20) lib/sass/plugin/rack.rb:54:in `call'\nwarden (1.2.1)
+        `call'\nsass (3.2.1) lib/sass/plugin/rack.rb:54:in `call'\nwarden (1.2.1)
         lib/warden/manager.rb:35:in `block in call'\nwarden (1.2.1) lib/warden/manager.rb:34:in
         `catch'\nwarden (1.2.1) lib/warden/manager.rb:34:in `call'\nactionpack (3.2.5)
         lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'\nrack
@@ -196,7 +196,7 @@ http_interactions:
         (3.2.5) lib/active_record/connection_adapters/abstract/connection_pool.rb:473:in
         `call'\nactionpack (3.2.5) lib/action_dispatch/middleware/callbacks.rb:28:in
         `block in call'\nactivesupport (3.2.5) lib/active_support/callbacks.rb:405:in
-        `_run__3311676825989509118__call__2080196147372406816__callbacks'\nactivesupport
+        `_run__2283012725456568784__call__2823763339468302654__callbacks'\nactivesupport
         (3.2.5) lib/active_support/callbacks.rb:405:in `__run_callback'\nactivesupport
         (3.2.5) lib/active_support/callbacks.rb:385:in `_run_call_callbacks'\nactivesupport
         (3.2.5) lib/active_support/callbacks.rb:81:in `run_callbacks'\nactionpack
@@ -216,8 +216,8 @@ http_interactions:
         lib/thin/connection.rb:80:in `block in pre_process'\nthin (1.4.1) lib/thin/connection.rb:78:in
         `catch'\nthin (1.4.1) lib/thin/connection.rb:78:in `pre_process'\nthin (1.4.1)
         lib/thin/connection.rb:53:in `process'\nthin (1.4.1) lib/thin/connection.rb:38:in
-        `receive_data'\neventmachine (0.12.10) lib/eventmachine.rb:256:in `run_machine'\neventmachine
-        (0.12.10) lib/eventmachine.rb:256:in `run'\nthin (1.4.1) lib/thin/backends/base.rb:63:in
+        `receive_data'\neventmachine (1.0.0) lib/eventmachine.rb:187:in `run_machine'\neventmachine
+        (1.0.0) lib/eventmachine.rb:187:in `run'\nthin (1.4.1) lib/thin/backends/base.rb:63:in
         `start'\nthin (1.4.1) lib/thin/server.rb:159:in `start'\nrack (1.4.1) lib/rack/handler/thin.rb:13:in
         `run'\nrack (1.4.1) lib/rack/server.rb:265:in `start'\nrailties (3.2.5) lib/rails/commands/server.rb:70:in
         `start'\nrailties (3.2.5) lib/rails/commands.rb:55:in `block in &lt;top (required)&gt;'\nrailties
@@ -234,5 +234,5 @@ http_interactions:
         &quot;test.lvh.me&quot;\nSERVER_PROTOCOL: &quot;HTTP/1.1&quot;</pre></div>\n\n\n<h2
         style=\"margin-top: 30px\">Response</h2>\n<p><b>Headers</b>: <pre>None</pre></p>\n\n\n\n</body>\n</html>\n"
     http_version: 
-  recorded_at: Sun, 22 Jul 2012 20:43:52 GMT
-recorded_with: VCR 2.2.2
+  recorded_at: Sun, 16 Sep 2012 20:05:27 GMT
+recorded_with: VCR 2.2.5

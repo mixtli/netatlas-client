@@ -23,13 +23,13 @@ http_interactions:
       x-ua-compatible:
       - IE=Edge,chrome=1
       etag:
-      - ! '"7d657c98f7d8ea602ccfe5eb7d3234d1"'
+      - ! '"65bbaaa34f0fbe84093e4b789ebcf7ae"'
       cache-control:
       - max-age=0, private, must-revalidate
       x-request-id:
-      - ca66077a1ebe4ca62c3ca88557552c40
+      - d8620152c5e6d630608ccfc93ba9281c
       x-runtime:
-      - '0.075614'
+      - '0.078314'
       content-length:
       - '239'
       connection:
@@ -38,16 +38,16 @@ http_interactions:
       - thin 1.4.1 codename Chromeo
     body:
       encoding: US-ASCII
-      string: ! '{"created_at":"2012-07-22T13:42:33Z","creator_id":null,"deleted_at":null,"deleter_id":null,"description":"bar","device_id":null,"id":1,"label":"foo","snmp_index":null,"state":"unknown","updated_at":"2012-07-22T13:42:33Z","updater_id":null}'
+      string: ! '{"created_at":"2012-09-16T13:05:15Z","creator_id":null,"deleted_at":null,"deleter_id":null,"description":"bar","device_id":null,"id":1,"label":"foo","snmp_index":null,"state":"unknown","updated_at":"2012-09-16T13:05:15Z","updater_id":null}'
     http_version: 
-  recorded_at: Sun, 22 Jul 2012 20:43:52 GMT
+  recorded_at: Sun, 16 Sep 2012 20:05:29 GMT
 - request:
     method: put
     uri: http://test.lvh.me:3001/nodes/1
     body:
       encoding: US-ASCII
-      string: ! '{"created_at":"2012-07-22T13:42:33Z","creator_id":null,"deleted_at":null,"deleter_id":null,"description":"bar","device_id":null,"id":1,"label":"New
-        Label","snmp_index":null,"state":"unknown","updated_at":"2012-07-22T13:42:33Z","updater_id":null}'
+      string: ! '{"created_at":"2012-09-16T13:05:15Z","creator_id":null,"deleted_at":null,"deleter_id":null,"description":"bar","device_id":null,"id":1,"label":"New
+        Label","snmp_index":null,"state":"unknown","updated_at":"2012-09-16T13:05:15Z","updater_id":null}'
     headers:
       Authorization:
       - Basic YWRtaW5AbmV0YXRsYXMuY29tOnBhc3N3b3Jk
@@ -65,9 +65,9 @@ http_interactions:
       cache-control:
       - no-cache
       x-request-id:
-      - 86ebc926866fa72f21818a1e58208f83
+      - 13c60ad65f44603ec34f82654055fbae
       x-runtime:
-      - '0.073764'
+      - '0.074645'
       connection:
       - close
       server:
@@ -76,5 +76,5 @@ http_interactions:
       encoding: US-ASCII
       string: ''
     http_version: 
-  recorded_at: Sun, 22 Jul 2012 20:43:52 GMT
-recorded_with: VCR 2.2.2
+  recorded_at: Sun, 16 Sep 2012 20:05:29 GMT
+recorded_with: VCR 2.2.5

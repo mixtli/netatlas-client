@@ -11,7 +11,6 @@ require 'json'
 include GLI::App
 include CommandLineReporter
 
-
 program_desc 'NetAtlas CLI'
 
 version NetAtlas::Client::VERSION

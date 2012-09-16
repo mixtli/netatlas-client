@@ -23,13 +23,13 @@ http_interactions:
       x-ua-compatible:
       - IE=Edge,chrome=1
       etag:
-      - ! '"7d657c98f7d8ea602ccfe5eb7d3234d1"'
+      - ! '"65bbaaa34f0fbe84093e4b789ebcf7ae"'
       cache-control:
       - max-age=0, private, must-revalidate
       x-request-id:
-      - 81d8b2751c707263b2d057e9fc3feb19
+      - cf0a1f0326b74194210997af9ccb4a19
       x-runtime:
-      - '0.076539'
+      - '0.116001'
       content-length:
       - '239'
       connection:
@@ -38,9 +38,9 @@ http_interactions:
       - thin 1.4.1 codename Chromeo
     body:
       encoding: US-ASCII
-      string: ! '{"created_at":"2012-07-22T13:42:33Z","creator_id":null,"deleted_at":null,"deleter_id":null,"description":"bar","device_id":null,"id":1,"label":"foo","snmp_index":null,"state":"unknown","updated_at":"2012-07-22T13:42:33Z","updater_id":null}'
+      string: ! '{"created_at":"2012-09-16T13:05:15Z","creator_id":null,"deleted_at":null,"deleter_id":null,"description":"bar","device_id":null,"id":1,"label":"foo","snmp_index":null,"state":"unknown","updated_at":"2012-09-16T13:05:15Z","updater_id":null}'
     http_version: 
-  recorded_at: Sun, 22 Jul 2012 20:43:52 GMT
+  recorded_at: Sun, 16 Sep 2012 20:05:28 GMT
 - request:
     method: put
     uri: http://test.lvh.me:3001/nodes/1
@@ -64,9 +64,9 @@ http_interactions:
       cache-control:
       - no-cache
       x-request-id:
-      - 2297782ded20eada28d20454f062e753
+      - 5b0d32563237d64bf85c79d470167e7b
       x-runtime:
-      - '0.073256'
+      - '0.075434'
       connection:
       - close
       server:
@@ -75,5 +75,5 @@ http_interactions:
       encoding: US-ASCII
       string: ''
     http_version: 
-  recorded_at: Sun, 22 Jul 2012 20:43:52 GMT
-recorded_with: VCR 2.2.2
+  recorded_at: Sun, 16 Sep 2012 20:05:28 GMT
+recorded_with: VCR 2.2.5

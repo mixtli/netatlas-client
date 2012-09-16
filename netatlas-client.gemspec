@@ -4,8 +4,8 @@ require File.expand_path('../lib/netatlas/client/version', __FILE__)
 Gem::Specification.new do |gem|
   gem.authors       = ["mixtli"]
   gem.email         = ["ronmcclain75@gmail.com"]
-  gem.description   = %q{TODO: Write a gem description}
-  gem.summary       = %q{TODO: Write a gem summary}
+  gem.description   = %q{Client libraries and utilities for NetAtlas}
+  gem.summary       = %q{Client libraries and utilities for NetAtlas}
   gem.homepage      = ""
 
   gem.files         = `git ls-files`.split($\)
