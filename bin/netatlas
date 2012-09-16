@@ -38,17 +38,17 @@ resources.each do |fields|
   resource_name = resource.to_s.camelize
   resource_class = "NetAtlas::Resource::#{resource_name}".constantize
 
-desc 'Node commands'
+  desc "#{resource_name} commands" 
   command resource do |n|
     desc 'List nodes'
     n.command :list do |l|
       l.action do |global_options,options,args|
         results = resource_class.find
         case global_options[:format]
-          when 'table'
-            puts NetAtlas::Renderer::Table.new(results, :id, :label, :description).render
-          when 'json'
-            jj results
+        when 'table'
+          puts NetAtlas::Renderer::Table.new(results, *resource_class.schema.keys).render
+        when 'json'
+          jj results
         else
           exit_now! "Unknown content-type #{resource_name}"
         end

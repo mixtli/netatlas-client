@@ -2,7 +2,7 @@ require 'spec_helper'
 
 shared_examples_for "a node" do 
   before do
-    user = Fabricate(:admin)
+    @user ||= Fabricate(:admin)
     NetAtlas::Resource::Base.user = 'admin@netatlas.com'
     NetAtlas::Resource::Base.pass = 'password'
   end

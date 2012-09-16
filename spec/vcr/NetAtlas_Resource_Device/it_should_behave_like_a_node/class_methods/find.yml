@@ -1,0 +1,44 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://test.lvh.me:3001/devices
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Authorization:
+      - Basic YWRtaW5AbmV0YXRsYXMuY29tOnBhc3N3b3Jk
+      Content-Type:
+      - application/json
+      Accept:
+      - application/json
+  response:
+    status:
+      code: 200
+      message: 
+    headers:
+      content-type:
+      - application/json; charset=utf-8
+      x-ua-compatible:
+      - IE=Edge,chrome=1
+      etag:
+      - ! '"229cfa0d5db4e125fd8f5b5b5a7680c2"'
+      cache-control:
+      - max-age=0, private, must-revalidate
+      x-request-id:
+      - 3a81aea465f83a4b03c39be9f3ecdbaf
+      x-runtime:
+      - '0.076483'
+      content-length:
+      - '6103'
+      connection:
+      - close
+      server:
+      - thin 1.4.1 codename Chromeo
+    body:
+      encoding: US-ASCII
+      string: ! '[{"auth_password":null,"auth_protocol":null,"community":null,"created_at":"2012-07-22T13:42:33Z","creator_id":null,"deleted_at":null,"deleter_id":null,"description":"bar","device_id":null,"hostname":"host2.lvh.me","id":115,"ip_address":null,"ip_forwarding":null,"label":"foo","memory":null,"num_cpus":null,"os":null,"os_type":null,"os_vendor":null,"os_version":null,"priv_password":null,"priv_protocol":null,"snmp_index":null,"snmp_version":null,"state":"unknown","sys_contact":null,"sys_descr":null,"sys_location":null,"sys_name":null,"sys_objectid":null,"updated_at":"2012-07-22T13:42:33Z","updater_id":null},{"auth_password":null,"auth_protocol":null,"community":null,"created_at":"2012-07-22T13:42:33Z","creator_id":null,"deleted_at":null,"deleter_id":null,"description":"bar","device_id":null,"hostname":"host3.lvh.me","id":116,"ip_address":null,"ip_forwarding":null,"label":"foo","memory":null,"num_cpus":null,"os":null,"os_type":null,"os_vendor":null,"os_version":null,"priv_password":null,"priv_protocol":null,"snmp_index":null,"snmp_version":null,"state":"unknown","sys_contact":null,"sys_descr":null,"sys_location":null,"sys_name":null,"sys_objectid":null,"updated_at":"2012-07-22T13:42:33Z","updater_id":null},{"auth_password":null,"auth_protocol":null,"community":null,"created_at":"2012-07-22T13:42:33Z","creator_id":null,"deleted_at":null,"deleter_id":null,"description":"bar","device_id":null,"hostname":"host4.lvh.me","id":117,"ip_address":null,"ip_forwarding":null,"label":"foo","memory":null,"num_cpus":null,"os":null,"os_type":null,"os_vendor":null,"os_version":null,"priv_password":null,"priv_protocol":null,"snmp_index":null,"snmp_version":null,"state":"unknown","sys_contact":null,"sys_descr":null,"sys_location":null,"sys_name":null,"sys_objectid":null,"updated_at":"2012-07-22T13:42:33Z","updater_id":null},{"auth_password":null,"auth_protocol":null,"community":null,"created_at":"2012-07-22T13:42:33Z","creator_id":null,"deleted_at":null,"deleter_id":null,"description":"bar","device_id":null,"hostname":"host5.lvh.me","id":118,"ip_address":null,"ip_forwarding":null,"label":"foo","memory":null,"num_cpus":null,"os":null,"os_type":null,"os_vendor":null,"os_version":null,"priv_password":null,"priv_protocol":null,"snmp_index":null,"snmp_version":null,"state":"unknown","sys_contact":null,"sys_descr":null,"sys_location":null,"sys_name":null,"sys_objectid":null,"updated_at":"2012-07-22T13:42:33Z","updater_id":null},{"auth_password":null,"auth_protocol":null,"community":null,"created_at":"2012-07-22T13:42:33Z","creator_id":null,"deleted_at":null,"deleter_id":null,"description":"bar","device_id":null,"hostname":"host6.lvh.me","id":119,"ip_address":null,"ip_forwarding":null,"label":"foo","memory":null,"num_cpus":null,"os":null,"os_type":null,"os_vendor":null,"os_version":null,"priv_password":null,"priv_protocol":null,"snmp_index":null,"snmp_version":null,"state":"unknown","sys_contact":null,"sys_descr":null,"sys_location":null,"sys_name":null,"sys_objectid":null,"updated_at":"2012-07-22T13:42:33Z","updater_id":null},{"auth_password":null,"auth_protocol":null,"community":null,"created_at":"2012-07-22T13:42:33Z","creator_id":null,"deleted_at":null,"deleter_id":null,"description":"bar","device_id":null,"hostname":"host7.lvh.me","id":120,"ip_address":null,"ip_forwarding":null,"label":"foo","memory":null,"num_cpus":null,"os":null,"os_type":null,"os_vendor":null,"os_version":null,"priv_password":null,"priv_protocol":null,"snmp_index":null,"snmp_version":null,"state":"unknown","sys_contact":null,"sys_descr":null,"sys_location":null,"sys_name":null,"sys_objectid":null,"updated_at":"2012-07-22T13:42:33Z","updater_id":null},{"auth_password":null,"auth_protocol":null,"community":null,"created_at":"2012-07-22T13:42:33Z","creator_id":null,"deleted_at":null,"deleter_id":null,"description":"bar","device_id":null,"hostname":"host8.lvh.me","id":121,"ip_address":null,"ip_forwarding":null,"label":"foo","memory":null,"num_cpus":null,"os":null,"os_type":null,"os_vendor":null,"os_version":null,"priv_password":null,"priv_protocol":null,"snmp_index":null,"snmp_version":null,"state":"unknown","sys_contact":null,"sys_descr":null,"sys_location":null,"sys_name":null,"sys_objectid":null,"updated_at":"2012-07-22T13:42:33Z","updater_id":null},{"auth_password":null,"auth_protocol":null,"community":null,"created_at":"2012-07-22T13:42:33Z","creator_id":null,"deleted_at":null,"deleter_id":null,"description":"bar","device_id":null,"hostname":"host9.lvh.me","id":122,"ip_address":null,"ip_forwarding":null,"label":"foo","memory":null,"num_cpus":null,"os":null,"os_type":null,"os_vendor":null,"os_version":null,"priv_password":null,"priv_protocol":null,"snmp_index":null,"snmp_version":null,"state":"unknown","sys_contact":null,"sys_descr":null,"sys_location":null,"sys_name":null,"sys_objectid":null,"updated_at":"2012-07-22T13:42:33Z","updater_id":null},{"auth_password":null,"auth_protocol":null,"community":null,"created_at":"2012-07-22T13:42:33Z","creator_id":null,"deleted_at":null,"deleter_id":null,"description":"bar","device_id":null,"hostname":"host10.lvh.me","id":123,"ip_address":null,"ip_forwarding":null,"label":"foo","memory":null,"num_cpus":null,"os":null,"os_type":null,"os_vendor":null,"os_version":null,"priv_password":null,"priv_protocol":null,"snmp_index":null,"snmp_version":null,"state":"unknown","sys_contact":null,"sys_descr":null,"sys_location":null,"sys_name":null,"sys_objectid":null,"updated_at":"2012-07-22T13:42:33Z","updater_id":null},{"auth_password":null,"auth_protocol":null,"community":null,"created_at":"2012-07-22T13:42:33Z","creator_id":null,"deleted_at":null,"deleter_id":null,"description":"bar","device_id":null,"hostname":"host11.lvh.me","id":124,"ip_address":null,"ip_forwarding":null,"label":"foo","memory":null,"num_cpus":null,"os":null,"os_type":null,"os_vendor":null,"os_version":null,"priv_password":null,"priv_protocol":null,"snmp_index":null,"snmp_version":null,"state":"unknown","sys_contact":null,"sys_descr":null,"sys_location":null,"sys_name":null,"sys_objectid":null,"updated_at":"2012-07-22T13:42:33Z","updater_id":null}]'
+    http_version: 
+  recorded_at: Sun, 22 Jul 2012 20:43:49 GMT
+recorded_with: VCR 2.2.2

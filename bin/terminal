@@ -1,6 +1,6 @@
 #!/usr/bin/env ruby
 $: << File.expand_path(File.dirname(File.realpath(__FILE__)) + '/../lib')
-$LOAD_PATH << "/Users/rmcclain/Projects/net-snmp/lib"
+#$LOAD_PATH << "/Users/rmcclain/Projects/net-snmp/lib"
 require 'rubygems'
 require 'netatlas'
 require 'rbcurse'

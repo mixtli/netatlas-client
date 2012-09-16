@@ -1,4 +1,4 @@
 class NetAtlas::Resource::Device < NetAtlas::Resource::Base
-  #self.schema = {:ip_address => :string}
   self.uri = '/devices'
+  self.schema = {:id => Integer, :label => String, :hostname => String, :description => String}
 end

@@ -1,0 +1,46 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: http://test.lvh.me:3001/devices
+    body:
+      encoding: US-ASCII
+      string: ! '{"label":"foo","description":"bar","created_at":"2012-07-22T13:42:33-07:00","updated_at":"2012-07-22T13:42:33-07:00","hostname":"host0.lvh.me","type":"Device"}'
+    headers:
+      Authorization:
+      - Basic YWRtaW5AbmV0YXRsYXMuY29tOnBhc3N3b3Jk
+      Content-Type:
+      - application/json
+      Accept:
+      - application/json
+  response:
+    status:
+      code: 201
+      message: 
+    headers:
+      location:
+      - http://test.lvh.me:3001/devices/114
+      content-type:
+      - application/json; charset=utf-8
+      x-ua-compatible:
+      - IE=Edge,chrome=1
+      etag:
+      - ! '"e9a1c68cbd4aff4ee4e5c2be7b1269c3"'
+      cache-control:
+      - max-age=0, private, must-revalidate
+      x-request-id:
+      - 72d01a6e1273604fbdcae90df1f821f2
+      x-runtime:
+      - '0.310786'
+      content-length:
+      - '612'
+      connection:
+      - close
+      server:
+      - thin 1.4.1 codename Chromeo
+    body:
+      encoding: US-ASCII
+      string: ! '{"auth_password":null,"auth_protocol":null,"community":null,"created_at":"2012-07-22T20:43:49Z","creator_id":50,"deleted_at":null,"deleter_id":null,"description":"bar","device_id":null,"hostname":"host0.lvh.me","id":114,"ip_address":"127.0.0.1","ip_forwarding":null,"label":"foo","memory":null,"num_cpus":null,"os":null,"os_type":null,"os_vendor":null,"os_version":null,"priv_password":null,"priv_protocol":null,"snmp_index":null,"snmp_version":null,"state":"unknown","sys_contact":null,"sys_descr":null,"sys_location":null,"sys_name":null,"sys_objectid":null,"updated_at":"2012-07-22T20:43:49Z","updater_id":50}'
+    http_version: 
+  recorded_at: Sun, 22 Jul 2012 20:43:49 GMT
+recorded_with: VCR 2.2.2

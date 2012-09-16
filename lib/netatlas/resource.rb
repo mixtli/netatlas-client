@@ -7,6 +7,7 @@ module NetAtlas
       class_attribute :user
       class_attribute :pass
       
+      class_attribute :schema
       attr_accessor :attributes
 
       self.base_url = ::CONFIG['netatlas_url']
