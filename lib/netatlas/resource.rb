@@ -82,6 +82,8 @@ module NetAtlas
         end
 
         def conn
+          puts "base_url = #{base_url}"
+          puts "uri = #{self.uri}"
           @conn ||= Faraday.new(base_url + self.uri) do |c|
             c.basic_auth(self.user, self.pass)
             c.request :json

@@ -1,6 +1,8 @@
 module NetAtlas
   class Resource::DataSource < Resource::Base
     #self.schema = {:ip_address => :string,  :port => :integer, :plugin_name => :string, :arguments => nil, :warning_threshold => :float, :critical_threshold => :float }
+    self.uri = '/data_sources'
+    self.schema = {:id => Integer, :node_id => Integer, :description => String}
 
     attr_accessor :last_result
     def get_plugin
