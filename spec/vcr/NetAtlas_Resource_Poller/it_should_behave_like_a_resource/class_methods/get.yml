@@ -1,11 +1,11 @@
 ---
 http_interactions:
 - request:
-    method: post
-    uri: http://test.lvh.me:3001/nodes
+    method: get
+    uri: http://test.lvh.me:3001/pollers/1
     body:
       encoding: US-ASCII
-      string: ! '{"label":"foo","description":"bar","created_at":"2012-09-30T17:00:50-07:00","updated_at":"2012-09-30T17:00:50-07:00"}'
+      string: ''
     headers:
       Authorization:
       - Basic YWRtaW5AbmV0YXRsYXMuY29tOnBhc3N3b3Jk
@@ -15,32 +15,30 @@ http_interactions:
       - application/json
   response:
     status:
-      code: 201
+      code: 200
       message: 
     headers:
-      location:
-      - http://test.lvh.me:3001/nodes/442
       content-type:
       - application/json; charset=utf-8
       x-ua-compatible:
       - IE=Edge,chrome=1
       etag:
-      - ! '"77bce393470f8387123524f80578813e"'
+      - ! '"72f6f6f4339e2dff1c3783a3f7f24ff4"'
       cache-control:
       - max-age=0, private, must-revalidate
       x-request-id:
-      - ffa82df2153294f8075788b4c9e0d767
+      - c97e8461cd373454cc7a9087b0bf2bb3
       x-runtime:
-      - '0.077966'
+      - '0.073255'
       content-length:
-      - '239'
+      - '258'
       connection:
       - close
       server:
       - thin 1.4.1 codename Chromeo
     body:
       encoding: US-ASCII
-      string: ! '{"created_at":"2012-10-01T00:01:08Z","creator_id":197,"deleted_at":null,"deleter_id":null,"description":"bar","device_id":null,"id":442,"label":"foo","snmp_index":null,"state":"unknown","updated_at":"2012-10-01T00:01:08Z","updater_id":197}'
+      string: ! '{"created_at":"2012-09-30T17:04:50Z","creator_id":null,"deleted_at":null,"deleter_id":null,"hostname":"host1.lvh.me","id":1,"port":null,"queue_password":"pass1","queue_username":"user1","state":"unknown","updated_at":"2012-09-30T17:04:50Z","updater_id":null}'
     http_version: 
-  recorded_at: Mon, 01 Oct 2012 00:01:08 GMT
+  recorded_at: Mon, 01 Oct 2012 00:04:51 GMT
 recorded_with: VCR 2.2.5

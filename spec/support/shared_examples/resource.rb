@@ -1,10 +1,10 @@
 require 'spec_helper'
 
-shared_examples_for "a node" do 
+shared_examples_for "a resource" do 
   before do
-    @user ||= Fabricate(:admin)
     NetAtlas::Resource::Base.user = 'admin@netatlas.com'
     NetAtlas::Resource::Base.pass = 'password'
+    Fabricate(:admin)
   end
   context "class methods" do
     it "create", :vcr do
@@ -13,10 +13,9 @@ shared_examples_for "a node" do
     end
 
     it "get", :vcr => { :record => :once} do
-      node = Fabricate(factory_name, :id => 1, :label => 'foobar')
+      node = Fabricate(factory_name, :id => 1)
       retreived_node = described_class.get(node.id)
       retreived_node.id.should eql(node.id)
-      retreived_node.label.should eql('foobar')
     end
 
 
@@ -56,9 +55,7 @@ shared_examples_for "a node" do
     it "save", :vcr do
       Fabricate(factory_name, :id => 1)
       node = described_class.get(1) 
-      node.label = 'New Label'
       node.save.should be_true
-      node.label.should eql('New Label')
     end
   end
 

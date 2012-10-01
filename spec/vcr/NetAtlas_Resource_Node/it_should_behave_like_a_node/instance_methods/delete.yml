@@ -23,13 +23,13 @@ http_interactions:
       x-ua-compatible:
       - IE=Edge,chrome=1
       etag:
-      - ! '"65bbaaa34f0fbe84093e4b789ebcf7ae"'
+      - ! '"60414c22924ea9da207a11727a35ec32"'
       cache-control:
       - max-age=0, private, must-revalidate
       x-request-id:
-      - 9e2d34b44dcb4cffe68879deed4e870f
+      - de525b03ebc4b6f82a8ccad792061645
       x-runtime:
-      - '0.072782'
+      - '0.078790'
       content-length:
       - '239'
       connection:
@@ -38,9 +38,9 @@ http_interactions:
       - thin 1.4.1 codename Chromeo
     body:
       encoding: US-ASCII
-      string: ! '{"created_at":"2012-09-16T13:05:15Z","creator_id":null,"deleted_at":null,"deleter_id":null,"description":"bar","device_id":null,"id":1,"label":"foo","snmp_index":null,"state":"unknown","updated_at":"2012-09-16T13:05:15Z","updater_id":null}'
+      string: ! '{"created_at":"2012-09-30T17:00:50Z","creator_id":null,"deleted_at":null,"deleter_id":null,"description":"bar","device_id":null,"id":1,"label":"foo","snmp_index":null,"state":"unknown","updated_at":"2012-09-30T17:00:50Z","updater_id":null}'
     http_version: 
-  recorded_at: Sun, 16 Sep 2012 20:05:28 GMT
+  recorded_at: Mon, 01 Oct 2012 00:01:12 GMT
 - request:
     method: delete
     uri: http://test.lvh.me:3001/nodes/1
@@ -64,9 +64,9 @@ http_interactions:
       cache-control:
       - no-cache
       x-request-id:
-      - 92d8ada9cb788ce0b7250fefca8d9bde
+      - c28a40a2f50ed587f66bccff7ce8ac66
       x-runtime:
-      - '0.072236'
+      - '0.074202'
       connection:
       - close
       server:
@@ -75,7 +75,7 @@ http_interactions:
       encoding: US-ASCII
       string: ''
     http_version: 
-  recorded_at: Sun, 16 Sep 2012 20:05:28 GMT
+  recorded_at: Mon, 01 Oct 2012 00:01:12 GMT
 - request:
     method: get
     uri: http://test.lvh.me:3001/nodes/1
@@ -97,11 +97,11 @@ http_interactions:
       content-type:
       - text/html; charset=utf-8
       content-length:
-      - '14688'
+      - '14686'
       x-request-id:
-      - 68fa7f1ee4b08f792cb786a9d5edfcec
+      - 06d621d4f81b94f17b30a6063dc33699
       x-runtime:
-      - '0.083351'
+      - '0.084001'
       connection:
       - close
       server:
@@ -129,7 +129,7 @@ http_interactions:
         `find'\nactiverecord (3.2.5) lib/active_record/querying.rb:5:in `find'\ndeclarative_authorization
         (0.5.5) lib/declarative_authorization/in_controller.rb:143:in `load_controller_object'\ndeclarative_authorization
         (0.5.5) lib/declarative_authorization/in_controller.rb:527:in `block in filter_resource_access'\nactivesupport
-        (3.2.5) lib/active_support/callbacks.rb:451:in `_run__4179325405479073859__process_action__3908404088479820310__callbacks'\nactivesupport
+        (3.2.5) lib/active_support/callbacks.rb:451:in `_run__2343277301143197765__process_action__380172994579271004__callbacks'\nactivesupport
         (3.2.5) lib/active_support/callbacks.rb:405:in `__run_callback'\nactivesupport
         (3.2.5) lib/active_support/callbacks.rb:385:in `_run_process_action_callbacks'\nactivesupport
         (3.2.5) lib/active_support/callbacks.rb:81:in `run_callbacks'\nactionpack
@@ -166,7 +166,7 @@ http_interactions:
         (3.2.5) lib/active_record/connection_adapters/abstract/connection_pool.rb:473:in
         `call'\nactionpack (3.2.5) lib/action_dispatch/middleware/callbacks.rb:28:in
         `block in call'\nactivesupport (3.2.5) lib/active_support/callbacks.rb:405:in
-        `_run__2283012725456568784__call__2823763339468302654__callbacks'\nactivesupport
+        `_run__2610600063601118582__call__4486662743726971285__callbacks'\nactivesupport
         (3.2.5) lib/active_support/callbacks.rb:405:in `__run_callback'\nactivesupport
         (3.2.5) lib/active_support/callbacks.rb:385:in `_run_call_callbacks'\nactivesupport
         (3.2.5) lib/active_support/callbacks.rb:81:in `run_callbacks'\nactionpack
@@ -200,7 +200,7 @@ http_interactions:
         (3.2.5) lib/active_record/querying.rb:5:in `find'\ndeclarative_authorization
         (0.5.5) lib/declarative_authorization/in_controller.rb:143:in `load_controller_object'\ndeclarative_authorization
         (0.5.5) lib/declarative_authorization/in_controller.rb:527:in `block in filter_resource_access'\nactivesupport
-        (3.2.5) lib/active_support/callbacks.rb:451:in `_run__4179325405479073859__process_action__3908404088479820310__callbacks'\nactivesupport
+        (3.2.5) lib/active_support/callbacks.rb:451:in `_run__2343277301143197765__process_action__380172994579271004__callbacks'\nactivesupport
         (3.2.5) lib/active_support/callbacks.rb:405:in `__run_callback'\nactivesupport
         (3.2.5) lib/active_support/callbacks.rb:385:in `_run_process_action_callbacks'\nactivesupport
         (3.2.5) lib/active_support/callbacks.rb:81:in `run_callbacks'\nactionpack
@@ -237,7 +237,7 @@ http_interactions:
         (3.2.5) lib/active_record/connection_adapters/abstract/connection_pool.rb:473:in
         `call'\nactionpack (3.2.5) lib/action_dispatch/middleware/callbacks.rb:28:in
         `block in call'\nactivesupport (3.2.5) lib/active_support/callbacks.rb:405:in
-        `_run__2283012725456568784__call__2823763339468302654__callbacks'\nactivesupport
+        `_run__2610600063601118582__call__4486662743726971285__callbacks'\nactivesupport
         (3.2.5) lib/active_support/callbacks.rb:405:in `__run_callback'\nactivesupport
         (3.2.5) lib/active_support/callbacks.rb:385:in `_run_call_callbacks'\nactivesupport
         (3.2.5) lib/active_support/callbacks.rb:81:in `run_callbacks'\nactionpack
@@ -275,5 +275,5 @@ http_interactions:
         &quot;test.lvh.me&quot;\nSERVER_PROTOCOL: &quot;HTTP/1.1&quot;</pre></div>\n\n\n<h2
         style=\"margin-top: 30px\">Response</h2>\n<p><b>Headers</b>: <pre>None</pre></p>\n\n\n\n</body>\n</html>\n"
     http_version: 
-  recorded_at: Sun, 16 Sep 2012 20:05:28 GMT
+  recorded_at: Mon, 01 Oct 2012 00:01:12 GMT
 recorded_with: VCR 2.2.5

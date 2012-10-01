@@ -12,18 +12,19 @@ module NetAtlas
 
       self.base_url = ::CONFIG['netatlas_url']
       self.user = ::CONFIG['netatlas_user']
-      self.pass = ::CONFIG['netatlas_pass']
+      self.pass = ::CONFIG['netatlas_password']
       class << self
         def find(params = {})
           response = conn.get do |req|
             req.url uri
             req.headers['Content-Type'] = 'application/json'
             req.headers['Accept'] = "application/json"
+            req.params = params
           end
           if response.status == 200
             response.body.map { |attrs| new(attrs)}
           else
-            raise Error.new("Failed to find resource", response)
+            raise Error.new("Failed to find resource ", response)
           end
         end
 
@@ -50,7 +51,7 @@ module NetAtlas
           if response.status == 201
             new(response.body)
           else
-            raise Error.new("Failed to create resource", response)
+            raise Error.new("Failed to create resource #{response.body}", response)
           end
         end
 
@@ -82,8 +83,6 @@ module NetAtlas
         end
 
         def conn
-          puts "base_url = #{base_url}"
-          puts "uri = #{self.uri}"
           @conn ||= Faraday.new(base_url + self.uri) do |c|
             c.basic_auth(self.user, self.pass)
             c.request :json

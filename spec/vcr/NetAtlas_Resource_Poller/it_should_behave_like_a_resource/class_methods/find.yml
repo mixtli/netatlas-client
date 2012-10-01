@@ -1,0 +1,44 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://test.lvh.me:3001/pollers
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Authorization:
+      - Basic YWRtaW5AbmV0YXRsYXMuY29tOnBhc3N3b3Jk
+      Content-Type:
+      - application/json
+      Accept:
+      - application/json
+  response:
+    status:
+      code: 200
+      message: 
+    headers:
+      content-type:
+      - application/json; charset=utf-8
+      x-ua-compatible:
+      - IE=Edge,chrome=1
+      etag:
+      - ! '"773e4f9b1deb23c690206897d98aa8c9"'
+      cache-control:
+      - max-age=0, private, must-revalidate
+      x-request-id:
+      - 6ee9b121de0537062d2a0e28fc2c2a1f
+      x-runtime:
+      - '0.074141'
+      content-length:
+      - '2607'
+      connection:
+      - close
+      server:
+      - thin 1.4.1 codename Chromeo
+    body:
+      encoding: US-ASCII
+      string: ! '[{"created_at":"2012-09-30T17:04:50Z","creator_id":null,"deleted_at":null,"deleter_id":null,"hostname":"host2.lvh.me","id":75,"port":null,"queue_password":"pass2","queue_username":"user2","state":"unknown","updated_at":"2012-09-30T17:04:50Z","updater_id":null},{"created_at":"2012-09-30T17:04:50Z","creator_id":null,"deleted_at":null,"deleter_id":null,"hostname":"host3.lvh.me","id":76,"port":null,"queue_password":"pass3","queue_username":"user3","state":"unknown","updated_at":"2012-09-30T17:04:50Z","updater_id":null},{"created_at":"2012-09-30T17:04:50Z","creator_id":null,"deleted_at":null,"deleter_id":null,"hostname":"host4.lvh.me","id":77,"port":null,"queue_password":"pass4","queue_username":"user4","state":"unknown","updated_at":"2012-09-30T17:04:50Z","updater_id":null},{"created_at":"2012-09-30T17:04:50Z","creator_id":null,"deleted_at":null,"deleter_id":null,"hostname":"host5.lvh.me","id":78,"port":null,"queue_password":"pass5","queue_username":"user5","state":"unknown","updated_at":"2012-09-30T17:04:50Z","updater_id":null},{"created_at":"2012-09-30T17:04:50Z","creator_id":null,"deleted_at":null,"deleter_id":null,"hostname":"host6.lvh.me","id":79,"port":null,"queue_password":"pass6","queue_username":"user6","state":"unknown","updated_at":"2012-09-30T17:04:50Z","updater_id":null},{"created_at":"2012-09-30T17:04:50Z","creator_id":null,"deleted_at":null,"deleter_id":null,"hostname":"host7.lvh.me","id":80,"port":null,"queue_password":"pass7","queue_username":"user7","state":"unknown","updated_at":"2012-09-30T17:04:50Z","updater_id":null},{"created_at":"2012-09-30T17:04:50Z","creator_id":null,"deleted_at":null,"deleter_id":null,"hostname":"host8.lvh.me","id":81,"port":null,"queue_password":"pass8","queue_username":"user8","state":"unknown","updated_at":"2012-09-30T17:04:50Z","updater_id":null},{"created_at":"2012-09-30T17:04:50Z","creator_id":null,"deleted_at":null,"deleter_id":null,"hostname":"host9.lvh.me","id":82,"port":null,"queue_password":"pass9","queue_username":"user9","state":"unknown","updated_at":"2012-09-30T17:04:50Z","updater_id":null},{"created_at":"2012-09-30T17:04:50Z","creator_id":null,"deleted_at":null,"deleter_id":null,"hostname":"host10.lvh.me","id":83,"port":null,"queue_password":"pass10","queue_username":"user10","state":"unknown","updated_at":"2012-09-30T17:04:50Z","updater_id":null},{"created_at":"2012-09-30T17:04:50Z","creator_id":null,"deleted_at":null,"deleter_id":null,"hostname":"host11.lvh.me","id":84,"port":null,"queue_password":"pass11","queue_username":"user11","state":"unknown","updated_at":"2012-09-30T17:04:50Z","updater_id":null}]'
+    http_version: 
+  recorded_at: Mon, 01 Oct 2012 00:04:51 GMT
+recorded_with: VCR 2.2.5

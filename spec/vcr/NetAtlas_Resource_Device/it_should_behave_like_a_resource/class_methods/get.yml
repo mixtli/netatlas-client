@@ -1,0 +1,44 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://test.lvh.me:3001/devices/1
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Authorization:
+      - Basic YWRtaW5AbmV0YXRsYXMuY29tOnBhc3N3b3Jk
+      Content-Type:
+      - application/json
+      Accept:
+      - application/json
+  response:
+    status:
+      code: 200
+      message: 
+    headers:
+      content-type:
+      - application/json; charset=utf-8
+      x-ua-compatible:
+      - IE=Edge,chrome=1
+      etag:
+      - ! '"856701971bcddf218c3371e0b6c53325"'
+      cache-control:
+      - max-age=0, private, must-revalidate
+      x-request-id:
+      - ad7f58688e830f3bf357c2a433fab109
+      x-runtime:
+      - '0.078726'
+      content-length:
+      - '607'
+      connection:
+      - close
+      server:
+      - thin 1.4.1 codename Chromeo
+    body:
+      encoding: US-ASCII
+      string: ! '{"auth_password":null,"auth_protocol":null,"community":null,"created_at":"2012-09-30T17:04:27Z","creator_id":null,"deleted_at":null,"deleter_id":null,"description":"bar","device_id":null,"hostname":"host1.lvh.me","id":1,"ip_address":null,"ip_forwarding":null,"label":"foo","memory":null,"num_cpus":null,"os":null,"os_type":null,"os_vendor":null,"os_version":null,"priv_password":null,"priv_protocol":null,"snmp_index":null,"snmp_version":null,"state":"unknown","sys_contact":null,"sys_descr":null,"sys_location":null,"sys_name":null,"sys_objectid":null,"updated_at":"2012-09-30T17:04:27Z","updater_id":null}'
+    http_version: 
+  recorded_at: Mon, 01 Oct 2012 00:04:29 GMT
+recorded_with: VCR 2.2.5

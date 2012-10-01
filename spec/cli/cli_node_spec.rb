@@ -44,6 +44,7 @@ describe "CLI node", :integration do
     it "should create a node from json" do
       json = {:label => 'Foo', :description => 'Foo Node'}.to_json
       netatlas("--format json node create", json)
+      puts all_stdout
       JSON.parse(all_stdout)['label'].should eql('Foo')
     end
   end

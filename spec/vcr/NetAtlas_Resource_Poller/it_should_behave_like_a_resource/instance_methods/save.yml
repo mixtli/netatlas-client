@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: http://test.lvh.me:3001/nodes/1
+    uri: http://test.lvh.me:3001/pollers/1
     body:
       encoding: US-ASCII
       string: ''
@@ -23,31 +23,30 @@ http_interactions:
       x-ua-compatible:
       - IE=Edge,chrome=1
       etag:
-      - ! '"60414c22924ea9da207a11727a35ec32"'
+      - ! '"e63593fe3d2d1975ba2d9f08f1010245"'
       cache-control:
       - max-age=0, private, must-revalidate
       x-request-id:
-      - 5d70040fae55aaf2787160dc19ecde41
+      - 01c6806374eaf94676d5bbd9efa7ebe4
       x-runtime:
-      - '0.080639'
+      - '0.079899'
       content-length:
-      - '239'
+      - '261'
       connection:
       - close
       server:
       - thin 1.4.1 codename Chromeo
     body:
       encoding: US-ASCII
-      string: ! '{"created_at":"2012-09-30T17:00:50Z","creator_id":null,"deleted_at":null,"deleter_id":null,"description":"bar","device_id":null,"id":1,"label":"foo","snmp_index":null,"state":"unknown","updated_at":"2012-09-30T17:00:50Z","updater_id":null}'
+      string: ! '{"created_at":"2012-09-30T17:04:50Z","creator_id":null,"deleted_at":null,"deleter_id":null,"hostname":"host15.lvh.me","id":1,"port":null,"queue_password":"pass15","queue_username":"user15","state":"unknown","updated_at":"2012-09-30T17:04:50Z","updater_id":null}'
     http_version: 
-  recorded_at: Mon, 01 Oct 2012 00:01:13 GMT
+  recorded_at: Mon, 01 Oct 2012 00:04:55 GMT
 - request:
     method: put
-    uri: http://test.lvh.me:3001/nodes/1
+    uri: http://test.lvh.me:3001/pollers/1
     body:
       encoding: US-ASCII
-      string: ! '{"created_at":"2012-09-30T17:00:50Z","creator_id":null,"deleted_at":null,"deleter_id":null,"description":"bar","device_id":null,"id":1,"label":"New
-        Label","snmp_index":null,"state":"unknown","updated_at":"2012-09-30T17:00:50Z","updater_id":null}'
+      string: ! '{"created_at":"2012-09-30T17:04:50Z","creator_id":null,"deleted_at":null,"deleter_id":null,"hostname":"host15.lvh.me","id":1,"port":null,"queue_password":"pass15","queue_username":"user15","state":"unknown","updated_at":"2012-09-30T17:04:50Z","updater_id":null}'
     headers:
       Authorization:
       - Basic YWRtaW5AbmV0YXRsYXMuY29tOnBhc3N3b3Jk
@@ -65,9 +64,9 @@ http_interactions:
       cache-control:
       - no-cache
       x-request-id:
-      - 9ec2d8b6270ee6f212d58d4eb63cf14a
+      - 32f6a141f98707cdba21acf5ba0eecb4
       x-runtime:
-      - '0.122288'
+      - '0.074809'
       connection:
       - close
       server:
@@ -76,5 +75,5 @@ http_interactions:
       encoding: US-ASCII
       string: ''
     http_version: 
-  recorded_at: Mon, 01 Oct 2012 00:01:13 GMT
+  recorded_at: Mon, 01 Oct 2012 00:04:55 GMT
 recorded_with: VCR 2.2.5

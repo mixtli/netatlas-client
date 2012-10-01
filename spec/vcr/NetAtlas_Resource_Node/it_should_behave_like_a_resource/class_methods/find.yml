@@ -1,0 +1,44 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://test.lvh.me:3001/nodes
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Authorization:
+      - Basic YWRtaW5AbmV0YXRsYXMuY29tOnBhc3N3b3Jk
+      Content-Type:
+      - application/json
+      Accept:
+      - application/json
+  response:
+    status:
+      code: 200
+      message: 
+    headers:
+      content-type:
+      - application/json; charset=utf-8
+      x-ua-compatible:
+      - IE=Edge,chrome=1
+      etag:
+      - ! '"456355f58b7ad1a6007460b34f1536d4"'
+      cache-control:
+      - max-age=0, private, must-revalidate
+      x-request-id:
+      - aeaa1608db4ef961506f1eab985f6df1
+      x-runtime:
+      - '0.078596'
+      content-length:
+      - '2421'
+      connection:
+      - close
+      server:
+      - thin 1.4.1 codename Chromeo
+    body:
+      encoding: US-ASCII
+      string: ! '[{"created_at":"2012-09-30T17:04:38Z","creator_id":null,"deleted_at":null,"deleter_id":null,"description":"bar","device_id":null,"id":466,"label":"foo","snmp_index":null,"state":"unknown","updated_at":"2012-09-30T17:04:38Z","updater_id":null},{"created_at":"2012-09-30T17:04:38Z","creator_id":null,"deleted_at":null,"deleter_id":null,"description":"bar","device_id":null,"id":467,"label":"foo","snmp_index":null,"state":"unknown","updated_at":"2012-09-30T17:04:38Z","updater_id":null},{"created_at":"2012-09-30T17:04:38Z","creator_id":null,"deleted_at":null,"deleter_id":null,"description":"bar","device_id":null,"id":468,"label":"foo","snmp_index":null,"state":"unknown","updated_at":"2012-09-30T17:04:38Z","updater_id":null},{"created_at":"2012-09-30T17:04:38Z","creator_id":null,"deleted_at":null,"deleter_id":null,"description":"bar","device_id":null,"id":469,"label":"foo","snmp_index":null,"state":"unknown","updated_at":"2012-09-30T17:04:38Z","updater_id":null},{"created_at":"2012-09-30T17:04:38Z","creator_id":null,"deleted_at":null,"deleter_id":null,"description":"bar","device_id":null,"id":470,"label":"foo","snmp_index":null,"state":"unknown","updated_at":"2012-09-30T17:04:38Z","updater_id":null},{"created_at":"2012-09-30T17:04:38Z","creator_id":null,"deleted_at":null,"deleter_id":null,"description":"bar","device_id":null,"id":471,"label":"foo","snmp_index":null,"state":"unknown","updated_at":"2012-09-30T17:04:38Z","updater_id":null},{"created_at":"2012-09-30T17:04:38Z","creator_id":null,"deleted_at":null,"deleter_id":null,"description":"bar","device_id":null,"id":472,"label":"foo","snmp_index":null,"state":"unknown","updated_at":"2012-09-30T17:04:38Z","updater_id":null},{"created_at":"2012-09-30T17:04:38Z","creator_id":null,"deleted_at":null,"deleter_id":null,"description":"bar","device_id":null,"id":473,"label":"foo","snmp_index":null,"state":"unknown","updated_at":"2012-09-30T17:04:38Z","updater_id":null},{"created_at":"2012-09-30T17:04:38Z","creator_id":null,"deleted_at":null,"deleter_id":null,"description":"bar","device_id":null,"id":474,"label":"foo","snmp_index":null,"state":"unknown","updated_at":"2012-09-30T17:04:38Z","updater_id":null},{"created_at":"2012-09-30T17:04:38Z","creator_id":null,"deleted_at":null,"deleter_id":null,"description":"bar","device_id":null,"id":475,"label":"foo","snmp_index":null,"state":"unknown","updated_at":"2012-09-30T17:04:38Z","updater_id":null}]'
+    http_version: 
+  recorded_at: Mon, 01 Oct 2012 00:04:40 GMT
+recorded_with: VCR 2.2.5

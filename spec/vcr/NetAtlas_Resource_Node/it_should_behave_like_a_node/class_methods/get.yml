@@ -23,13 +23,13 @@ http_interactions:
       x-ua-compatible:
       - IE=Edge,chrome=1
       etag:
-      - ! '"cefeed4d3fce4e6a64b3f64b001ce8da"'
+      - ! '"d37174a92fb1fdd07ad23246ab7efdae"'
       cache-control:
       - max-age=0, private, must-revalidate
       x-request-id:
-      - 5f4fa7ac02a6485be47c13a18cc55494
+      - 946609954f4fc3794fa9d66e664de4fc
       x-runtime:
-      - '0.074993'
+      - '0.078256'
       content-length:
       - '242'
       connection:
@@ -38,7 +38,7 @@ http_interactions:
       - thin 1.4.1 codename Chromeo
     body:
       encoding: US-ASCII
-      string: ! '{"created_at":"2012-09-16T13:05:15Z","creator_id":null,"deleted_at":null,"deleter_id":null,"description":"bar","device_id":null,"id":1,"label":"foobar","snmp_index":null,"state":"unknown","updated_at":"2012-09-16T13:05:15Z","updater_id":null}'
+      string: ! '{"created_at":"2012-09-30T17:00:50Z","creator_id":null,"deleted_at":null,"deleter_id":null,"description":"bar","device_id":null,"id":1,"label":"foobar","snmp_index":null,"state":"unknown","updated_at":"2012-09-30T17:00:50Z","updater_id":null}'
     http_version: 
-  recorded_at: Sun, 16 Sep 2012 20:05:27 GMT
+  recorded_at: Mon, 01 Oct 2012 00:01:09 GMT
 recorded_with: VCR 2.2.5

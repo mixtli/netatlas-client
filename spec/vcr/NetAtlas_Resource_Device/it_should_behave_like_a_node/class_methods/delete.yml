@@ -23,9 +23,9 @@ http_interactions:
       cache-control:
       - no-cache
       x-request-id:
-      - c346aa47372aba70105b2b1cb59beba2
+      - 763da7d0e138c0efbd39b49fdf05dc04
       x-runtime:
-      - '0.074337'
+      - '0.073399'
       connection:
       - close
       server:
@@ -34,7 +34,7 @@ http_interactions:
       encoding: US-ASCII
       string: ''
     http_version: 
-  recorded_at: Sun, 16 Sep 2012 20:05:26 GMT
+  recorded_at: Mon, 01 Oct 2012 00:00:13 GMT
 - request:
     method: get
     uri: http://test.lvh.me:3001/devices/1
@@ -58,9 +58,9 @@ http_interactions:
       content-length:
       - '14751'
       x-request-id:
-      - 4c3a4aec923b36537978712dec467e7f
+      - 3e9a82a1c2488e26fc1cff5270ab6942
       x-runtime:
-      - '0.087185'
+      - '0.084308'
       connection:
       - close
       server:
@@ -89,7 +89,7 @@ http_interactions:
         `find'\nactiverecord (3.2.5) lib/active_record/querying.rb:5:in `find'\ndeclarative_authorization
         (0.5.5) lib/declarative_authorization/in_controller.rb:143:in `load_controller_object'\ndeclarative_authorization
         (0.5.5) lib/declarative_authorization/in_controller.rb:527:in `block in filter_resource_access'\nactivesupport
-        (3.2.5) lib/active_support/callbacks.rb:451:in `_run__658954133277113999__process_action__3908404088479820310__callbacks'\nactivesupport
+        (3.2.5) lib/active_support/callbacks.rb:451:in `_run__2691889552178573180__process_action__380172994579271004__callbacks'\nactivesupport
         (3.2.5) lib/active_support/callbacks.rb:405:in `__run_callback'\nactivesupport
         (3.2.5) lib/active_support/callbacks.rb:385:in `_run_process_action_callbacks'\nactivesupport
         (3.2.5) lib/active_support/callbacks.rb:81:in `run_callbacks'\nactionpack
@@ -126,7 +126,7 @@ http_interactions:
         (3.2.5) lib/active_record/connection_adapters/abstract/connection_pool.rb:473:in
         `call'\nactionpack (3.2.5) lib/action_dispatch/middleware/callbacks.rb:28:in
         `block in call'\nactivesupport (3.2.5) lib/active_support/callbacks.rb:405:in
-        `_run__2283012725456568784__call__2823763339468302654__callbacks'\nactivesupport
+        `_run__2610600063601118582__call__4486662743726971285__callbacks'\nactivesupport
         (3.2.5) lib/active_support/callbacks.rb:405:in `__run_callback'\nactivesupport
         (3.2.5) lib/active_support/callbacks.rb:385:in `_run_call_callbacks'\nactivesupport
         (3.2.5) lib/active_support/callbacks.rb:81:in `run_callbacks'\nactionpack
@@ -160,7 +160,7 @@ http_interactions:
         (3.2.5) lib/active_record/querying.rb:5:in `find'\ndeclarative_authorization
         (0.5.5) lib/declarative_authorization/in_controller.rb:143:in `load_controller_object'\ndeclarative_authorization
         (0.5.5) lib/declarative_authorization/in_controller.rb:527:in `block in filter_resource_access'\nactivesupport
-        (3.2.5) lib/active_support/callbacks.rb:451:in `_run__658954133277113999__process_action__3908404088479820310__callbacks'\nactivesupport
+        (3.2.5) lib/active_support/callbacks.rb:451:in `_run__2691889552178573180__process_action__380172994579271004__callbacks'\nactivesupport
         (3.2.5) lib/active_support/callbacks.rb:405:in `__run_callback'\nactivesupport
         (3.2.5) lib/active_support/callbacks.rb:385:in `_run_process_action_callbacks'\nactivesupport
         (3.2.5) lib/active_support/callbacks.rb:81:in `run_callbacks'\nactionpack
@@ -197,7 +197,7 @@ http_interactions:
         (3.2.5) lib/active_record/connection_adapters/abstract/connection_pool.rb:473:in
         `call'\nactionpack (3.2.5) lib/action_dispatch/middleware/callbacks.rb:28:in
         `block in call'\nactivesupport (3.2.5) lib/active_support/callbacks.rb:405:in
-        `_run__2283012725456568784__call__2823763339468302654__callbacks'\nactivesupport
+        `_run__2610600063601118582__call__4486662743726971285__callbacks'\nactivesupport
         (3.2.5) lib/active_support/callbacks.rb:405:in `__run_callback'\nactivesupport
         (3.2.5) lib/active_support/callbacks.rb:385:in `_run_call_callbacks'\nactivesupport
         (3.2.5) lib/active_support/callbacks.rb:81:in `run_callbacks'\nactionpack
@@ -235,5 +235,5 @@ http_interactions:
         &quot;test.lvh.me&quot;\nSERVER_PROTOCOL: &quot;HTTP/1.1&quot;</pre></div>\n\n\n<h2
         style=\"margin-top: 30px\">Response</h2>\n<p><b>Headers</b>: <pre>None</pre></p>\n\n\n\n</body>\n</html>\n"
     http_version: 
-  recorded_at: Sun, 16 Sep 2012 20:05:26 GMT
+  recorded_at: Mon, 01 Oct 2012 00:00:13 GMT
 recorded_with: VCR 2.2.5

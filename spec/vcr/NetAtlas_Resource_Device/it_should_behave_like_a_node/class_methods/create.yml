@@ -5,7 +5,7 @@ http_interactions:
     uri: http://test.lvh.me:3001/devices
     body:
       encoding: US-ASCII
-      string: ! '{"label":"foo","description":"bar","created_at":"2012-09-16T13:04:29-07:00","updated_at":"2012-09-16T13:04:29-07:00","hostname":"host0.lvh.me","type":"Device"}'
+      string: ! '{"label":"foo","description":"bar","created_at":"2012-09-30T17:00:10-07:00","updated_at":"2012-09-30T17:00:10-07:00","hostname":"host0.lvh.me","type":"Device"}'
     headers:
       Authorization:
       - Basic YWRtaW5AbmV0YXRsYXMuY29tOnBhc3N3b3Jk
@@ -19,28 +19,28 @@ http_interactions:
       message: 
     headers:
       location:
-      - http://test.lvh.me:3001/devices/1122
+      - http://test.lvh.me:3001/devices/385
       content-type:
       - application/json; charset=utf-8
       x-ua-compatible:
       - IE=Edge,chrome=1
       etag:
-      - ! '"871e0bfa49b87a89facf97690ebb3e36"'
+      - ! '"d208f00b80c1e2c6c348f3c45b1ff7fd"'
       cache-control:
       - max-age=0, private, must-revalidate
       x-request-id:
-      - 52bb0dcb7bfd58ecf548975922da99df
+      - b196e47817ebcdeedc2d732c61fe2432
       x-runtime:
-      - '0.457900'
+      - '0.082114'
       content-length:
-      - '615'
+      - '656'
       connection:
       - close
       server:
       - thin 1.4.1 codename Chromeo
     body:
       encoding: US-ASCII
-      string: ! '{"auth_password":null,"auth_protocol":null,"community":null,"created_at":"2012-09-16T20:04:29Z","creator_id":371,"deleted_at":null,"deleter_id":null,"description":"bar","device_id":null,"hostname":"host0.lvh.me","id":1122,"ip_address":"127.0.0.1","ip_forwarding":null,"label":"foo","memory":null,"num_cpus":null,"os":null,"os_type":null,"os_vendor":null,"os_version":null,"priv_password":null,"priv_protocol":null,"snmp_index":null,"snmp_version":null,"state":"unknown","sys_contact":null,"sys_descr":null,"sys_location":null,"sys_name":null,"sys_objectid":null,"updated_at":"2012-09-16T20:04:29Z","updater_id":371}'
+      string: ! '{"auth_password":null,"auth_protocol":null,"community":null,"created_at":"2012-10-01T00:00:11Z","creator_id":174,"deleted_at":null,"deleter_id":null,"description":"bar","device_id":null,"hostname":"host0.lvh.me","id":385,"ip_address":{"family":2,"addr":2130706433,"mask_addr":4294967295},"ip_forwarding":null,"label":"foo","memory":null,"num_cpus":null,"os":null,"os_type":null,"os_vendor":null,"os_version":null,"priv_password":null,"priv_protocol":null,"snmp_index":null,"snmp_version":null,"state":"unknown","sys_contact":null,"sys_descr":null,"sys_location":null,"sys_name":null,"sys_objectid":null,"updated_at":"2012-10-01T00:00:11Z","updater_id":174}'
     http_version: 
-  recorded_at: Sun, 16 Sep 2012 20:04:29 GMT
+  recorded_at: Mon, 01 Oct 2012 00:00:11 GMT
 recorded_with: VCR 2.2.5

@@ -13,11 +13,12 @@ require 'pry'
 require 'database_cleaner'
 require 'aruba/api'
 
-ENV['NETATLAS_ENVIRONMENT'] = 'test'
+ENV['NETATLAS_ENV'] = 'test'
 SimpleCov.start if File.basename($0) == 'rspec'
 
 DB = Sequel.connect('postgres://postgres@localhost/netatlas_test')
 require 'netatlas/client'
+require 'netatlas/factories'
 Dir["./spec/support/**/*.rb"].map {|f| require File.expand_path(f)}
 
 RSpec.configure do |config|
