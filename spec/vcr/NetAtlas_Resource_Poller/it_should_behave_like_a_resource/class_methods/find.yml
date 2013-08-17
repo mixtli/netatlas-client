@@ -2,15 +2,13 @@
 http_interactions:
 - request:
     method: get
-    uri: http://test.lvh.me:3001/pollers
+    uri: http://test.netatlas.lvh.me/api/pollers/1
     body:
       encoding: US-ASCII
       string: ''
     headers:
-      Authorization:
-      - Basic YWRtaW5AbmV0YXRsYXMuY29tOnBhc3N3b3Jk
-      Content-Type:
-      - application/json
+      User-Agent:
+      - Faraday v0.8.8
       Accept:
       - application/json
   response:
@@ -18,27 +16,76 @@ http_interactions:
       code: 200
       message: 
     headers:
-      content-type:
-      - application/json; charset=utf-8
-      x-ua-compatible:
-      - IE=Edge,chrome=1
+      date:
+      - Sat, 17 Aug 2013 23:25:59 GMT
+      server:
+      - Apache/2.2.22 (Unix) DAV/2 PHP/5.3.15 with Suhosin-Patch Phusion_Passenger/3.0.19
+        mod_ssl/2.2.22 OpenSSL/0.9.8x
+      x-powered-by:
+      - Phusion Passenger (mod_rails/mod_rack) 3.0.19
       etag:
-      - ! '"773e4f9b1deb23c690206897d98aa8c9"'
+      - ! '"287aec48779b4cfcaa7a0d27c634026e"'
       cache-control:
       - max-age=0, private, must-revalidate
       x-request-id:
-      - 6ee9b121de0537062d2a0e28fc2c2a1f
+      - 23aadb8e-3b3e-4a83-b3a7-9ac8e1729572
       x-runtime:
-      - '0.074141'
+      - '0.016879'
       content-length:
-      - '2607'
+      - '277'
+      status:
+      - '200'
       connection:
       - close
-      server:
-      - thin 1.4.1 codename Chromeo
+      content-type:
+      - application/json
     body:
       encoding: US-ASCII
-      string: ! '[{"created_at":"2012-09-30T17:04:50Z","creator_id":null,"deleted_at":null,"deleter_id":null,"hostname":"host2.lvh.me","id":75,"port":null,"queue_password":"pass2","queue_username":"user2","state":"unknown","updated_at":"2012-09-30T17:04:50Z","updater_id":null},{"created_at":"2012-09-30T17:04:50Z","creator_id":null,"deleted_at":null,"deleter_id":null,"hostname":"host3.lvh.me","id":76,"port":null,"queue_password":"pass3","queue_username":"user3","state":"unknown","updated_at":"2012-09-30T17:04:50Z","updater_id":null},{"created_at":"2012-09-30T17:04:50Z","creator_id":null,"deleted_at":null,"deleter_id":null,"hostname":"host4.lvh.me","id":77,"port":null,"queue_password":"pass4","queue_username":"user4","state":"unknown","updated_at":"2012-09-30T17:04:50Z","updater_id":null},{"created_at":"2012-09-30T17:04:50Z","creator_id":null,"deleted_at":null,"deleter_id":null,"hostname":"host5.lvh.me","id":78,"port":null,"queue_password":"pass5","queue_username":"user5","state":"unknown","updated_at":"2012-09-30T17:04:50Z","updater_id":null},{"created_at":"2012-09-30T17:04:50Z","creator_id":null,"deleted_at":null,"deleter_id":null,"hostname":"host6.lvh.me","id":79,"port":null,"queue_password":"pass6","queue_username":"user6","state":"unknown","updated_at":"2012-09-30T17:04:50Z","updater_id":null},{"created_at":"2012-09-30T17:04:50Z","creator_id":null,"deleted_at":null,"deleter_id":null,"hostname":"host7.lvh.me","id":80,"port":null,"queue_password":"pass7","queue_username":"user7","state":"unknown","updated_at":"2012-09-30T17:04:50Z","updater_id":null},{"created_at":"2012-09-30T17:04:50Z","creator_id":null,"deleted_at":null,"deleter_id":null,"hostname":"host8.lvh.me","id":81,"port":null,"queue_password":"pass8","queue_username":"user8","state":"unknown","updated_at":"2012-09-30T17:04:50Z","updater_id":null},{"created_at":"2012-09-30T17:04:50Z","creator_id":null,"deleted_at":null,"deleter_id":null,"hostname":"host9.lvh.me","id":82,"port":null,"queue_password":"pass9","queue_username":"user9","state":"unknown","updated_at":"2012-09-30T17:04:50Z","updater_id":null},{"created_at":"2012-09-30T17:04:50Z","creator_id":null,"deleted_at":null,"deleter_id":null,"hostname":"host10.lvh.me","id":83,"port":null,"queue_password":"pass10","queue_username":"user10","state":"unknown","updated_at":"2012-09-30T17:04:50Z","updater_id":null},{"created_at":"2012-09-30T17:04:50Z","creator_id":null,"deleted_at":null,"deleter_id":null,"hostname":"host11.lvh.me","id":84,"port":null,"queue_password":"pass11","queue_username":"user11","state":"unknown","updated_at":"2012-09-30T17:04:50Z","updater_id":null}]'
+      string: ! '{"poller":{"id":1,"hostname":"host1.lvh.me","port":null,"state":"unknown","queue_username":"user1","queue_password":"pass1","creator_id":null,"updater_id":null,"deleter_id":null,"created_at":"2013-08-17T16:25:35.272Z","updated_at":"2013-08-17T16:25:35.272Z","deleted_at":null}}'
     http_version: 
-  recorded_at: Mon, 01 Oct 2012 00:04:51 GMT
-recorded_with: VCR 2.2.5
+  recorded_at: Sat, 17 Aug 2013 23:25:59 GMT
+- request:
+    method: get
+    uri: http://test.netatlas.lvh.me/api/pollers
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.8.8
+      Accept:
+      - application/json
+  response:
+    status:
+      code: 200
+      message: 
+    headers:
+      date:
+      - Sat, 17 Aug 2013 23:25:59 GMT
+      server:
+      - Apache/2.2.22 (Unix) DAV/2 PHP/5.3.15 with Suhosin-Patch Phusion_Passenger/3.0.19
+        mod_ssl/2.2.22 OpenSSL/0.9.8x
+      x-powered-by:
+      - Phusion Passenger (mod_rails/mod_rack) 3.0.19
+      etag:
+      - ! '"72db0731dafe1c091af853b2403a43c1"'
+      cache-control:
+      - max-age=0, private, must-revalidate
+      x-request-id:
+      - a3f2eec5-ba0e-47df-9962-54ffbd2c39c3
+      x-runtime:
+      - '0.020279'
+      content-length:
+      - '2797'
+      status:
+      - '200'
+      connection:
+      - close
+      content-type:
+      - application/json
+    body:
+      encoding: US-ASCII
+      string: ! '[{"poller":{"id":13,"hostname":"host2.lvh.me","port":null,"state":"unknown","queue_username":"user2","queue_password":"pass2","creator_id":null,"updater_id":null,"deleter_id":null,"created_at":"2013-08-17T16:25:35.272Z","updated_at":"2013-08-17T16:25:35.272Z","deleted_at":null}},{"poller":{"id":14,"hostname":"host3.lvh.me","port":null,"state":"unknown","queue_username":"user3","queue_password":"pass3","creator_id":null,"updater_id":null,"deleter_id":null,"created_at":"2013-08-17T16:25:35.272Z","updated_at":"2013-08-17T16:25:35.272Z","deleted_at":null}},{"poller":{"id":15,"hostname":"host4.lvh.me","port":null,"state":"unknown","queue_username":"user4","queue_password":"pass4","creator_id":null,"updater_id":null,"deleter_id":null,"created_at":"2013-08-17T16:25:35.272Z","updated_at":"2013-08-17T16:25:35.272Z","deleted_at":null}},{"poller":{"id":16,"hostname":"host5.lvh.me","port":null,"state":"unknown","queue_username":"user5","queue_password":"pass5","creator_id":null,"updater_id":null,"deleter_id":null,"created_at":"2013-08-17T16:25:35.272Z","updated_at":"2013-08-17T16:25:35.272Z","deleted_at":null}},{"poller":{"id":17,"hostname":"host6.lvh.me","port":null,"state":"unknown","queue_username":"user6","queue_password":"pass6","creator_id":null,"updater_id":null,"deleter_id":null,"created_at":"2013-08-17T16:25:35.272Z","updated_at":"2013-08-17T16:25:35.272Z","deleted_at":null}},{"poller":{"id":18,"hostname":"host7.lvh.me","port":null,"state":"unknown","queue_username":"user7","queue_password":"pass7","creator_id":null,"updater_id":null,"deleter_id":null,"created_at":"2013-08-17T16:25:35.272Z","updated_at":"2013-08-17T16:25:35.272Z","deleted_at":null}},{"poller":{"id":19,"hostname":"host8.lvh.me","port":null,"state":"unknown","queue_username":"user8","queue_password":"pass8","creator_id":null,"updater_id":null,"deleter_id":null,"created_at":"2013-08-17T16:25:35.272Z","updated_at":"2013-08-17T16:25:35.272Z","deleted_at":null}},{"poller":{"id":20,"hostname":"host9.lvh.me","port":null,"state":"unknown","queue_username":"user9","queue_password":"pass9","creator_id":null,"updater_id":null,"deleter_id":null,"created_at":"2013-08-17T16:25:35.272Z","updated_at":"2013-08-17T16:25:35.272Z","deleted_at":null}},{"poller":{"id":21,"hostname":"host10.lvh.me","port":null,"state":"unknown","queue_username":"user10","queue_password":"pass10","creator_id":null,"updater_id":null,"deleter_id":null,"created_at":"2013-08-17T16:25:35.272Z","updated_at":"2013-08-17T16:25:35.272Z","deleted_at":null}},{"poller":{"id":22,"hostname":"host11.lvh.me","port":null,"state":"unknown","queue_username":"user11","queue_password":"pass11","creator_id":null,"updater_id":null,"deleter_id":null,"created_at":"2013-08-17T16:25:35.272Z","updated_at":"2013-08-17T16:25:35.272Z","deleted_at":null}}]'
+    http_version: 
+  recorded_at: Sat, 17 Aug 2013 23:25:59 GMT
+recorded_with: VCR 2.5.0

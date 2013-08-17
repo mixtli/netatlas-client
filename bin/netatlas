@@ -28,12 +28,9 @@ desc 'Password'
 arg_name 'password'
 flag [:p, :pass]
 
-resources = [
-  [:node, :id, :label, :description],
-  [:device, :id, :hostname, :label, :description]
-]
-resources.each do |fields|
-  resource = fields.shift
+resources = [ :node, :device, :service, :interface, :event, :poller, :data_source ]
+
+resources.each do |resource|
   resource_name = resource.to_s.camelize
   resource_class = "NetAtlas::Resource::#{resource_name}".constantize
 
@@ -42,7 +39,7 @@ resources.each do |fields|
     desc 'List nodes'
     n.command :list do |l|
       l.action do |global_options,options,args|
-        results = resource_class.find
+        results = resource_class.all.map {|r| r.attributes}
         case global_options[:format]
         when 'table'
           puts NetAtlas::Renderer::Table.new(results, *resource_class.schema.keys).render
@@ -55,12 +52,12 @@ resources.each do |fields|
     end
     n.command :show do |s|
       s.action do |global_options, options, args|
-        result = resource_class.get(args.pop.to_i)
+        result = resource_class.find(args.pop.to_i)
         case global_options[:format]
         when 'table'
           puts NetAtlas::Renderer::Table.new(result).render
         when 'json'
-          jj result
+          jj result.attributes
         else
           exit_now! "Unknown content type #{resource_name}"
         end
@@ -75,9 +72,14 @@ resources.each do |fields|
         else
           exit_now! "Unknown content-type #{global_options[:format]}"
         end
-        result = resource_class.create(attrs)
+        begin
+          result = resource_class.create(attrs)
+        rescue => e
+          puts e.response
+          exit 1
+        end
         if result
-          jj result
+          jj result.attributes
         else
           exit_now! "Error createing #{resource_name}"
         end
@@ -92,9 +94,9 @@ resources.each do |fields|
         else
           raise "Unknown content-type #{global_otions[:format]}"
         end
-        result = resource_class.update(args[0].to_i, attrs)
+        result = resource_class.save_existing(args[0].to_i, attrs)
         if result
-          jj result
+          jj result.attributes
         else
           puts "Error updating #{resource_name}"
         end
@@ -102,7 +104,7 @@ resources.each do |fields|
     end
     n.command :delete do |d|
       d.action do |global_options, options, args|
-        result = resource_class.delete(args[0].to_i)
+        result = resource_class.destroy_existing(args[0].to_i)
         if result
           puts "#{resource_name} successfully deleted"
         else
@@ -115,8 +117,8 @@ end
 
 pre do |global,command,options,args|
   # Use skips_pre before a command to skip this block
-  NetAtlas::Resource::Base.user = global[:user] if global[:user]
-  NetAtlas::Resource::Base.pass = global[:pass] if global[:pass]
+  #NetAtlas::Resource::Base.user = global[:user] if global[:user]
+  #NetAtlas::Resource::Base.pass = global[:pass] if global[:pass]
   true
 end
 

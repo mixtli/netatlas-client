@@ -1,0 +1,91 @@
+---
+http_interactions:
+- request:
+    method: delete
+    uri: http://test.netatlas.lvh.me/api/interfaces/1
+    body:
+      encoding: UTF-8
+      string: ! '{}'
+    headers:
+      User-Agent:
+      - Faraday v0.8.8
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 200
+      message: 
+    headers:
+      date:
+      - Sat, 17 Aug 2013 23:25:56 GMT
+      server:
+      - Apache/2.2.22 (Unix) DAV/2 PHP/5.3.15 with Suhosin-Patch Phusion_Passenger/3.0.19
+        mod_ssl/2.2.22 OpenSSL/0.9.8x
+      x-powered-by:
+      - Phusion Passenger (mod_rails/mod_rack) 3.0.19
+      etag:
+      - ! '"87cd76855ec14fb9363cb3908556e7bd"'
+      cache-control:
+      - max-age=0, private, must-revalidate
+      x-request-id:
+      - 732b3fd3-dde7-4975-861c-2a0c431e79a5
+      x-runtime:
+      - '0.017596'
+      content-length:
+      - '538'
+      status:
+      - '200'
+      connection:
+      - close
+      content-type:
+      - application/json
+    body:
+      encoding: US-ASCII
+      string: ! '{"interface":{"id":1,"label":"foo","description":"bar","state":"unknown","device_id":null,"snmp_index":null,"snmp_attributes":null,"last_scan":null,"creator_id":null,"updater_id":null,"deleter_id":null,"created_at":"2013-08-17T16:25:35.271Z","updated_at":"2013-08-17T16:25:35.271Z","deleted_at":null,"ip_address":"192.168.0.12","hostname":null,"if_speed":null,"if_type":null,"if_name":null,"if_alias":null,"if_descr":null,"if_promiscuous":null,"if_high_speed":null,"if_admin_status":null,"physical_address":null,"mtu":null,"duplex":null}}'
+    http_version: 
+  recorded_at: Sat, 17 Aug 2013 23:25:56 GMT
+- request:
+    method: get
+    uri: http://test.netatlas.lvh.me/api/interfaces/1
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.8.8
+      Accept:
+      - application/json
+  response:
+    status:
+      code: 404
+      message: 
+    headers:
+      date:
+      - Sat, 17 Aug 2013 23:25:56 GMT
+      server:
+      - Apache/2.2.22 (Unix) DAV/2 PHP/5.3.15 with Suhosin-Patch Phusion_Passenger/3.0.19
+        mod_ssl/2.2.22 OpenSSL/0.9.8x
+      x-powered-by:
+      - Phusion Passenger (mod_rails/mod_rack) 3.0.19
+      cache-control:
+      - no-cache
+      x-request-id:
+      - 78ca2e5b-8f47-4375-9451-c24adaf527ca
+      x-runtime:
+      - '0.014267'
+      content-length:
+      - '31'
+      status:
+      - '404'
+      connection:
+      - close
+      content-type:
+      - application/json
+    body:
+      encoding: US-ASCII
+      string: ! '{"error":"Resource not found!"}'
+    http_version: 
+  recorded_at: Sat, 17 Aug 2013 23:25:56 GMT
+recorded_with: VCR 2.5.0

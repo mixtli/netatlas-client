@@ -6,15 +6,28 @@ describe NetAtlas::Resource::Device do
     let(:factory_name) { :device }
   end
   before do
-    NetAtlas::Resource::Base.user = 'admin@netatlas.com'
-    NetAtlas::Resource::Base.pass = 'password'
+    Fabricate(:admin)
   end
 
   it "should get device attributes" do
-    Fabricate(:admin)
     node = Fabricate(:device, :id => 1, :label => 'foobar', :hostname => 'host1')
-    retreived_node = described_class.get(node.id)
+    retreived_node = described_class.find(node.id)
     retreived_node.id.should eql(node.id)
     retreived_node.hostname.should eql(node.hostname)
+  end
+
+  context "instance methods" do
+    it "update" do
+      Fabricate(:device, :id => 1)
+      node = described_class.find(1)
+      node.hostname = 'blah.lvh.me'
+      node.save
+      node.hostname.should eql("blah.lvh.me")
+    end
+    it "save", :vcr => {:record => :all} do
+      r = Fabricate(:device, :id => 1)
+      node = described_class.find(1) 
+      node.save.should be_true
+    end
   end
 end

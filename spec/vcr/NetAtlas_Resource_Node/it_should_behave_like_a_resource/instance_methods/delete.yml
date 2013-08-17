@@ -2,15 +2,13 @@
 http_interactions:
 - request:
     method: get
-    uri: http://test.lvh.me:3001/nodes/1
+    uri: http://test.netatlas.lvh.me/api/nodes/1
     body:
       encoding: US-ASCII
       string: ''
     headers:
-      Authorization:
-      - Basic YWRtaW5AbmV0YXRsYXMuY29tOnBhc3N3b3Jk
-      Content-Type:
-      - application/json
+      User-Agent:
+      - Faraday v0.8.8
       Accept:
       - application/json
   response:
@@ -18,75 +16,89 @@ http_interactions:
       code: 200
       message: 
     headers:
-      content-type:
-      - application/json; charset=utf-8
-      x-ua-compatible:
-      - IE=Edge,chrome=1
+      date:
+      - Sat, 17 Aug 2013 23:25:57 GMT
+      server:
+      - Apache/2.2.22 (Unix) DAV/2 PHP/5.3.15 with Suhosin-Patch Phusion_Passenger/3.0.19
+        mod_ssl/2.2.22 OpenSSL/0.9.8x
+      x-powered-by:
+      - Phusion Passenger (mod_rails/mod_rack) 3.0.19
       etag:
-      - ! '"bbe952438e48d5987636fa5eb1aa0309"'
+      - ! '"4470d94501fc7cbb776ddc7709aa18ac"'
       cache-control:
       - max-age=0, private, must-revalidate
       x-request-id:
-      - f01a5ecb913c22b1f0e74f3fafd898a9
+      - eb4f2a76-dd3b-4e32-bbb0-17871200ba6d
       x-runtime:
-      - '0.123539'
+      - '0.016534'
       content-length:
-      - '239'
+      - '296'
+      status:
+      - '200'
       connection:
       - close
-      server:
-      - thin 1.4.1 codename Chromeo
+      content-type:
+      - application/json
     body:
       encoding: US-ASCII
-      string: ! '{"created_at":"2012-09-30T17:04:38Z","creator_id":null,"deleted_at":null,"deleter_id":null,"description":"bar","device_id":null,"id":1,"label":"foo","snmp_index":null,"state":"unknown","updated_at":"2012-09-30T17:04:38Z","updater_id":null}'
+      string: ! '{"node":{"id":1,"label":"foo","description":"bar","state":"unknown","device_id":null,"snmp_index":null,"snmp_attributes":null,"last_scan":null,"creator_id":null,"updater_id":null,"deleter_id":null,"created_at":"2013-08-17T16:25:35.271Z","updated_at":"2013-08-17T16:25:35.271Z","deleted_at":null}}'
     http_version: 
-  recorded_at: Mon, 01 Oct 2012 00:04:42 GMT
+  recorded_at: Sat, 17 Aug 2013 23:25:57 GMT
 - request:
     method: delete
-    uri: http://test.lvh.me:3001/nodes/1
+    uri: http://test.netatlas.lvh.me/api/nodes/1
     body:
-      encoding: US-ASCII
-      string: ''
+      encoding: UTF-8
+      string: ! '{}'
     headers:
-      Authorization:
-      - Basic YWRtaW5AbmV0YXRsYXMuY29tOnBhc3N3b3Jk
-      Content-Type:
-      - application/json
+      User-Agent:
+      - Faraday v0.8.8
       Accept:
+      - application/json
+      Content-Type:
       - application/json
   response:
     status:
-      code: 204
+      code: 200
       message: 
     headers:
-      x-ua-compatible:
-      - IE=Edge,chrome=1
+      date:
+      - Sat, 17 Aug 2013 23:25:57 GMT
+      server:
+      - Apache/2.2.22 (Unix) DAV/2 PHP/5.3.15 with Suhosin-Patch Phusion_Passenger/3.0.19
+        mod_ssl/2.2.22 OpenSSL/0.9.8x
+      x-powered-by:
+      - Phusion Passenger (mod_rails/mod_rack) 3.0.19
+      etag:
+      - ! '"4470d94501fc7cbb776ddc7709aa18ac"'
       cache-control:
-      - no-cache
+      - max-age=0, private, must-revalidate
       x-request-id:
-      - 165e83d31fbcd8c62337f8725271085c
+      - b93bbe25-1364-4f9d-b31a-bfc7c735bdc8
       x-runtime:
-      - '0.075545'
+      - '0.016863'
+      content-length:
+      - '296'
+      status:
+      - '200'
       connection:
       - close
-      server:
-      - thin 1.4.1 codename Chromeo
+      content-type:
+      - application/json
     body:
       encoding: US-ASCII
-      string: ''
+      string: ! '{"node":{"id":1,"label":"foo","description":"bar","state":"unknown","device_id":null,"snmp_index":null,"snmp_attributes":null,"last_scan":null,"creator_id":null,"updater_id":null,"deleter_id":null,"created_at":"2013-08-17T16:25:35.271Z","updated_at":"2013-08-17T16:25:35.271Z","deleted_at":null}}'
     http_version: 
-  recorded_at: Mon, 01 Oct 2012 00:04:42 GMT
+  recorded_at: Sat, 17 Aug 2013 23:25:57 GMT
 - request:
     method: get
-    uri: http://test.lvh.me:3001/nodes/1
+    uri: http://test.netatlas.lvh.me/api/nodes/1
     body:
       encoding: US-ASCII
       string: ''
     headers:
-      Authorization:
-      - Basic YWRtaW5AbmV0YXRsYXMuY29tOnBhc3N3b3Jk
-      Content-Type:
-      - application/json
+      User-Agent:
+      - Faraday v0.8.8
       Accept:
       - application/json
   response:
@@ -94,186 +106,30 @@ http_interactions:
       code: 404
       message: 
     headers:
-      content-type:
-      - text/html; charset=utf-8
-      content-length:
-      - '14686'
+      date:
+      - Sat, 17 Aug 2013 23:25:57 GMT
+      server:
+      - Apache/2.2.22 (Unix) DAV/2 PHP/5.3.15 with Suhosin-Patch Phusion_Passenger/3.0.19
+        mod_ssl/2.2.22 OpenSSL/0.9.8x
+      x-powered-by:
+      - Phusion Passenger (mod_rails/mod_rack) 3.0.19
+      cache-control:
+      - no-cache
       x-request-id:
-      - fcd509a53e852e5885a2e0ee4625c618
+      - 70c3a9f3-97ff-4c86-8d10-1ea20d9cd093
       x-runtime:
-      - '0.084732'
+      - '0.014461'
+      content-length:
+      - '31'
+      status:
+      - '404'
       connection:
       - close
-      server:
-      - thin 1.4.1 codename Chromeo
+      content-type:
+      - application/json
     body:
       encoding: US-ASCII
-      string: ! "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n  <meta charset=\"utf-8\"
-        />\n  <title>Action Controller: Exception caught</title>\n  <style>\n    body
-        { background-color: #fff; color: #333; }\n\n    body, p, ol, ul, td {\n      font-family:
-        helvetica, verdana, arial, sans-serif;\n      font-size:   13px;\n      line-height:
-        18px;\n    }\n\n    pre {\n      background-color: #eee;\n      padding: 10px;\n
-        \     font-size: 11px;\n      white-space: pre-wrap;\n    }\n\n    a { color:
-        #000; }\n    a:visited { color: #666; }\n    a:hover { color: #fff; background-color:#000;
-        }\n  </style>\n</head>\n<body>\n\n<h1>\n  ActiveRecord::RecordNotFound\n    in
-        NodesController#show\n</h1>\n<pre>Couldn't find Node with id=1</pre>\n\n\n<p><code>Rails.root:
-        /Users/rmcclain/Projects/netatlas-rails</code></p>\n\n<div id=\"traces\">\n
-        \   <a href=\"#\" onclick=\"document.getElementById('Framework-Trace').style.display='none';document.getElementById('Full-Trace').style.display='none';document.getElementById('Application-Trace').style.display='block';;
-        return false;\">Application Trace</a> |\n    <a href=\"#\" onclick=\"document.getElementById('Application-Trace').style.display='none';document.getElementById('Full-Trace').style.display='none';document.getElementById('Framework-Trace').style.display='block';;
-        return false;\">Framework Trace</a> |\n    <a href=\"#\" onclick=\"document.getElementById('Application-Trace').style.display='none';document.getElementById('Framework-Trace').style.display='none';document.getElementById('Full-Trace').style.display='block';;
-        return false;\">Full Trace</a> \n\n    <div id=\"Application-Trace\" style=\"display:
-        block;\">\n      <pre><code></code></pre>\n    </div>\n    <div id=\"Framework-Trace\"
-        style=\"display: none;\">\n      <pre><code>activerecord (3.2.5) lib/active_record/relation/finder_methods.rb:339:in
-        `find_one'\nactiverecord (3.2.5) lib/active_record/relation/finder_methods.rb:310:in
-        `find_with_ids'\nactiverecord (3.2.5) lib/active_record/relation/finder_methods.rb:107:in
-        `find'\nactiverecord (3.2.5) lib/active_record/querying.rb:5:in `find'\ndeclarative_authorization
-        (0.5.5) lib/declarative_authorization/in_controller.rb:143:in `load_controller_object'\ndeclarative_authorization
-        (0.5.5) lib/declarative_authorization/in_controller.rb:527:in `block in filter_resource_access'\nactivesupport
-        (3.2.5) lib/active_support/callbacks.rb:451:in `_run__2343277301143197765__process_action__380172994579271004__callbacks'\nactivesupport
-        (3.2.5) lib/active_support/callbacks.rb:405:in `__run_callback'\nactivesupport
-        (3.2.5) lib/active_support/callbacks.rb:385:in `_run_process_action_callbacks'\nactivesupport
-        (3.2.5) lib/active_support/callbacks.rb:81:in `run_callbacks'\nactionpack
-        (3.2.5) lib/abstract_controller/callbacks.rb:17:in `process_action'\nactionpack
-        (3.2.5) lib/action_controller/metal/rescue.rb:29:in `process_action'\nactionpack
-        (3.2.5) lib/action_controller/metal/instrumentation.rb:30:in `block in process_action'\nactivesupport
-        (3.2.5) lib/active_support/notifications.rb:123:in `block in instrument'\nactivesupport
-        (3.2.5) lib/active_support/notifications/instrumenter.rb:20:in `instrument'\nactivesupport
-        (3.2.5) lib/active_support/notifications.rb:123:in `instrument'\nactionpack
-        (3.2.5) lib/action_controller/metal/instrumentation.rb:29:in `process_action'\nactionpack
-        (3.2.5) lib/action_controller/metal/params_wrapper.rb:206:in `process_action'\nactiverecord
-        (3.2.5) lib/active_record/railties/controller_runtime.rb:18:in `process_action'\nactionpack
-        (3.2.5) lib/abstract_controller/base.rb:121:in `process'\nactionpack (3.2.5)
-        lib/abstract_controller/rendering.rb:45:in `process'\nactionpack (3.2.5) lib/action_controller/metal.rb:203:in
-        `dispatch'\nactionpack (3.2.5) lib/action_controller/metal/rack_delegation.rb:14:in
-        `dispatch'\nactionpack (3.2.5) lib/action_controller/metal.rb:246:in `block
-        in action'\nactionpack (3.2.5) lib/action_dispatch/routing/route_set.rb:73:in
-        `call'\nactionpack (3.2.5) lib/action_dispatch/routing/route_set.rb:73:in
-        `dispatch'\nactionpack (3.2.5) lib/action_dispatch/routing/route_set.rb:36:in
-        `call'\njourney (1.0.4) lib/journey/router.rb:68:in `block in call'\njourney
-        (1.0.4) lib/journey/router.rb:56:in `each'\njourney (1.0.4) lib/journey/router.rb:56:in
-        `call'\nactionpack (3.2.5) lib/action_dispatch/routing/route_set.rb:600:in
-        `call'\nsass (3.2.1) lib/sass/plugin/rack.rb:54:in `call'\nwarden (1.2.1)
-        lib/warden/manager.rb:35:in `block in call'\nwarden (1.2.1) lib/warden/manager.rb:34:in
-        `catch'\nwarden (1.2.1) lib/warden/manager.rb:34:in `call'\nactionpack (3.2.5)
-        lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'\nrack
-        (1.4.1) lib/rack/etag.rb:23:in `call'\nrack (1.4.1) lib/rack/conditionalget.rb:25:in
-        `call'\nactionpack (3.2.5) lib/action_dispatch/middleware/head.rb:14:in `call'\nactionpack
-        (3.2.5) lib/action_dispatch/middleware/params_parser.rb:21:in `call'\nactionpack
-        (3.2.5) lib/action_dispatch/middleware/flash.rb:238:in `call'\nrack (1.4.1)
-        lib/rack/session/abstract/id.rb:205:in `context'\nrack (1.4.1) lib/rack/session/abstract/id.rb:200:in
-        `call'\nactionpack (3.2.5) lib/action_dispatch/middleware/cookies.rb:338:in
-        `call'\nactiverecord (3.2.5) lib/active_record/query_cache.rb:64:in `call'\nactiverecord
-        (3.2.5) lib/active_record/connection_adapters/abstract/connection_pool.rb:473:in
-        `call'\nactionpack (3.2.5) lib/action_dispatch/middleware/callbacks.rb:28:in
-        `block in call'\nactivesupport (3.2.5) lib/active_support/callbacks.rb:405:in
-        `_run__2610600063601118582__call__4486662743726971285__callbacks'\nactivesupport
-        (3.2.5) lib/active_support/callbacks.rb:405:in `__run_callback'\nactivesupport
-        (3.2.5) lib/active_support/callbacks.rb:385:in `_run_call_callbacks'\nactivesupport
-        (3.2.5) lib/active_support/callbacks.rb:81:in `run_callbacks'\nactionpack
-        (3.2.5) lib/action_dispatch/middleware/callbacks.rb:27:in `call'\nactionpack
-        (3.2.5) lib/action_dispatch/middleware/reloader.rb:65:in `call'\nactionpack
-        (3.2.5) lib/action_dispatch/middleware/remote_ip.rb:31:in `call'\nactionpack
-        (3.2.5) lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'\nactionpack
-        (3.2.5) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'\nrailties
-        (3.2.5) lib/rails/rack/logger.rb:26:in `call_app'\nrailties (3.2.5) lib/rails/rack/logger.rb:16:in
-        `call'\nactionpack (3.2.5) lib/action_dispatch/middleware/request_id.rb:22:in
-        `call'\nrack (1.4.1) lib/rack/methodoverride.rb:21:in `call'\nrack (1.4.1)
-        lib/rack/runtime.rb:17:in `call'\nactivesupport (3.2.5) lib/active_support/cache/strategy/local_cache.rb:72:in
-        `call'\nrack (1.4.1) lib/rack/lock.rb:15:in `call'\nactionpack (3.2.5) lib/action_dispatch/middleware/static.rb:62:in
-        `call'\nrailties (3.2.5) lib/rails/engine.rb:479:in `call'\nrailties (3.2.5)
-        lib/rails/application.rb:220:in `call'\nrack (1.4.1) lib/rack/content_length.rb:14:in
-        `call'\nrailties (3.2.5) lib/rails/rack/log_tailer.rb:17:in `call'\nthin (1.4.1)
-        lib/thin/connection.rb:80:in `block in pre_process'\nthin (1.4.1) lib/thin/connection.rb:78:in
-        `catch'\nthin (1.4.1) lib/thin/connection.rb:78:in `pre_process'\nthin (1.4.1)
-        lib/thin/connection.rb:53:in `process'\nthin (1.4.1) lib/thin/connection.rb:38:in
-        `receive_data'\neventmachine (1.0.0) lib/eventmachine.rb:187:in `run_machine'\neventmachine
-        (1.0.0) lib/eventmachine.rb:187:in `run'\nthin (1.4.1) lib/thin/backends/base.rb:63:in
-        `start'\nthin (1.4.1) lib/thin/server.rb:159:in `start'\nrack (1.4.1) lib/rack/handler/thin.rb:13:in
-        `run'\nrack (1.4.1) lib/rack/server.rb:265:in `start'\nrailties (3.2.5) lib/rails/commands/server.rb:70:in
-        `start'\nrailties (3.2.5) lib/rails/commands.rb:55:in `block in &lt;top (required)&gt;'\nrailties
-        (3.2.5) lib/rails/commands.rb:50:in `tap'\nrailties (3.2.5) lib/rails/commands.rb:50:in
-        `&lt;top (required)&gt;'\nscript/rails:6:in `require'\nscript/rails:6:in `&lt;main&gt;'</code></pre>\n
-        \   </div>\n    <div id=\"Full-Trace\" style=\"display: none;\">\n      <pre><code>activerecord
-        (3.2.5) lib/active_record/relation/finder_methods.rb:339:in `find_one'\nactiverecord
-        (3.2.5) lib/active_record/relation/finder_methods.rb:310:in `find_with_ids'\nactiverecord
-        (3.2.5) lib/active_record/relation/finder_methods.rb:107:in `find'\nactiverecord
-        (3.2.5) lib/active_record/querying.rb:5:in `find'\ndeclarative_authorization
-        (0.5.5) lib/declarative_authorization/in_controller.rb:143:in `load_controller_object'\ndeclarative_authorization
-        (0.5.5) lib/declarative_authorization/in_controller.rb:527:in `block in filter_resource_access'\nactivesupport
-        (3.2.5) lib/active_support/callbacks.rb:451:in `_run__2343277301143197765__process_action__380172994579271004__callbacks'\nactivesupport
-        (3.2.5) lib/active_support/callbacks.rb:405:in `__run_callback'\nactivesupport
-        (3.2.5) lib/active_support/callbacks.rb:385:in `_run_process_action_callbacks'\nactivesupport
-        (3.2.5) lib/active_support/callbacks.rb:81:in `run_callbacks'\nactionpack
-        (3.2.5) lib/abstract_controller/callbacks.rb:17:in `process_action'\nactionpack
-        (3.2.5) lib/action_controller/metal/rescue.rb:29:in `process_action'\nactionpack
-        (3.2.5) lib/action_controller/metal/instrumentation.rb:30:in `block in process_action'\nactivesupport
-        (3.2.5) lib/active_support/notifications.rb:123:in `block in instrument'\nactivesupport
-        (3.2.5) lib/active_support/notifications/instrumenter.rb:20:in `instrument'\nactivesupport
-        (3.2.5) lib/active_support/notifications.rb:123:in `instrument'\nactionpack
-        (3.2.5) lib/action_controller/metal/instrumentation.rb:29:in `process_action'\nactionpack
-        (3.2.5) lib/action_controller/metal/params_wrapper.rb:206:in `process_action'\nactiverecord
-        (3.2.5) lib/active_record/railties/controller_runtime.rb:18:in `process_action'\nactionpack
-        (3.2.5) lib/abstract_controller/base.rb:121:in `process'\nactionpack (3.2.5)
-        lib/abstract_controller/rendering.rb:45:in `process'\nactionpack (3.2.5) lib/action_controller/metal.rb:203:in
-        `dispatch'\nactionpack (3.2.5) lib/action_controller/metal/rack_delegation.rb:14:in
-        `dispatch'\nactionpack (3.2.5) lib/action_controller/metal.rb:246:in `block
-        in action'\nactionpack (3.2.5) lib/action_dispatch/routing/route_set.rb:73:in
-        `call'\nactionpack (3.2.5) lib/action_dispatch/routing/route_set.rb:73:in
-        `dispatch'\nactionpack (3.2.5) lib/action_dispatch/routing/route_set.rb:36:in
-        `call'\njourney (1.0.4) lib/journey/router.rb:68:in `block in call'\njourney
-        (1.0.4) lib/journey/router.rb:56:in `each'\njourney (1.0.4) lib/journey/router.rb:56:in
-        `call'\nactionpack (3.2.5) lib/action_dispatch/routing/route_set.rb:600:in
-        `call'\nsass (3.2.1) lib/sass/plugin/rack.rb:54:in `call'\nwarden (1.2.1)
-        lib/warden/manager.rb:35:in `block in call'\nwarden (1.2.1) lib/warden/manager.rb:34:in
-        `catch'\nwarden (1.2.1) lib/warden/manager.rb:34:in `call'\nactionpack (3.2.5)
-        lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'\nrack
-        (1.4.1) lib/rack/etag.rb:23:in `call'\nrack (1.4.1) lib/rack/conditionalget.rb:25:in
-        `call'\nactionpack (3.2.5) lib/action_dispatch/middleware/head.rb:14:in `call'\nactionpack
-        (3.2.5) lib/action_dispatch/middleware/params_parser.rb:21:in `call'\nactionpack
-        (3.2.5) lib/action_dispatch/middleware/flash.rb:238:in `call'\nrack (1.4.1)
-        lib/rack/session/abstract/id.rb:205:in `context'\nrack (1.4.1) lib/rack/session/abstract/id.rb:200:in
-        `call'\nactionpack (3.2.5) lib/action_dispatch/middleware/cookies.rb:338:in
-        `call'\nactiverecord (3.2.5) lib/active_record/query_cache.rb:64:in `call'\nactiverecord
-        (3.2.5) lib/active_record/connection_adapters/abstract/connection_pool.rb:473:in
-        `call'\nactionpack (3.2.5) lib/action_dispatch/middleware/callbacks.rb:28:in
-        `block in call'\nactivesupport (3.2.5) lib/active_support/callbacks.rb:405:in
-        `_run__2610600063601118582__call__4486662743726971285__callbacks'\nactivesupport
-        (3.2.5) lib/active_support/callbacks.rb:405:in `__run_callback'\nactivesupport
-        (3.2.5) lib/active_support/callbacks.rb:385:in `_run_call_callbacks'\nactivesupport
-        (3.2.5) lib/active_support/callbacks.rb:81:in `run_callbacks'\nactionpack
-        (3.2.5) lib/action_dispatch/middleware/callbacks.rb:27:in `call'\nactionpack
-        (3.2.5) lib/action_dispatch/middleware/reloader.rb:65:in `call'\nactionpack
-        (3.2.5) lib/action_dispatch/middleware/remote_ip.rb:31:in `call'\nactionpack
-        (3.2.5) lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'\nactionpack
-        (3.2.5) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'\nrailties
-        (3.2.5) lib/rails/rack/logger.rb:26:in `call_app'\nrailties (3.2.5) lib/rails/rack/logger.rb:16:in
-        `call'\nactionpack (3.2.5) lib/action_dispatch/middleware/request_id.rb:22:in
-        `call'\nrack (1.4.1) lib/rack/methodoverride.rb:21:in `call'\nrack (1.4.1)
-        lib/rack/runtime.rb:17:in `call'\nactivesupport (3.2.5) lib/active_support/cache/strategy/local_cache.rb:72:in
-        `call'\nrack (1.4.1) lib/rack/lock.rb:15:in `call'\nactionpack (3.2.5) lib/action_dispatch/middleware/static.rb:62:in
-        `call'\nrailties (3.2.5) lib/rails/engine.rb:479:in `call'\nrailties (3.2.5)
-        lib/rails/application.rb:220:in `call'\nrack (1.4.1) lib/rack/content_length.rb:14:in
-        `call'\nrailties (3.2.5) lib/rails/rack/log_tailer.rb:17:in `call'\nthin (1.4.1)
-        lib/thin/connection.rb:80:in `block in pre_process'\nthin (1.4.1) lib/thin/connection.rb:78:in
-        `catch'\nthin (1.4.1) lib/thin/connection.rb:78:in `pre_process'\nthin (1.4.1)
-        lib/thin/connection.rb:53:in `process'\nthin (1.4.1) lib/thin/connection.rb:38:in
-        `receive_data'\neventmachine (1.0.0) lib/eventmachine.rb:187:in `run_machine'\neventmachine
-        (1.0.0) lib/eventmachine.rb:187:in `run'\nthin (1.4.1) lib/thin/backends/base.rb:63:in
-        `start'\nthin (1.4.1) lib/thin/server.rb:159:in `start'\nrack (1.4.1) lib/rack/handler/thin.rb:13:in
-        `run'\nrack (1.4.1) lib/rack/server.rb:265:in `start'\nrailties (3.2.5) lib/rails/commands/server.rb:70:in
-        `start'\nrailties (3.2.5) lib/rails/commands.rb:55:in `block in &lt;top (required)&gt;'\nrailties
-        (3.2.5) lib/rails/commands.rb:50:in `tap'\nrailties (3.2.5) lib/rails/commands.rb:50:in
-        `&lt;top (required)&gt;'\nscript/rails:6:in `require'\nscript/rails:6:in `&lt;main&gt;'</code></pre>\n
-        \   </div>\n</div>\n\n\n\n<h2 style=\"margin-top: 30px\">Request</h2>\n<p><b>Parameters</b>:
-        <pre>{&quot;id&quot;=&gt;&quot;1&quot;,\n &quot;node&quot;=&gt;{}}</pre></p>\n\n<p><a
-        href=\"#\" onclick=\"document.getElementById('session_dump').style.display='block';
-        return false;\">Show session dump</a></p>\n<div id=\"session_dump\" style=\"display:none\"><pre></pre></div>\n\n<p><a
-        href=\"#\" onclick=\"document.getElementById('env_dump').style.display='block';
-        return false;\">Show env dump</a></p>\n<div id=\"env_dump\" style=\"display:none\"><pre>GATEWAY_INTERFACE:
-        &quot;CGI/1.2&quot;\nHTTP_ACCEPT: &quot;application/json&quot;\nHTTP_ACCEPT_ENCODING:
-        &quot;gzip;q=1.0,deflate;q=0.6,identity;q=0.3&quot;\nREMOTE_ADDR: &quot;127.0.0.1&quot;\nSERVER_NAME:
-        &quot;test.lvh.me&quot;\nSERVER_PROTOCOL: &quot;HTTP/1.1&quot;</pre></div>\n\n\n<h2
-        style=\"margin-top: 30px\">Response</h2>\n<p><b>Headers</b>: <pre>None</pre></p>\n\n\n\n</body>\n</html>\n"
+      string: ! '{"error":"Resource not found!"}'
     http_version: 
-  recorded_at: Mon, 01 Oct 2012 00:04:42 GMT
-recorded_with: VCR 2.2.5
+  recorded_at: Sat, 17 Aug 2013 23:25:57 GMT
+recorded_with: VCR 2.5.0

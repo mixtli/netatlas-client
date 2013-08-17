@@ -1,0 +1,49 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: http://test.netatlas.lvh.me/api/events
+    body:
+      encoding: UTF-8
+      string: ! '{"event":{"created_at":"2013-08-17T16:25:35-07:00","updated_at":"2013-08-17T16:25:35-07:00"}}'
+    headers:
+      User-Agent:
+      - Faraday v0.8.8
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 201
+      message: 
+    headers:
+      date:
+      - Sat, 17 Aug 2013 23:25:55 GMT
+      server:
+      - Apache/2.2.22 (Unix) DAV/2 PHP/5.3.15 with Suhosin-Patch Phusion_Passenger/3.0.19
+        mod_ssl/2.2.22 OpenSSL/0.9.8x
+      x-powered-by:
+      - Phusion Passenger (mod_rails/mod_rack) 3.0.19
+      etag:
+      - ! '"b088aad70313bba1f8eef2c3f8d2c181"'
+      cache-control:
+      - max-age=0, private, must-revalidate
+      x-request-id:
+      - 8620d04a-c2b5-4d66-9921-c5252c9795f6
+      x-runtime:
+      - '0.018888'
+      content-length:
+      - '407'
+      status:
+      - '201'
+      connection:
+      - close
+      content-type:
+      - application/json
+    body:
+      encoding: US-ASCII
+      string: ! '{"event":{"id":12,"poller_id":null,"node_id":null,"data_source_id":null,"state":"open","repeats":0,"severity":null,"description":null,"additional":null,"notes":null,"arguments":null,"acknowledged_by_id":null,"resolved_by_id":null,"acknowledged_at":null,"resolved_at":null,"created_at":"2013-08-17T23:25:55.188Z","updated_at":"2013-08-17T23:25:55.188Z","deleted_at":null,"creator_id":null,"updater_id":null}}'
+    http_version: 
+  recorded_at: Sat, 17 Aug 2013 23:25:55 GMT
+recorded_with: VCR 2.5.0

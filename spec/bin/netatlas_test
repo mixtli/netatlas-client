@@ -4,6 +4,19 @@ $LOAD_PATH << File.join(File.dirname(__FILE__), "..", "..", "lib")
 #$LOAD_PATH << "/Users/rmcclain/Projects/net-snmp/lib"
 require 'active_support/core_ext'
 #silence_stream(STDOUT) do
+  require 'vcr'
   require 'spec_helper'
+  require 'faraday'
 #end
-load File.join(File.dirname(__FILE__), "..", "..", "bin", "netatlas")
+VCR.configure do |c|
+  c.cassette_library_dir = File.join(File.dirname(__FILE__), "..", 'vcr', 'cli')
+  c.hook_into :faraday
+  c.allow_http_connections_when_no_cassette = true
+end
+if ENV['CASSETTE'] 
+  VCR.use_cassette(ENV['CASSETTE']) do
+    load File.join(File.dirname(__FILE__), "..", "..", "bin", "netatlas")
+  end
+else
+  load File.join(File.dirname(__FILE__), "..", "..", "bin", "netatlas")
+end

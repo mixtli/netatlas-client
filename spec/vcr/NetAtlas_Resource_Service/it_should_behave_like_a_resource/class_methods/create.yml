@@ -1,0 +1,49 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: http://test.netatlas.lvh.me/api/services
+    body:
+      encoding: UTF-8
+      string: ! '{"service":{"label":"foo","description":"bar","state":"unknown","created_at":"2013-08-17T16:25:35-07:00","updated_at":"2013-08-17T16:25:35-07:00","type":"Service"}}'
+    headers:
+      User-Agent:
+      - Faraday v0.8.8
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 201
+      message: 
+    headers:
+      date:
+      - Sat, 17 Aug 2013 23:26:00 GMT
+      server:
+      - Apache/2.2.22 (Unix) DAV/2 PHP/5.3.15 with Suhosin-Patch Phusion_Passenger/3.0.19
+        mod_ssl/2.2.22 OpenSSL/0.9.8x
+      x-powered-by:
+      - Phusion Passenger (mod_rails/mod_rack) 3.0.19
+      etag:
+      - ! '"d0c03d5682f88bec4bbbb9fc10e9e138"'
+      cache-control:
+      - max-age=0, private, must-revalidate
+      x-request-id:
+      - a69f08b8-ade2-4bf5-bc42-696ec5f89d6e
+      x-runtime:
+      - '0.018142'
+      content-length:
+      - '336'
+      status:
+      - '201'
+      connection:
+      - close
+      content-type:
+      - application/json
+    body:
+      encoding: US-ASCII
+      string: ! '{"service":{"id":243,"label":"foo","description":"bar","state":"unknown","device_id":null,"snmp_index":null,"snmp_attributes":null,"last_scan":null,"creator_id":null,"updater_id":null,"deleter_id":null,"created_at":"2013-08-17T23:26:00.811Z","updated_at":"2013-08-17T23:26:00.811Z","deleted_at":null,"port":null,"service_type_id":null}}'
+    http_version: 
+  recorded_at: Sat, 17 Aug 2013 23:26:00 GMT
+recorded_with: VCR 2.5.0

@@ -1,5 +1,6 @@
 require 'vcr'
 VCR.configure do |c|
+  c.default_cassette_options = {:record => :all }
   c.cassette_library_dir = File.join(File.dirname(__FILE__), '..', 'vcr')   
   c.hook_into :faraday
   c.configure_rspec_metadata!

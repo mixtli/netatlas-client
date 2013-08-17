@@ -25,17 +25,19 @@ module NetAtlas::Renderer
     end
 
     def render_resource
+      puts "in render_resource"
       @headers = @data.attributes.keys.map {|k| {:field => k, :label => k.to_s}} if @headers.empty?
       table(:border => true) do
         @headers.each do |h|
           row do
             column h[:label], :width => @headers.map {|f| f[:label].size }.max
-            column @data.attributes[h[:field]]
+            column @data.attributes[h[:field]], :width => 40
           end
         end
       end
     end
     def render_array
+      puts "in render array"
       table(:border => true ) do
         row :header => true do
           @headers.each do |h|

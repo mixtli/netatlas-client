@@ -1,0 +1,91 @@
+---
+http_interactions:
+- request:
+    method: delete
+    uri: http://test.netatlas.lvh.me/api/services/1
+    body:
+      encoding: UTF-8
+      string: ! '{}'
+    headers:
+      User-Agent:
+      - Faraday v0.8.8
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 200
+      message: 
+    headers:
+      date:
+      - Sat, 17 Aug 2013 23:26:01 GMT
+      server:
+      - Apache/2.2.22 (Unix) DAV/2 PHP/5.3.15 with Suhosin-Patch Phusion_Passenger/3.0.19
+        mod_ssl/2.2.22 OpenSSL/0.9.8x
+      x-powered-by:
+      - Phusion Passenger (mod_rails/mod_rack) 3.0.19
+      etag:
+      - ! '"5ff554e51e30bb5a5524f65bd4594b84"'
+      cache-control:
+      - max-age=0, private, must-revalidate
+      x-request-id:
+      - 5552eb75-e79d-4128-a249-68413dd1108d
+      x-runtime:
+      - '0.026377'
+      content-length:
+      - '334'
+      status:
+      - '200'
+      connection:
+      - close
+      content-type:
+      - application/json
+    body:
+      encoding: US-ASCII
+      string: ! '{"service":{"id":1,"label":"foo","description":"bar","state":"unknown","device_id":null,"snmp_index":null,"snmp_attributes":null,"last_scan":null,"creator_id":null,"updater_id":null,"deleter_id":null,"created_at":"2013-08-17T16:25:35.271Z","updated_at":"2013-08-17T16:25:35.271Z","deleted_at":null,"port":null,"service_type_id":null}}'
+    http_version: 
+  recorded_at: Sat, 17 Aug 2013 23:26:01 GMT
+- request:
+    method: get
+    uri: http://test.netatlas.lvh.me/api/services/1
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.8.8
+      Accept:
+      - application/json
+  response:
+    status:
+      code: 404
+      message: 
+    headers:
+      date:
+      - Sat, 17 Aug 2013 23:26:01 GMT
+      server:
+      - Apache/2.2.22 (Unix) DAV/2 PHP/5.3.15 with Suhosin-Patch Phusion_Passenger/3.0.19
+        mod_ssl/2.2.22 OpenSSL/0.9.8x
+      x-powered-by:
+      - Phusion Passenger (mod_rails/mod_rack) 3.0.19
+      cache-control:
+      - no-cache
+      x-request-id:
+      - e8d34bfa-ee60-486d-90f1-7e77cc340d96
+      x-runtime:
+      - '0.019675'
+      content-length:
+      - '31'
+      status:
+      - '404'
+      connection:
+      - close
+      content-type:
+      - application/json
+    body:
+      encoding: US-ASCII
+      string: ! '{"error":"Resource not found!"}'
+    http_version: 
+  recorded_at: Sat, 17 Aug 2013 23:26:01 GMT
+recorded_with: VCR 2.5.0

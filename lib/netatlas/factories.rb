@@ -5,12 +5,16 @@ module NetAtlas
     class Device < ::Sequel::Model; unrestrict_primary_key; end
     class Poller < ::Sequel::Model; unrestrict_primary_key; end
     class Plugin < ::Sequel::Model; unrestrict_primary_key; end
+    class Service < ::Sequel::Model; unrestrict_primary_key; end
+    class Event < ::Sequel::Model; unrestrict_primary_key; end
+    class Interface < ::Sequel::Model; unrestrict_primary_key; end
     class DataSource < ::Sequel::Model; unrestrict_primary_key; end
     class DataStream < ::Sequel::Model; unrestrict_primary_key; end
+    class Notification < ::Sequel::Model; unrestrict_primary_key; end
   end
 end
 
-Fabricator(:node, :from => NetAtlas::Model::Node)  do
+Fabricator(:node, :from => 'NetAtlas::Model::Node')  do
   label 'foo'
   description  'bar'
   state 'unknown'
@@ -18,7 +22,7 @@ Fabricator(:node, :from => NetAtlas::Model::Node)  do
   updated_at Time.now
 end
 
-Fabricator(:user, :from => NetAtlas::Model::User) do
+Fabricator(:user, :from => 'NetAtlas::Model::User') do
   email { sequence(:email) { |i| "user#{i}@netatlas.com"}}
   # password is 'password'
   encrypted_password '$2a$10$MkM//rGucWRhbxDPOrHc7ebCEdReBE3dqGZCVntVTVmJAcOJ.Hd5G'
@@ -26,6 +30,7 @@ Fabricator(:user, :from => NetAtlas::Model::User) do
   created_at Time.now
   updated_at Time.now
 end
+
 
 
 Fabricator(:admin, :from => :user) do
@@ -42,6 +47,15 @@ Fabricator(:device, :from => :node, :class_name => 'NetAtlas::Model::Device') do
   type "Device"
 end
 
+Fabricator(:interface, :from => :node, :class_name => 'NetAtlas::Model::Interface') do
+  ip_address { sequence(:ip_address) { |i| "192.168.0.#{i}"}}
+  type "Interface"
+end
+
+Fabricator(:service, :from => :node, :class_name => 'NetAtlas::Model::Service') do
+  type "Service"
+end
+
 Fabricator(:poller, :class_name => 'NetAtlas::Model::Poller') do
   hostname { sequence(:hostname) { |i| "host#{i}.lvh.me"}}
   queue_username { sequence(:queue_username) { |i| "user#{i}" }}
@@ -52,6 +66,7 @@ Fabricator(:poller, :class_name => 'NetAtlas::Model::Poller') do
 end
 Fabricator(:plugin, :class_name => 'NetAtlas::Model::Plugin') do
   name 'Plugin'
+  class_name 'SNMP'
   created_at Time.now
   updated_at Time.now
 end
@@ -70,3 +85,15 @@ Fabricator(:data_stream, :class_name => 'NetAtlas::Model::DataStream') do
   created_at Time.now
   updated_at Time.now
 end
+
+Fabricator(:event, :class_name => 'NetAtlas::Model::Event') do
+  created_at Time.now
+  updated_at Time.now
+end
+
+Fabricator(:notification, :from => 'NetAtlas::Model::Notification') do
+  message "Test Message"
+  created_at Time.now
+  updated_at Time.now
+end
+

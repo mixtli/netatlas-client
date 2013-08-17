@@ -1,20 +1,10 @@
-module NetAtlas
-  class Resource::DataSource < Resource::Base
-    #self.schema = {:ip_address => :string,  :port => :integer, :plugin_name => :string, :arguments => nil, :warning_threshold => :float, :critical_threshold => :float }
-    self.uri = '/data_sources'
-    self.schema = {:id => Integer, :node_id => Integer, :description => String}
+require_relative "../resource"
+class NetAtlas::Resource::DataSource < NetAtlas::Resource::Base
+  collection_path '/api/data_sources'
+  self.schema = {:id => Integer, :description => String}
 
-    attr_accessor :last_result
-    def get_plugin
-      @real_plugin ||= eval "NetAtlas::Plugin::#{plugin_name}.new"
-    end
-
-    def as_json(options = nil)
-      h = super
-      # ARes does weird shit with serialized arguments.  
-      h['data_source']['arguments'] = arguments.attributes
-      h
-    end
+  def get_plugin
+    @real_plugin ||= eval "NetAtlas::Plugin::#{plugin_name}.new"
   end
 end
 

@@ -4,6 +4,7 @@
 # loaded once.
 #
 # See http://rubydoc.info/gems/rspec-core/RSpec/Core/Configuration
+require 'pg'
 require 'simplecov'
 require 'fabrication'
 require 'rspec'
@@ -20,6 +21,10 @@ DB = Sequel.connect('postgres://postgres@localhost/netatlas_test')
 require 'netatlas/client'
 require 'netatlas/factories'
 Dir["./spec/support/**/*.rb"].map {|f| require File.expand_path(f)}
+
+NetAtlas.setup(:url => 'http://test.netatlas.lvh.me', :user => 'admin@netatlas.com', :password => 'password')
+require_relative "../lib/netatlas/resource"
+Dir[File.dirname(__FILE__) + "/../lib/netatlas/resource/*.rb"].each {|file| require file }
 
 RSpec.configure do |config|
   config.treat_symbols_as_metadata_keys_with_true_values = true

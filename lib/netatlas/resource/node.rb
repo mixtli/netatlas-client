@@ -1,8 +1,8 @@
 module NetAtlas
   module Resource
     class Node < Base
-      self.uri = '/nodes'
-      self.schema = {:id => Integer, :label => String, :description => String}
+      collection_path '/api/nodes'
+      self.schema = {:id => Integer, :label => String}
     end
   end
 end

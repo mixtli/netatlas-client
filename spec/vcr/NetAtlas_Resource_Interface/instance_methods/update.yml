@@ -1,0 +1,93 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://test.netatlas.lvh.me/api/interfaces/1
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.8.8
+      Accept:
+      - application/json
+  response:
+    status:
+      code: 200
+      message: 
+    headers:
+      date:
+      - Sat, 17 Aug 2013 23:25:56 GMT
+      server:
+      - Apache/2.2.22 (Unix) DAV/2 PHP/5.3.15 with Suhosin-Patch Phusion_Passenger/3.0.19
+        mod_ssl/2.2.22 OpenSSL/0.9.8x
+      x-powered-by:
+      - Phusion Passenger (mod_rails/mod_rack) 3.0.19
+      etag:
+      - ! '"15416f25b7cef02da9e4ea21e33eee5d"'
+      cache-control:
+      - max-age=0, private, must-revalidate
+      x-request-id:
+      - fa7e3de2-94e8-4c9c-986d-22c89820e700
+      x-runtime:
+      - '0.014901'
+      content-length:
+      - '538'
+      status:
+      - '200'
+      connection:
+      - close
+      content-type:
+      - application/json
+    body:
+      encoding: US-ASCII
+      string: ! '{"interface":{"id":1,"label":"foo","description":"bar","state":"unknown","device_id":null,"snmp_index":null,"snmp_attributes":null,"last_scan":null,"creator_id":null,"updater_id":null,"deleter_id":null,"created_at":"2013-08-17T16:25:35.271Z","updated_at":"2013-08-17T16:25:35.271Z","deleted_at":null,"ip_address":"192.168.0.14","hostname":null,"if_speed":null,"if_type":null,"if_name":null,"if_alias":null,"if_descr":null,"if_promiscuous":null,"if_high_speed":null,"if_admin_status":null,"physical_address":null,"mtu":null,"duplex":null}}'
+    http_version: 
+  recorded_at: Sat, 17 Aug 2013 23:25:56 GMT
+- request:
+    method: put
+    uri: http://test.netatlas.lvh.me/api/interfaces/1
+    body:
+      encoding: UTF-8
+      string: ! '{"interface":{"id":1,"label":"New Label","description":"bar","state":"unknown","device_id":null,"snmp_index":null,"snmp_attributes":null,"last_scan":null,"creator_id":null,"updater_id":null,"deleter_id":null,"created_at":"2013-08-17T16:25:35.271Z","updated_at":"2013-08-17T16:25:35.271Z","deleted_at":null,"ip_address":"192.168.0.14","hostname":null,"if_speed":null,"if_type":null,"if_name":null,"if_alias":null,"if_descr":null,"if_promiscuous":null,"if_high_speed":null,"if_admin_status":null,"physical_address":null,"mtu":null,"duplex":null}}'
+    headers:
+      User-Agent:
+      - Faraday v0.8.8
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 200
+      message: 
+    headers:
+      date:
+      - Sat, 17 Aug 2013 23:25:56 GMT
+      server:
+      - Apache/2.2.22 (Unix) DAV/2 PHP/5.3.15 with Suhosin-Patch Phusion_Passenger/3.0.19
+        mod_ssl/2.2.22 OpenSSL/0.9.8x
+      x-powered-by:
+      - Phusion Passenger (mod_rails/mod_rack) 3.0.19
+      etag:
+      - ! '"987cceade42682a8024b7709bf63b55f"'
+      cache-control:
+      - max-age=0, private, must-revalidate
+      x-request-id:
+      - 6f2ce96d-c7f5-4784-9d8f-bfec8794971d
+      x-runtime:
+      - '0.019244'
+      content-length:
+      - '544'
+      status:
+      - '200'
+      connection:
+      - close
+      content-type:
+      - application/json
+    body:
+      encoding: US-ASCII
+      string: ! '{"interface":{"id":1,"label":"New Label","description":"bar","state":"unknown","device_id":null,"snmp_index":null,"snmp_attributes":null,"last_scan":null,"creator_id":null,"updater_id":null,"deleter_id":null,"created_at":"2013-08-17T16:25:35.271Z","updated_at":"2013-08-17T23:25:56.962Z","deleted_at":null,"ip_address":"192.168.0.14","hostname":null,"if_speed":null,"if_type":null,"if_name":null,"if_alias":null,"if_descr":null,"if_promiscuous":null,"if_high_speed":null,"if_admin_status":null,"physical_address":null,"mtu":null,"duplex":null}}'
+    http_version: 
+  recorded_at: Sat, 17 Aug 2013 23:25:56 GMT
+recorded_with: VCR 2.5.0

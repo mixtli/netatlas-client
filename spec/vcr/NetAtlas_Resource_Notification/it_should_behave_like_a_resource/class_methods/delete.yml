@@ -1,0 +1,92 @@
+---
+http_interactions:
+- request:
+    method: delete
+    uri: http://test.netatlas.lvh.me/api/notifications/1
+    body:
+      encoding: UTF-8
+      string: ! '{}'
+    headers:
+      User-Agent:
+      - Faraday v0.8.8
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 200
+      message: 
+    headers:
+      date:
+      - Sat, 17 Aug 2013 23:25:58 GMT
+      server:
+      - Apache/2.2.22 (Unix) DAV/2 PHP/5.3.15 with Suhosin-Patch Phusion_Passenger/3.0.19
+        mod_ssl/2.2.22 OpenSSL/0.9.8x
+      x-powered-by:
+      - Phusion Passenger (mod_rails/mod_rack) 3.0.19
+      etag:
+      - ! '"793c8517b68eb72827488bd6f660222a"'
+      cache-control:
+      - max-age=0, private, must-revalidate
+      x-request-id:
+      - 0a7ee0a2-650a-40e6-9e7f-1339ad83d7e1
+      x-runtime:
+      - '0.037531'
+      content-length:
+      - '254'
+      status:
+      - '200'
+      connection:
+      - close
+      content-type:
+      - application/json
+    body:
+      encoding: US-ASCII
+      string: ! '{"notification":{"id":1,"event_id":null,"contact_id":null,"event_filter_id":null,"state":null,"message":"Test
+        Message","creator_id":null,"updater_id":null,"created_at":"2013-08-17T16:25:35.272Z","updated_at":"2013-08-17T16:25:35.272Z","deleted_at":null}}'
+    http_version: 
+  recorded_at: Sat, 17 Aug 2013 23:25:58 GMT
+- request:
+    method: get
+    uri: http://test.netatlas.lvh.me/api/notifications/1
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.8.8
+      Accept:
+      - application/json
+  response:
+    status:
+      code: 404
+      message: 
+    headers:
+      date:
+      - Sat, 17 Aug 2013 23:25:58 GMT
+      server:
+      - Apache/2.2.22 (Unix) DAV/2 PHP/5.3.15 with Suhosin-Patch Phusion_Passenger/3.0.19
+        mod_ssl/2.2.22 OpenSSL/0.9.8x
+      x-powered-by:
+      - Phusion Passenger (mod_rails/mod_rack) 3.0.19
+      cache-control:
+      - no-cache
+      x-request-id:
+      - 8f317baa-89d8-43ad-8094-ba556c2f1c8b
+      x-runtime:
+      - '0.015230'
+      content-length:
+      - '31'
+      status:
+      - '404'
+      connection:
+      - close
+      content-type:
+      - application/json
+    body:
+      encoding: US-ASCII
+      string: ! '{"error":"Resource not found!"}'
+    http_version: 
+  recorded_at: Sat, 17 Aug 2013 23:25:58 GMT
+recorded_with: VCR 2.5.0
