@@ -11,28 +11,32 @@ http_interactions:
       - Faraday v0.8.8
       Accept:
       - application/json
+      Authorization:
+      - ! 'Basic YWRtaW5AbmV0YXRsYXMuY29tOnBhc3N3b3Jk
+
+'
   response:
     status:
       code: 200
       message: 
     headers:
       date:
-      - Sat, 17 Aug 2013 23:25:58 GMT
+      - Sun, 25 Aug 2013 09:40:33 GMT
       server:
       - Apache/2.2.22 (Unix) DAV/2 PHP/5.3.15 with Suhosin-Patch Phusion_Passenger/3.0.19
         mod_ssl/2.2.22 OpenSSL/0.9.8x
       x-powered-by:
       - Phusion Passenger (mod_rails/mod_rack) 3.0.19
       etag:
-      - ! '"4470d94501fc7cbb776ddc7709aa18ac"'
+      - ! '"89c00a1e10af834b9c7791a5471dee09"'
       cache-control:
       - max-age=0, private, must-revalidate
       x-request-id:
-      - 76affbc1-cc2f-4dba-bf40-e70fba7382c5
+      - 9e450569-7c6a-439a-bb1e-90232c1a0971
       x-runtime:
-      - '0.015998'
+      - '0.111192'
       content-length:
-      - '296'
+      - '294'
       status:
       - '200'
       connection:
@@ -41,15 +45,15 @@ http_interactions:
       - application/json
     body:
       encoding: US-ASCII
-      string: ! '{"node":{"id":1,"label":"foo","description":"bar","state":"unknown","device_id":null,"snmp_index":null,"snmp_attributes":null,"last_scan":null,"creator_id":null,"updater_id":null,"deleter_id":null,"created_at":"2013-08-17T16:25:35.271Z","updated_at":"2013-08-17T16:25:35.271Z","deleted_at":null}}'
+      string: ! '{"node":{"id":1,"label":"foo","description":"bar","state":"unknown","device_id":null,"snmp_index":null,"snmp_attributes":{},"last_scan":null,"creator_id":null,"updater_id":null,"deleter_id":null,"created_at":"2013-08-25T02:40:06.128Z","updated_at":"2013-08-25T02:40:06.128Z","deleted_at":null}}'
     http_version: 
-  recorded_at: Sat, 17 Aug 2013 23:25:58 GMT
+  recorded_at: Sun, 25 Aug 2013 09:40:34 GMT
 - request:
     method: put
     uri: http://test.netatlas.lvh.me/api/nodes/1
     body:
       encoding: UTF-8
-      string: ! '{"node":{"id":1,"label":"foo","description":"bar","state":"unknown","device_id":null,"snmp_index":null,"snmp_attributes":null,"last_scan":null,"creator_id":null,"updater_id":null,"deleter_id":null,"created_at":"2013-08-17T16:25:35.271Z","updated_at":"2013-08-17T16:25:35.271Z","deleted_at":null}}'
+      string: ! '{"node":{"id":1,"label":"foo","description":"bar","state":"unknown","device_id":null,"snmp_index":null,"snmp_attributes":{},"last_scan":null,"creator_id":null,"updater_id":null,"deleter_id":null,"created_at":"2013-08-25T02:40:06.128Z","updated_at":"2013-08-25T02:40:06.128Z","deleted_at":null}}'
     headers:
       User-Agent:
       - Faraday v0.8.8
@@ -57,28 +61,32 @@ http_interactions:
       - application/json
       Content-Type:
       - application/json
+      Authorization:
+      - ! 'Basic YWRtaW5AbmV0YXRsYXMuY29tOnBhc3N3b3Jk
+
+'
   response:
     status:
       code: 200
       message: 
     headers:
       date:
-      - Sat, 17 Aug 2013 23:25:58 GMT
+      - Sun, 25 Aug 2013 09:40:34 GMT
       server:
       - Apache/2.2.22 (Unix) DAV/2 PHP/5.3.15 with Suhosin-Patch Phusion_Passenger/3.0.19
         mod_ssl/2.2.22 OpenSSL/0.9.8x
       x-powered-by:
       - Phusion Passenger (mod_rails/mod_rack) 3.0.19
       etag:
-      - ! '"4470d94501fc7cbb776ddc7709aa18ac"'
+      - ! '"44c849087745ef703897e31c8145a8a7"'
       cache-control:
       - max-age=0, private, must-revalidate
       x-request-id:
-      - accdec7a-de8f-47d1-b58a-8d4e74b63bda
+      - 9e4944b3-256a-4475-a753-3cbd94b8f991
       x-runtime:
-      - '0.020334'
+      - '0.119470'
       content-length:
-      - '296'
+      - '293'
       status:
       - '200'
       connection:
@@ -87,7 +95,7 @@ http_interactions:
       - application/json
     body:
       encoding: US-ASCII
-      string: ! '{"node":{"id":1,"label":"foo","description":"bar","state":"unknown","device_id":null,"snmp_index":null,"snmp_attributes":null,"last_scan":null,"creator_id":null,"updater_id":null,"deleter_id":null,"created_at":"2013-08-17T16:25:35.271Z","updated_at":"2013-08-17T16:25:35.271Z","deleted_at":null}}'
+      string: ! '{"node":{"id":1,"label":"foo","description":"bar","state":"unknown","device_id":null,"snmp_index":null,"snmp_attributes":{},"last_scan":null,"creator_id":null,"updater_id":351,"deleter_id":null,"created_at":"2013-08-25T02:40:06.128Z","updated_at":"2013-08-25T09:40:34.189Z","deleted_at":null}}'
     http_version: 
-  recorded_at: Sat, 17 Aug 2013 23:25:58 GMT
+  recorded_at: Sun, 25 Aug 2013 09:40:34 GMT
 recorded_with: VCR 2.5.0

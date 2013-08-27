@@ -11,28 +11,32 @@ http_interactions:
       - Faraday v0.8.8
       Accept:
       - application/json
+      Authorization:
+      - ! 'Basic YWRtaW5AbmV0YXRsYXMuY29tOnBhc3N3b3Jk
+
+'
   response:
     status:
       code: 200
       message: 
     headers:
       date:
-      - Sat, 17 Aug 2013 23:25:53 GMT
+      - Sun, 25 Aug 2013 09:34:36 GMT
       server:
       - Apache/2.2.22 (Unix) DAV/2 PHP/5.3.15 with Suhosin-Patch Phusion_Passenger/3.0.19
         mod_ssl/2.2.22 OpenSSL/0.9.8x
       x-powered-by:
       - Phusion Passenger (mod_rails/mod_rack) 3.0.19
       etag:
-      - ! '"55f1e2712572c003b59dc1615f715d78"'
+      - ! '"ba20f5ce0a16dd747e01ecd91f93d3da"'
       cache-control:
       - max-age=0, private, must-revalidate
       x-request-id:
-      - 0b3440bf-4ef3-4200-8dee-3daed96368de
+      - 5aeb3ba5-f2ea-42fa-bc2c-bdc822c9ff77
       x-runtime:
-      - '0.017887'
+      - '0.084084'
       content-length:
-      - '446'
+      - '755'
       status:
       - '200'
       connection:
@@ -41,15 +45,15 @@ http_interactions:
       - application/json
     body:
       encoding: US-ASCII
-      string: ! '{"data_source":{"id":1,"node_id":208,"plugin_id":60,"data_template_id":null,"state":"unknown","last_polled_at":null,"interval":300,"description":null,"arguments":null,"varbinds":null,"warning_threshold":null,"critical_threshold":null,"operator":"\u003E","creator_id":null,"updater_id":null,"deleter_id":null,"created_at":"2013-08-17T16:25:35.272Z","updated_at":"2013-08-17T16:25:35.272Z","deleted_at":null,"plugin_name":"Plugin","ip_address":""}}'
+      string: ! '{"data_source":{"id":1,"node_id":256,"plugin_id":188,"data_template_id":null,"state":"unknown","last_polled_at":null,"interval":300,"description":null,"data_type":null,"arguments":{},"varbinds":{},"warning_threshold":null,"critical_threshold":null,"operator":"\u003E","creator_id":null,"updater_id":null,"deleter_id":null,"created_at":"2013-08-25T02:34:34.757Z","updated_at":"2013-08-25T02:34:34.757Z","deleted_at":null,"node":{"id":256,"label":"foo","description":"bar","state":"unknown","device_id":null,"snmp_index":null,"snmp_attributes":{},"last_scan":null,"creator_id":null,"updater_id":null,"deleter_id":null,"created_at":"2013-08-25T02:34:34.757Z","updated_at":"2013-08-25T02:34:34.757Z","deleted_at":null},"plugin_name":"Plugin","ip_address":""}}'
     http_version: 
-  recorded_at: Sat, 17 Aug 2013 23:25:53 GMT
+  recorded_at: Sun, 25 Aug 2013 09:34:36 GMT
 - request:
     method: put
     uri: http://test.netatlas.lvh.me/api/data_sources/1
     body:
       encoding: UTF-8
-      string: ! '{"data_source":{"id":1,"node_id":208,"plugin_id":60,"data_template_id":null,"state":"unknown","last_polled_at":null,"interval":300,"description":null,"arguments":null,"varbinds":null,"warning_threshold":null,"critical_threshold":null,"operator":">","creator_id":null,"updater_id":null,"deleter_id":null,"created_at":"2013-08-17T16:25:35.272Z","updated_at":"2013-08-17T16:25:35.272Z","deleted_at":null,"plugin_name":"Plugin","ip_address":""}}'
+      string: ! '{"data_source":{"id":1,"node_id":256,"plugin_id":188,"data_template_id":null,"state":"unknown","last_polled_at":null,"interval":300,"description":null,"data_type":null,"arguments":{},"varbinds":{},"warning_threshold":null,"critical_threshold":null,"operator":">","creator_id":null,"updater_id":null,"deleter_id":null,"created_at":"2013-08-25T02:34:34.757Z","updated_at":"2013-08-25T02:34:34.757Z","deleted_at":null,"node":{"metadata":{},"response_errors":{},"destroyed":false,"attributes":{"id":256,"label":"foo","description":"bar","state":"unknown","device_id":null,"snmp_index":null,"snmp_attributes":{},"last_scan":null,"creator_id":null,"updater_id":null,"deleter_id":null,"created_at":"2013-08-25T02:34:34.757Z","updated_at":"2013-08-25T02:34:34.757Z","deleted_at":null}},"plugin_name":"Plugin","ip_address":""}}'
     headers:
       User-Agent:
       - Faraday v0.8.8
@@ -57,28 +61,32 @@ http_interactions:
       - application/json
       Content-Type:
       - application/json
+      Authorization:
+      - ! 'Basic YWRtaW5AbmV0YXRsYXMuY29tOnBhc3N3b3Jk
+
+'
   response:
     status:
       code: 200
       message: 
     headers:
       date:
-      - Sat, 17 Aug 2013 23:25:53 GMT
+      - Sun, 25 Aug 2013 09:34:36 GMT
       server:
       - Apache/2.2.22 (Unix) DAV/2 PHP/5.3.15 with Suhosin-Patch Phusion_Passenger/3.0.19
         mod_ssl/2.2.22 OpenSSL/0.9.8x
       x-powered-by:
       - Phusion Passenger (mod_rails/mod_rack) 3.0.19
       etag:
-      - ! '"efd4b038c0a4f05ad3e443fd29c3561f"'
+      - ! '"c0f1440d5ad5357b81a008cbf4a0a5f9"'
       cache-control:
       - max-age=0, private, must-revalidate
       x-request-id:
-      - c51bfff4-ffad-49bd-a5fb-2778eeb8711c
+      - eb3cfb04-52ee-4259-8b2e-595e81404b1e
       x-runtime:
-      - '0.023731'
+      - '0.089585'
       content-length:
-      - '446'
+      - '754'
       status:
       - '200'
       connection:
@@ -87,7 +95,7 @@ http_interactions:
       - application/json
     body:
       encoding: US-ASCII
-      string: ! '{"data_source":{"id":1,"node_id":208,"plugin_id":60,"data_template_id":null,"state":"unknown","last_polled_at":null,"interval":300,"description":null,"arguments":null,"varbinds":null,"warning_threshold":null,"critical_threshold":null,"operator":"\u003E","creator_id":null,"updater_id":null,"deleter_id":null,"created_at":"2013-08-17T16:25:35.272Z","updated_at":"2013-08-17T23:25:53.929Z","deleted_at":null,"plugin_name":"Plugin","ip_address":""}}'
+      string: ! '{"data_source":{"id":1,"node_id":256,"plugin_id":188,"data_template_id":null,"state":"unknown","last_polled_at":null,"interval":300,"description":null,"data_type":null,"arguments":{},"varbinds":{},"warning_threshold":null,"critical_threshold":null,"operator":"\u003E","creator_id":null,"updater_id":208,"deleter_id":null,"created_at":"2013-08-25T02:34:34.757Z","updated_at":"2013-08-25T09:34:36.922Z","deleted_at":null,"node":{"id":256,"label":"foo","description":"bar","state":"unknown","device_id":null,"snmp_index":null,"snmp_attributes":{},"last_scan":null,"creator_id":null,"updater_id":null,"deleter_id":null,"created_at":"2013-08-25T02:34:34.757Z","updated_at":"2013-08-25T02:34:34.757Z","deleted_at":null},"plugin_name":"Plugin","ip_address":""}}'
     http_version: 
-  recorded_at: Sat, 17 Aug 2013 23:25:53 GMT
+  recorded_at: Sun, 25 Aug 2013 09:34:36 GMT
 recorded_with: VCR 2.5.0

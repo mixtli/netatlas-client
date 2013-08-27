@@ -77,6 +77,7 @@ Fabricator(:data_source, :class_name => 'NetAtlas::Model::DataSource') do
   state "unknown"
   created_at Time.now
   updated_at Time.now
+  arguments "{}"
 end
 
 Fabricator(:data_stream, :class_name => 'NetAtlas::Model::DataStream') do

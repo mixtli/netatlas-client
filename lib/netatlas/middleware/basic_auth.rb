@@ -1,10 +1,11 @@
 class NetAtlas::BasicAuthMiddleware < Faraday::Middleware
-  def initialize(credientials)
+  def initialize(adapter, credentials)
     @credentials = credentials
-    super
+    super(adapter)
   end
 
   def call(env)
-    env[:request_headers]['Authorization'] = "Basic " + Base64.encode("#{@credentials[:user]}:#{@credentials[:pass]}")
+    env[:request_headers]['Authorization'] = "Basic " + Base64.encode64("#{@credentials[:user]}:#{@credentials[:password]}")
+    @app.call(env)
   end
 end

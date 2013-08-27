@@ -13,7 +13,7 @@ shared_examples_for "a resource" do
       retreived_node.id.should eql(node.id)
     end
 
-    it "find", :vcr do
+    it "find all", :vcr do
       10.times do
         Fabricate(factory_name)
       end

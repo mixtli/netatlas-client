@@ -11,28 +11,32 @@ http_interactions:
       - Faraday v0.8.8
       Accept:
       - application/json
+      Authorization:
+      - ! 'Basic YWRtaW5AbmV0YXRsYXMuY29tOnBhc3N3b3Jk
+
+'
   response:
     status:
       code: 200
       message: 
     headers:
       date:
-      - Sat, 17 Aug 2013 23:25:54 GMT
+      - Sun, 25 Aug 2013 09:36:51 GMT
       server:
       - Apache/2.2.22 (Unix) DAV/2 PHP/5.3.15 with Suhosin-Patch Phusion_Passenger/3.0.19
         mod_ssl/2.2.22 OpenSSL/0.9.8x
       x-powered-by:
       - Phusion Passenger (mod_rails/mod_rack) 3.0.19
       etag:
-      - ! '"659e40fcb920ecc1de9e1fb4244b8c08"'
+      - ! '"72a20bcc60849e25d7dbeaef1ce2d0a6"'
       cache-control:
       - max-age=0, private, must-revalidate
       x-request-id:
-      - 1793ab0a-550d-4545-b71b-c8a44d32aa87
+      - 93c3b3a4-9eb4-478b-88b8-ec0721c5d855
       x-runtime:
-      - '0.019275'
+      - '0.091079'
       content-length:
-      - '666'
+      - '461'
       status:
       - '200'
       connection:
@@ -41,51 +45,7 @@ http_interactions:
       - application/json
     body:
       encoding: US-ASCII
-      string: ! '{"device":{"id":1,"label":"foo","description":"bar","state":"unknown","device_id":null,"snmp_index":null,"snmp_attributes":null,"last_scan":null,"creator_id":null,"updater_id":null,"deleter_id":null,"created_at":"2013-08-17T16:25:35.271Z","updated_at":"2013-08-17T16:25:35.271Z","deleted_at":null,"hostname":"host1.lvh.me","ip_address":null,"ip_forwarding":null,"os":null,"os_version":null,"os_type":null,"os_vendor":null,"community":null,"auth_protocol":null,"auth_password":null,"priv_protocol":null,"priv_password":null,"sys_name":null,"sys_descr":null,"sys_contact":null,"sys_location":null,"sys_objectid":null,"memory":null,"num_cpus":null,"snmp_version":null}}'
+      string: ! '{"device":{"id":1,"label":"foo","description":"bar","state":"unknown","device_id":null,"snmp_index":null,"snmp_attributes":{},"last_scan":null,"creator_id":null,"updater_id":null,"deleter_id":null,"created_at":"2013-08-25T02:36:32.172Z","updated_at":"2013-08-25T02:36:32.172Z","deleted_at":null,"hostname":"host1.lvh.me","ip_address":null,"community":null,"auth_protocol":null,"auth_password":null,"priv_protocol":null,"priv_password":null,"snmp_version":null}}'
     http_version: 
-  recorded_at: Sat, 17 Aug 2013 23:25:54 GMT
-- request:
-    method: get
-    uri: http://test.netatlas.lvh.me/api/devices
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      User-Agent:
-      - Faraday v0.8.8
-      Accept:
-      - application/json
-  response:
-    status:
-      code: 200
-      message: 
-    headers:
-      date:
-      - Sat, 17 Aug 2013 23:25:54 GMT
-      server:
-      - Apache/2.2.22 (Unix) DAV/2 PHP/5.3.15 with Suhosin-Patch Phusion_Passenger/3.0.19
-        mod_ssl/2.2.22 OpenSSL/0.9.8x
-      x-powered-by:
-      - Phusion Passenger (mod_rails/mod_rack) 3.0.19
-      etag:
-      - ! '"41282802011c946f82d9e81c57313098"'
-      cache-control:
-      - max-age=0, private, must-revalidate
-      x-request-id:
-      - 6cde665e-dc0c-4e82-97a1-e8a10f2dbaec
-      x-runtime:
-      - '0.028430'
-      content-length:
-      - '6693'
-      status:
-      - '200'
-      connection:
-      - close
-      content-type:
-      - application/json
-    body:
-      encoding: US-ASCII
-      string: ! '[{"device":{"id":211,"label":"foo","description":"bar","state":"unknown","device_id":null,"snmp_index":null,"snmp_attributes":null,"last_scan":null,"creator_id":null,"updater_id":null,"deleter_id":null,"created_at":"2013-08-17T16:25:35.271Z","updated_at":"2013-08-17T16:25:35.271Z","deleted_at":null,"hostname":"host2.lvh.me","ip_address":null,"ip_forwarding":null,"os":null,"os_version":null,"os_type":null,"os_vendor":null,"community":null,"auth_protocol":null,"auth_password":null,"priv_protocol":null,"priv_password":null,"sys_name":null,"sys_descr":null,"sys_contact":null,"sys_location":null,"sys_objectid":null,"memory":null,"num_cpus":null,"snmp_version":null}},{"device":{"id":212,"label":"foo","description":"bar","state":"unknown","device_id":null,"snmp_index":null,"snmp_attributes":null,"last_scan":null,"creator_id":null,"updater_id":null,"deleter_id":null,"created_at":"2013-08-17T16:25:35.271Z","updated_at":"2013-08-17T16:25:35.271Z","deleted_at":null,"hostname":"host3.lvh.me","ip_address":null,"ip_forwarding":null,"os":null,"os_version":null,"os_type":null,"os_vendor":null,"community":null,"auth_protocol":null,"auth_password":null,"priv_protocol":null,"priv_password":null,"sys_name":null,"sys_descr":null,"sys_contact":null,"sys_location":null,"sys_objectid":null,"memory":null,"num_cpus":null,"snmp_version":null}},{"device":{"id":213,"label":"foo","description":"bar","state":"unknown","device_id":null,"snmp_index":null,"snmp_attributes":null,"last_scan":null,"creator_id":null,"updater_id":null,"deleter_id":null,"created_at":"2013-08-17T16:25:35.271Z","updated_at":"2013-08-17T16:25:35.271Z","deleted_at":null,"hostname":"host4.lvh.me","ip_address":null,"ip_forwarding":null,"os":null,"os_version":null,"os_type":null,"os_vendor":null,"community":null,"auth_protocol":null,"auth_password":null,"priv_protocol":null,"priv_password":null,"sys_name":null,"sys_descr":null,"sys_contact":null,"sys_location":null,"sys_objectid":null,"memory":null,"num_cpus":null,"snmp_version":null}},{"device":{"id":214,"label":"foo","description":"bar","state":"unknown","device_id":null,"snmp_index":null,"snmp_attributes":null,"last_scan":null,"creator_id":null,"updater_id":null,"deleter_id":null,"created_at":"2013-08-17T16:25:35.271Z","updated_at":"2013-08-17T16:25:35.271Z","deleted_at":null,"hostname":"host5.lvh.me","ip_address":null,"ip_forwarding":null,"os":null,"os_version":null,"os_type":null,"os_vendor":null,"community":null,"auth_protocol":null,"auth_password":null,"priv_protocol":null,"priv_password":null,"sys_name":null,"sys_descr":null,"sys_contact":null,"sys_location":null,"sys_objectid":null,"memory":null,"num_cpus":null,"snmp_version":null}},{"device":{"id":215,"label":"foo","description":"bar","state":"unknown","device_id":null,"snmp_index":null,"snmp_attributes":null,"last_scan":null,"creator_id":null,"updater_id":null,"deleter_id":null,"created_at":"2013-08-17T16:25:35.271Z","updated_at":"2013-08-17T16:25:35.271Z","deleted_at":null,"hostname":"host6.lvh.me","ip_address":null,"ip_forwarding":null,"os":null,"os_version":null,"os_type":null,"os_vendor":null,"community":null,"auth_protocol":null,"auth_password":null,"priv_protocol":null,"priv_password":null,"sys_name":null,"sys_descr":null,"sys_contact":null,"sys_location":null,"sys_objectid":null,"memory":null,"num_cpus":null,"snmp_version":null}},{"device":{"id":216,"label":"foo","description":"bar","state":"unknown","device_id":null,"snmp_index":null,"snmp_attributes":null,"last_scan":null,"creator_id":null,"updater_id":null,"deleter_id":null,"created_at":"2013-08-17T16:25:35.271Z","updated_at":"2013-08-17T16:25:35.271Z","deleted_at":null,"hostname":"host7.lvh.me","ip_address":null,"ip_forwarding":null,"os":null,"os_version":null,"os_type":null,"os_vendor":null,"community":null,"auth_protocol":null,"auth_password":null,"priv_protocol":null,"priv_password":null,"sys_name":null,"sys_descr":null,"sys_contact":null,"sys_location":null,"sys_objectid":null,"memory":null,"num_cpus":null,"snmp_version":null}},{"device":{"id":217,"label":"foo","description":"bar","state":"unknown","device_id":null,"snmp_index":null,"snmp_attributes":null,"last_scan":null,"creator_id":null,"updater_id":null,"deleter_id":null,"created_at":"2013-08-17T16:25:35.271Z","updated_at":"2013-08-17T16:25:35.271Z","deleted_at":null,"hostname":"host8.lvh.me","ip_address":null,"ip_forwarding":null,"os":null,"os_version":null,"os_type":null,"os_vendor":null,"community":null,"auth_protocol":null,"auth_password":null,"priv_protocol":null,"priv_password":null,"sys_name":null,"sys_descr":null,"sys_contact":null,"sys_location":null,"sys_objectid":null,"memory":null,"num_cpus":null,"snmp_version":null}},{"device":{"id":218,"label":"foo","description":"bar","state":"unknown","device_id":null,"snmp_index":null,"snmp_attributes":null,"last_scan":null,"creator_id":null,"updater_id":null,"deleter_id":null,"created_at":"2013-08-17T16:25:35.271Z","updated_at":"2013-08-17T16:25:35.271Z","deleted_at":null,"hostname":"host9.lvh.me","ip_address":null,"ip_forwarding":null,"os":null,"os_version":null,"os_type":null,"os_vendor":null,"community":null,"auth_protocol":null,"auth_password":null,"priv_protocol":null,"priv_password":null,"sys_name":null,"sys_descr":null,"sys_contact":null,"sys_location":null,"sys_objectid":null,"memory":null,"num_cpus":null,"snmp_version":null}},{"device":{"id":219,"label":"foo","description":"bar","state":"unknown","device_id":null,"snmp_index":null,"snmp_attributes":null,"last_scan":null,"creator_id":null,"updater_id":null,"deleter_id":null,"created_at":"2013-08-17T16:25:35.271Z","updated_at":"2013-08-17T16:25:35.271Z","deleted_at":null,"hostname":"host10.lvh.me","ip_address":null,"ip_forwarding":null,"os":null,"os_version":null,"os_type":null,"os_vendor":null,"community":null,"auth_protocol":null,"auth_password":null,"priv_protocol":null,"priv_password":null,"sys_name":null,"sys_descr":null,"sys_contact":null,"sys_location":null,"sys_objectid":null,"memory":null,"num_cpus":null,"snmp_version":null}},{"device":{"id":220,"label":"foo","description":"bar","state":"unknown","device_id":null,"snmp_index":null,"snmp_attributes":null,"last_scan":null,"creator_id":null,"updater_id":null,"deleter_id":null,"created_at":"2013-08-17T16:25:35.271Z","updated_at":"2013-08-17T16:25:35.271Z","deleted_at":null,"hostname":"host11.lvh.me","ip_address":null,"ip_forwarding":null,"os":null,"os_version":null,"os_type":null,"os_vendor":null,"community":null,"auth_protocol":null,"auth_password":null,"priv_protocol":null,"priv_password":null,"sys_name":null,"sys_descr":null,"sys_contact":null,"sys_location":null,"sys_objectid":null,"memory":null,"num_cpus":null,"snmp_version":null}}]'
-    http_version: 
-  recorded_at: Sat, 17 Aug 2013 23:25:54 GMT
+  recorded_at: Sun, 25 Aug 2013 09:36:51 GMT
 recorded_with: VCR 2.5.0

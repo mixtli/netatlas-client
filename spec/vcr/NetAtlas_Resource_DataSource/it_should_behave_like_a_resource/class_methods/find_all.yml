@@ -1,0 +1,51 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://test.netatlas.lvh.me/api/data_sources
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.8.8
+      Accept:
+      - application/json
+      Authorization:
+      - ! 'Basic YWRtaW5AbmV0YXRsYXMuY29tOnBhc3N3b3Jk
+
+'
+  response:
+    status:
+      code: 200
+      message: 
+    headers:
+      date:
+      - Sun, 25 Aug 2013 09:36:18 GMT
+      server:
+      - Apache/2.2.22 (Unix) DAV/2 PHP/5.3.15 with Suhosin-Patch Phusion_Passenger/3.0.19
+        mod_ssl/2.2.22 OpenSSL/0.9.8x
+      x-powered-by:
+      - Phusion Passenger (mod_rails/mod_rack) 3.0.19
+      etag:
+      - ! '"360ee45505d4078ccce695573833d507"'
+      cache-control:
+      - max-age=0, private, must-revalidate
+      x-request-id:
+      - 7e9f39df-bf6d-4e2a-bfd3-f7211e584bef
+      x-runtime:
+      - '0.255516'
+      content-length:
+      - '7581'
+      status:
+      - '200'
+      connection:
+      - close
+      content-type:
+      - application/json
+    body:
+      encoding: US-ASCII
+      string: ! '[{"data_source":{"id":104,"node_id":260,"plugin_id":193,"data_template_id":null,"state":"unknown","last_polled_at":null,"interval":300,"description":null,"data_type":null,"arguments":{},"varbinds":{},"warning_threshold":null,"critical_threshold":null,"operator":"\u003E","creator_id":null,"updater_id":null,"deleter_id":null,"created_at":"2013-08-25T02:36:17.741Z","updated_at":"2013-08-25T02:36:17.741Z","deleted_at":null,"node":{"id":260,"label":"foo","description":"bar","state":"unknown","device_id":null,"snmp_index":null,"snmp_attributes":{},"last_scan":null,"creator_id":null,"updater_id":null,"deleter_id":null,"created_at":"2013-08-25T02:36:17.740Z","updated_at":"2013-08-25T02:36:17.740Z","deleted_at":null},"plugin_name":"Plugin","ip_address":""}},{"data_source":{"id":105,"node_id":261,"plugin_id":194,"data_template_id":null,"state":"unknown","last_polled_at":null,"interval":300,"description":null,"data_type":null,"arguments":{},"varbinds":{},"warning_threshold":null,"critical_threshold":null,"operator":"\u003E","creator_id":null,"updater_id":null,"deleter_id":null,"created_at":"2013-08-25T02:36:17.741Z","updated_at":"2013-08-25T02:36:17.741Z","deleted_at":null,"node":{"id":261,"label":"foo","description":"bar","state":"unknown","device_id":null,"snmp_index":null,"snmp_attributes":{},"last_scan":null,"creator_id":null,"updater_id":null,"deleter_id":null,"created_at":"2013-08-25T02:36:17.740Z","updated_at":"2013-08-25T02:36:17.740Z","deleted_at":null},"plugin_name":"Plugin","ip_address":""}},{"data_source":{"id":106,"node_id":262,"plugin_id":195,"data_template_id":null,"state":"unknown","last_polled_at":null,"interval":300,"description":null,"data_type":null,"arguments":{},"varbinds":{},"warning_threshold":null,"critical_threshold":null,"operator":"\u003E","creator_id":null,"updater_id":null,"deleter_id":null,"created_at":"2013-08-25T02:36:17.741Z","updated_at":"2013-08-25T02:36:17.741Z","deleted_at":null,"node":{"id":262,"label":"foo","description":"bar","state":"unknown","device_id":null,"snmp_index":null,"snmp_attributes":{},"last_scan":null,"creator_id":null,"updater_id":null,"deleter_id":null,"created_at":"2013-08-25T02:36:17.740Z","updated_at":"2013-08-25T02:36:17.740Z","deleted_at":null},"plugin_name":"Plugin","ip_address":""}},{"data_source":{"id":107,"node_id":263,"plugin_id":196,"data_template_id":null,"state":"unknown","last_polled_at":null,"interval":300,"description":null,"data_type":null,"arguments":{},"varbinds":{},"warning_threshold":null,"critical_threshold":null,"operator":"\u003E","creator_id":null,"updater_id":null,"deleter_id":null,"created_at":"2013-08-25T02:36:17.741Z","updated_at":"2013-08-25T02:36:17.741Z","deleted_at":null,"node":{"id":263,"label":"foo","description":"bar","state":"unknown","device_id":null,"snmp_index":null,"snmp_attributes":{},"last_scan":null,"creator_id":null,"updater_id":null,"deleter_id":null,"created_at":"2013-08-25T02:36:17.740Z","updated_at":"2013-08-25T02:36:17.740Z","deleted_at":null},"plugin_name":"Plugin","ip_address":""}},{"data_source":{"id":108,"node_id":264,"plugin_id":197,"data_template_id":null,"state":"unknown","last_polled_at":null,"interval":300,"description":null,"data_type":null,"arguments":{},"varbinds":{},"warning_threshold":null,"critical_threshold":null,"operator":"\u003E","creator_id":null,"updater_id":null,"deleter_id":null,"created_at":"2013-08-25T02:36:17.741Z","updated_at":"2013-08-25T02:36:17.741Z","deleted_at":null,"node":{"id":264,"label":"foo","description":"bar","state":"unknown","device_id":null,"snmp_index":null,"snmp_attributes":{},"last_scan":null,"creator_id":null,"updater_id":null,"deleter_id":null,"created_at":"2013-08-25T02:36:17.740Z","updated_at":"2013-08-25T02:36:17.740Z","deleted_at":null},"plugin_name":"Plugin","ip_address":""}},{"data_source":{"id":109,"node_id":265,"plugin_id":198,"data_template_id":null,"state":"unknown","last_polled_at":null,"interval":300,"description":null,"data_type":null,"arguments":{},"varbinds":{},"warning_threshold":null,"critical_threshold":null,"operator":"\u003E","creator_id":null,"updater_id":null,"deleter_id":null,"created_at":"2013-08-25T02:36:17.741Z","updated_at":"2013-08-25T02:36:17.741Z","deleted_at":null,"node":{"id":265,"label":"foo","description":"bar","state":"unknown","device_id":null,"snmp_index":null,"snmp_attributes":{},"last_scan":null,"creator_id":null,"updater_id":null,"deleter_id":null,"created_at":"2013-08-25T02:36:17.740Z","updated_at":"2013-08-25T02:36:17.740Z","deleted_at":null},"plugin_name":"Plugin","ip_address":""}},{"data_source":{"id":110,"node_id":266,"plugin_id":199,"data_template_id":null,"state":"unknown","last_polled_at":null,"interval":300,"description":null,"data_type":null,"arguments":{},"varbinds":{},"warning_threshold":null,"critical_threshold":null,"operator":"\u003E","creator_id":null,"updater_id":null,"deleter_id":null,"created_at":"2013-08-25T02:36:17.741Z","updated_at":"2013-08-25T02:36:17.741Z","deleted_at":null,"node":{"id":266,"label":"foo","description":"bar","state":"unknown","device_id":null,"snmp_index":null,"snmp_attributes":{},"last_scan":null,"creator_id":null,"updater_id":null,"deleter_id":null,"created_at":"2013-08-25T02:36:17.740Z","updated_at":"2013-08-25T02:36:17.740Z","deleted_at":null},"plugin_name":"Plugin","ip_address":""}},{"data_source":{"id":111,"node_id":267,"plugin_id":200,"data_template_id":null,"state":"unknown","last_polled_at":null,"interval":300,"description":null,"data_type":null,"arguments":{},"varbinds":{},"warning_threshold":null,"critical_threshold":null,"operator":"\u003E","creator_id":null,"updater_id":null,"deleter_id":null,"created_at":"2013-08-25T02:36:17.741Z","updated_at":"2013-08-25T02:36:17.741Z","deleted_at":null,"node":{"id":267,"label":"foo","description":"bar","state":"unknown","device_id":null,"snmp_index":null,"snmp_attributes":{},"last_scan":null,"creator_id":null,"updater_id":null,"deleter_id":null,"created_at":"2013-08-25T02:36:17.740Z","updated_at":"2013-08-25T02:36:17.740Z","deleted_at":null},"plugin_name":"Plugin","ip_address":""}},{"data_source":{"id":112,"node_id":268,"plugin_id":201,"data_template_id":null,"state":"unknown","last_polled_at":null,"interval":300,"description":null,"data_type":null,"arguments":{},"varbinds":{},"warning_threshold":null,"critical_threshold":null,"operator":"\u003E","creator_id":null,"updater_id":null,"deleter_id":null,"created_at":"2013-08-25T02:36:17.741Z","updated_at":"2013-08-25T02:36:17.741Z","deleted_at":null,"node":{"id":268,"label":"foo","description":"bar","state":"unknown","device_id":null,"snmp_index":null,"snmp_attributes":{},"last_scan":null,"creator_id":null,"updater_id":null,"deleter_id":null,"created_at":"2013-08-25T02:36:17.740Z","updated_at":"2013-08-25T02:36:17.740Z","deleted_at":null},"plugin_name":"Plugin","ip_address":""}},{"data_source":{"id":113,"node_id":269,"plugin_id":202,"data_template_id":null,"state":"unknown","last_polled_at":null,"interval":300,"description":null,"data_type":null,"arguments":{},"varbinds":{},"warning_threshold":null,"critical_threshold":null,"operator":"\u003E","creator_id":null,"updater_id":null,"deleter_id":null,"created_at":"2013-08-25T02:36:17.741Z","updated_at":"2013-08-25T02:36:17.741Z","deleted_at":null,"node":{"id":269,"label":"foo","description":"bar","state":"unknown","device_id":null,"snmp_index":null,"snmp_attributes":{},"last_scan":null,"creator_id":null,"updater_id":null,"deleter_id":null,"created_at":"2013-08-25T02:36:17.740Z","updated_at":"2013-08-25T02:36:17.740Z","deleted_at":null},"plugin_name":"Plugin","ip_address":""}}]'
+    http_version: 
+  recorded_at: Sun, 25 Aug 2013 09:36:18 GMT
+recorded_with: VCR 2.5.0

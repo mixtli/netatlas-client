@@ -11,26 +11,30 @@ http_interactions:
       - Faraday v0.8.8
       Accept:
       - application/json
+      Authorization:
+      - ! 'Basic YWRtaW5AbmV0YXRsYXMuY29tOnBhc3N3b3Jk
+
+'
   response:
     status:
       code: 200
       message: 
     headers:
       date:
-      - Sat, 17 Aug 2013 23:25:58 GMT
+      - Sun, 25 Aug 2013 09:37:00 GMT
       server:
       - Apache/2.2.22 (Unix) DAV/2 PHP/5.3.15 with Suhosin-Patch Phusion_Passenger/3.0.19
         mod_ssl/2.2.22 OpenSSL/0.9.8x
       x-powered-by:
       - Phusion Passenger (mod_rails/mod_rack) 3.0.19
       etag:
-      - ! '"793c8517b68eb72827488bd6f660222a"'
+      - ! '"0f972452a056ed96316743cecede6225"'
       cache-control:
       - max-age=0, private, must-revalidate
       x-request-id:
-      - 5feef45e-6fa8-4a3d-a72a-a51a8ccea75c
+      - 1349ddfa-718c-4c85-bd52-70fbddf0d597
       x-runtime:
-      - '0.039417'
+      - '0.117328'
       content-length:
       - '254'
       status:
@@ -42,61 +46,7 @@ http_interactions:
     body:
       encoding: US-ASCII
       string: ! '{"notification":{"id":1,"event_id":null,"contact_id":null,"event_filter_id":null,"state":null,"message":"Test
-        Message","creator_id":null,"updater_id":null,"created_at":"2013-08-17T16:25:35.272Z","updated_at":"2013-08-17T16:25:35.272Z","deleted_at":null}}'
+        Message","creator_id":null,"updater_id":null,"created_at":"2013-08-25T02:36:32.172Z","updated_at":"2013-08-25T02:36:32.172Z","deleted_at":null}}'
     http_version: 
-  recorded_at: Sat, 17 Aug 2013 23:25:58 GMT
-- request:
-    method: get
-    uri: http://test.netatlas.lvh.me/api/notifications
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      User-Agent:
-      - Faraday v0.8.8
-      Accept:
-      - application/json
-  response:
-    status:
-      code: 200
-      message: 
-    headers:
-      date:
-      - Sat, 17 Aug 2013 23:25:58 GMT
-      server:
-      - Apache/2.2.22 (Unix) DAV/2 PHP/5.3.15 with Suhosin-Patch Phusion_Passenger/3.0.19
-        mod_ssl/2.2.22 OpenSSL/0.9.8x
-      x-powered-by:
-      - Phusion Passenger (mod_rails/mod_rack) 3.0.19
-      etag:
-      - ! '"123e3d5a6cf4679ac7a87b3c0b380a09"'
-      cache-control:
-      - max-age=0, private, must-revalidate
-      x-request-id:
-      - 43fe1298-8c4e-4d66-906f-aedc5676cfdb
-      x-runtime:
-      - '0.044364'
-      content-length:
-      - '2561'
-      status:
-      - '200'
-      connection:
-      - close
-      content-type:
-      - application/json
-    body:
-      encoding: US-ASCII
-      string: ! '[{"notification":{"id":13,"event_id":null,"contact_id":null,"event_filter_id":null,"state":null,"message":"Test
-        Message","creator_id":null,"updater_id":null,"created_at":"2013-08-17T16:25:35.272Z","updated_at":"2013-08-17T16:25:35.272Z","deleted_at":null}},{"notification":{"id":14,"event_id":null,"contact_id":null,"event_filter_id":null,"state":null,"message":"Test
-        Message","creator_id":null,"updater_id":null,"created_at":"2013-08-17T16:25:35.272Z","updated_at":"2013-08-17T16:25:35.272Z","deleted_at":null}},{"notification":{"id":15,"event_id":null,"contact_id":null,"event_filter_id":null,"state":null,"message":"Test
-        Message","creator_id":null,"updater_id":null,"created_at":"2013-08-17T16:25:35.272Z","updated_at":"2013-08-17T16:25:35.272Z","deleted_at":null}},{"notification":{"id":16,"event_id":null,"contact_id":null,"event_filter_id":null,"state":null,"message":"Test
-        Message","creator_id":null,"updater_id":null,"created_at":"2013-08-17T16:25:35.272Z","updated_at":"2013-08-17T16:25:35.272Z","deleted_at":null}},{"notification":{"id":17,"event_id":null,"contact_id":null,"event_filter_id":null,"state":null,"message":"Test
-        Message","creator_id":null,"updater_id":null,"created_at":"2013-08-17T16:25:35.272Z","updated_at":"2013-08-17T16:25:35.272Z","deleted_at":null}},{"notification":{"id":18,"event_id":null,"contact_id":null,"event_filter_id":null,"state":null,"message":"Test
-        Message","creator_id":null,"updater_id":null,"created_at":"2013-08-17T16:25:35.272Z","updated_at":"2013-08-17T16:25:35.272Z","deleted_at":null}},{"notification":{"id":19,"event_id":null,"contact_id":null,"event_filter_id":null,"state":null,"message":"Test
-        Message","creator_id":null,"updater_id":null,"created_at":"2013-08-17T16:25:35.272Z","updated_at":"2013-08-17T16:25:35.272Z","deleted_at":null}},{"notification":{"id":20,"event_id":null,"contact_id":null,"event_filter_id":null,"state":null,"message":"Test
-        Message","creator_id":null,"updater_id":null,"created_at":"2013-08-17T16:25:35.272Z","updated_at":"2013-08-17T16:25:35.272Z","deleted_at":null}},{"notification":{"id":21,"event_id":null,"contact_id":null,"event_filter_id":null,"state":null,"message":"Test
-        Message","creator_id":null,"updater_id":null,"created_at":"2013-08-17T16:25:35.272Z","updated_at":"2013-08-17T16:25:35.272Z","deleted_at":null}},{"notification":{"id":22,"event_id":null,"contact_id":null,"event_filter_id":null,"state":null,"message":"Test
-        Message","creator_id":null,"updater_id":null,"created_at":"2013-08-17T16:25:35.272Z","updated_at":"2013-08-17T16:25:35.272Z","deleted_at":null}}]'
-    http_version: 
-  recorded_at: Sat, 17 Aug 2013 23:25:58 GMT
+  recorded_at: Sun, 25 Aug 2013 09:37:00 GMT
 recorded_with: VCR 2.5.0

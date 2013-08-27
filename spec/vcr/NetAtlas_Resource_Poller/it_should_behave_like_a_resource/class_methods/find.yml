@@ -11,26 +11,30 @@ http_interactions:
       - Faraday v0.8.8
       Accept:
       - application/json
+      Authorization:
+      - ! 'Basic YWRtaW5AbmV0YXRsYXMuY29tOnBhc3N3b3Jk
+
+'
   response:
     status:
       code: 200
       message: 
     headers:
       date:
-      - Sat, 17 Aug 2013 23:25:59 GMT
+      - Sun, 25 Aug 2013 09:37:04 GMT
       server:
       - Apache/2.2.22 (Unix) DAV/2 PHP/5.3.15 with Suhosin-Patch Phusion_Passenger/3.0.19
         mod_ssl/2.2.22 OpenSSL/0.9.8x
       x-powered-by:
       - Phusion Passenger (mod_rails/mod_rack) 3.0.19
       etag:
-      - ! '"287aec48779b4cfcaa7a0d27c634026e"'
+      - ! '"bf9fc152d83c6190ad49659e6c92c27b"'
       cache-control:
       - max-age=0, private, must-revalidate
       x-request-id:
-      - 23aadb8e-3b3e-4a83-b3a7-9ac8e1729572
+      - 71b6302b-d226-4d96-91c2-59978ee8f84c
       x-runtime:
-      - '0.016879'
+      - '0.121468'
       content-length:
       - '277'
       status:
@@ -41,51 +45,7 @@ http_interactions:
       - application/json
     body:
       encoding: US-ASCII
-      string: ! '{"poller":{"id":1,"hostname":"host1.lvh.me","port":null,"state":"unknown","queue_username":"user1","queue_password":"pass1","creator_id":null,"updater_id":null,"deleter_id":null,"created_at":"2013-08-17T16:25:35.272Z","updated_at":"2013-08-17T16:25:35.272Z","deleted_at":null}}'
+      string: ! '{"poller":{"id":1,"hostname":"host1.lvh.me","port":null,"state":"unknown","queue_username":"user1","queue_password":"pass1","creator_id":null,"updater_id":null,"deleter_id":null,"created_at":"2013-08-25T02:36:32.172Z","updated_at":"2013-08-25T02:36:32.172Z","deleted_at":null}}'
     http_version: 
-  recorded_at: Sat, 17 Aug 2013 23:25:59 GMT
-- request:
-    method: get
-    uri: http://test.netatlas.lvh.me/api/pollers
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      User-Agent:
-      - Faraday v0.8.8
-      Accept:
-      - application/json
-  response:
-    status:
-      code: 200
-      message: 
-    headers:
-      date:
-      - Sat, 17 Aug 2013 23:25:59 GMT
-      server:
-      - Apache/2.2.22 (Unix) DAV/2 PHP/5.3.15 with Suhosin-Patch Phusion_Passenger/3.0.19
-        mod_ssl/2.2.22 OpenSSL/0.9.8x
-      x-powered-by:
-      - Phusion Passenger (mod_rails/mod_rack) 3.0.19
-      etag:
-      - ! '"72db0731dafe1c091af853b2403a43c1"'
-      cache-control:
-      - max-age=0, private, must-revalidate
-      x-request-id:
-      - a3f2eec5-ba0e-47df-9962-54ffbd2c39c3
-      x-runtime:
-      - '0.020279'
-      content-length:
-      - '2797'
-      status:
-      - '200'
-      connection:
-      - close
-      content-type:
-      - application/json
-    body:
-      encoding: US-ASCII
-      string: ! '[{"poller":{"id":13,"hostname":"host2.lvh.me","port":null,"state":"unknown","queue_username":"user2","queue_password":"pass2","creator_id":null,"updater_id":null,"deleter_id":null,"created_at":"2013-08-17T16:25:35.272Z","updated_at":"2013-08-17T16:25:35.272Z","deleted_at":null}},{"poller":{"id":14,"hostname":"host3.lvh.me","port":null,"state":"unknown","queue_username":"user3","queue_password":"pass3","creator_id":null,"updater_id":null,"deleter_id":null,"created_at":"2013-08-17T16:25:35.272Z","updated_at":"2013-08-17T16:25:35.272Z","deleted_at":null}},{"poller":{"id":15,"hostname":"host4.lvh.me","port":null,"state":"unknown","queue_username":"user4","queue_password":"pass4","creator_id":null,"updater_id":null,"deleter_id":null,"created_at":"2013-08-17T16:25:35.272Z","updated_at":"2013-08-17T16:25:35.272Z","deleted_at":null}},{"poller":{"id":16,"hostname":"host5.lvh.me","port":null,"state":"unknown","queue_username":"user5","queue_password":"pass5","creator_id":null,"updater_id":null,"deleter_id":null,"created_at":"2013-08-17T16:25:35.272Z","updated_at":"2013-08-17T16:25:35.272Z","deleted_at":null}},{"poller":{"id":17,"hostname":"host6.lvh.me","port":null,"state":"unknown","queue_username":"user6","queue_password":"pass6","creator_id":null,"updater_id":null,"deleter_id":null,"created_at":"2013-08-17T16:25:35.272Z","updated_at":"2013-08-17T16:25:35.272Z","deleted_at":null}},{"poller":{"id":18,"hostname":"host7.lvh.me","port":null,"state":"unknown","queue_username":"user7","queue_password":"pass7","creator_id":null,"updater_id":null,"deleter_id":null,"created_at":"2013-08-17T16:25:35.272Z","updated_at":"2013-08-17T16:25:35.272Z","deleted_at":null}},{"poller":{"id":19,"hostname":"host8.lvh.me","port":null,"state":"unknown","queue_username":"user8","queue_password":"pass8","creator_id":null,"updater_id":null,"deleter_id":null,"created_at":"2013-08-17T16:25:35.272Z","updated_at":"2013-08-17T16:25:35.272Z","deleted_at":null}},{"poller":{"id":20,"hostname":"host9.lvh.me","port":null,"state":"unknown","queue_username":"user9","queue_password":"pass9","creator_id":null,"updater_id":null,"deleter_id":null,"created_at":"2013-08-17T16:25:35.272Z","updated_at":"2013-08-17T16:25:35.272Z","deleted_at":null}},{"poller":{"id":21,"hostname":"host10.lvh.me","port":null,"state":"unknown","queue_username":"user10","queue_password":"pass10","creator_id":null,"updater_id":null,"deleter_id":null,"created_at":"2013-08-17T16:25:35.272Z","updated_at":"2013-08-17T16:25:35.272Z","deleted_at":null}},{"poller":{"id":22,"hostname":"host11.lvh.me","port":null,"state":"unknown","queue_username":"user11","queue_password":"pass11","creator_id":null,"updater_id":null,"deleter_id":null,"created_at":"2013-08-17T16:25:35.272Z","updated_at":"2013-08-17T16:25:35.272Z","deleted_at":null}}]'
-    http_version: 
-  recorded_at: Sat, 17 Aug 2013 23:25:59 GMT
+  recorded_at: Sun, 25 Aug 2013 09:37:04 GMT
 recorded_with: VCR 2.5.0

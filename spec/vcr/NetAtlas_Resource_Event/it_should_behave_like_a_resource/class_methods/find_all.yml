@@ -1,0 +1,51 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://test.netatlas.lvh.me/api/events
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.8.8
+      Accept:
+      - application/json
+      Authorization:
+      - ! 'Basic YWRtaW5AbmV0YXRsYXMuY29tOnBhc3N3b3Jk
+
+'
+  response:
+    status:
+      code: 200
+      message: 
+    headers:
+      date:
+      - Sun, 25 Aug 2013 09:36:53 GMT
+      server:
+      - Apache/2.2.22 (Unix) DAV/2 PHP/5.3.15 with Suhosin-Patch Phusion_Passenger/3.0.19
+        mod_ssl/2.2.22 OpenSSL/0.9.8x
+      x-powered-by:
+      - Phusion Passenger (mod_rails/mod_rack) 3.0.19
+      etag:
+      - ! '"be0937e050e75d50ed134f69037b622e"'
+      cache-control:
+      - max-age=0, private, must-revalidate
+      x-request-id:
+      - f513aacf-ba69-4387-b9eb-7c3adba2fe40
+      x-runtime:
+      - '0.103916'
+      content-length:
+      - '4021'
+      status:
+      - '200'
+      connection:
+      - close
+      content-type:
+      - application/json
+    body:
+      encoding: US-ASCII
+      string: ! '[{"event":{"id":23,"poller_id":null,"node_id":null,"data_source_id":null,"state":null,"repeats":0,"severity":null,"description":null,"additional":{},"notes":null,"arguments":{},"acknowledged_by_id":null,"resolved_by_id":null,"acknowledged_at":null,"resolved_at":null,"created_at":"2013-08-25T02:36:32.172Z","updated_at":"2013-08-25T02:36:32.172Z","deleted_at":null,"creator_id":null,"updater_id":null}},{"event":{"id":24,"poller_id":null,"node_id":null,"data_source_id":null,"state":null,"repeats":0,"severity":null,"description":null,"additional":{},"notes":null,"arguments":{},"acknowledged_by_id":null,"resolved_by_id":null,"acknowledged_at":null,"resolved_at":null,"created_at":"2013-08-25T02:36:32.172Z","updated_at":"2013-08-25T02:36:32.172Z","deleted_at":null,"creator_id":null,"updater_id":null}},{"event":{"id":25,"poller_id":null,"node_id":null,"data_source_id":null,"state":null,"repeats":0,"severity":null,"description":null,"additional":{},"notes":null,"arguments":{},"acknowledged_by_id":null,"resolved_by_id":null,"acknowledged_at":null,"resolved_at":null,"created_at":"2013-08-25T02:36:32.172Z","updated_at":"2013-08-25T02:36:32.172Z","deleted_at":null,"creator_id":null,"updater_id":null}},{"event":{"id":26,"poller_id":null,"node_id":null,"data_source_id":null,"state":null,"repeats":0,"severity":null,"description":null,"additional":{},"notes":null,"arguments":{},"acknowledged_by_id":null,"resolved_by_id":null,"acknowledged_at":null,"resolved_at":null,"created_at":"2013-08-25T02:36:32.172Z","updated_at":"2013-08-25T02:36:32.172Z","deleted_at":null,"creator_id":null,"updater_id":null}},{"event":{"id":27,"poller_id":null,"node_id":null,"data_source_id":null,"state":null,"repeats":0,"severity":null,"description":null,"additional":{},"notes":null,"arguments":{},"acknowledged_by_id":null,"resolved_by_id":null,"acknowledged_at":null,"resolved_at":null,"created_at":"2013-08-25T02:36:32.172Z","updated_at":"2013-08-25T02:36:32.172Z","deleted_at":null,"creator_id":null,"updater_id":null}},{"event":{"id":28,"poller_id":null,"node_id":null,"data_source_id":null,"state":null,"repeats":0,"severity":null,"description":null,"additional":{},"notes":null,"arguments":{},"acknowledged_by_id":null,"resolved_by_id":null,"acknowledged_at":null,"resolved_at":null,"created_at":"2013-08-25T02:36:32.172Z","updated_at":"2013-08-25T02:36:32.172Z","deleted_at":null,"creator_id":null,"updater_id":null}},{"event":{"id":29,"poller_id":null,"node_id":null,"data_source_id":null,"state":null,"repeats":0,"severity":null,"description":null,"additional":{},"notes":null,"arguments":{},"acknowledged_by_id":null,"resolved_by_id":null,"acknowledged_at":null,"resolved_at":null,"created_at":"2013-08-25T02:36:32.172Z","updated_at":"2013-08-25T02:36:32.172Z","deleted_at":null,"creator_id":null,"updater_id":null}},{"event":{"id":30,"poller_id":null,"node_id":null,"data_source_id":null,"state":null,"repeats":0,"severity":null,"description":null,"additional":{},"notes":null,"arguments":{},"acknowledged_by_id":null,"resolved_by_id":null,"acknowledged_at":null,"resolved_at":null,"created_at":"2013-08-25T02:36:32.172Z","updated_at":"2013-08-25T02:36:32.172Z","deleted_at":null,"creator_id":null,"updater_id":null}},{"event":{"id":31,"poller_id":null,"node_id":null,"data_source_id":null,"state":null,"repeats":0,"severity":null,"description":null,"additional":{},"notes":null,"arguments":{},"acknowledged_by_id":null,"resolved_by_id":null,"acknowledged_at":null,"resolved_at":null,"created_at":"2013-08-25T02:36:32.172Z","updated_at":"2013-08-25T02:36:32.172Z","deleted_at":null,"creator_id":null,"updater_id":null}},{"event":{"id":32,"poller_id":null,"node_id":null,"data_source_id":null,"state":null,"repeats":0,"severity":null,"description":null,"additional":{},"notes":null,"arguments":{},"acknowledged_by_id":null,"resolved_by_id":null,"acknowledged_at":null,"resolved_at":null,"created_at":"2013-08-25T02:36:32.172Z","updated_at":"2013-08-25T02:36:32.172Z","deleted_at":null,"creator_id":null,"updater_id":null}}]'
+    http_version: 
+  recorded_at: Sun, 25 Aug 2013 09:36:53 GMT
+recorded_with: VCR 2.5.0

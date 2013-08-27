@@ -5,7 +5,7 @@ describe NetAtlas::Resource::Poller do
   end
 
   before do
-    Fabricate(:admin)
+    @admin = Fabricate(:admin)
   end
   context "instance methods" do
     it "update" do
@@ -14,6 +14,11 @@ describe NetAtlas::Resource::Poller do
       node.label = 'New Label'
       node.save
       node.label.should eql("New Label")
+    end
+
+    it "should create a poller" do
+      described_class.create(:hostname => 'xenu.local')
+      described_class.all.size.should == 1
     end
     it "save", :vcr => {:record => :all} do
       r = Fabricate(:poller, :id => 1)

@@ -15,7 +15,6 @@ Gem::Specification.new do |gem|
   gem.require_paths = ["lib"]
   gem.version       = NetAtlas::Client::VERSION
   gem.add_dependency 'json'
-  gem.add_dependency 'her'
   gem.add_dependency 'faraday'
   gem.add_dependency 'faraday_middleware'
   gem.add_dependency 'i18n'

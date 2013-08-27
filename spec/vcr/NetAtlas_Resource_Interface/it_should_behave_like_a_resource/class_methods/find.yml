@@ -11,28 +11,32 @@ http_interactions:
       - Faraday v0.8.8
       Accept:
       - application/json
+      Authorization:
+      - ! 'Basic YWRtaW5AbmV0YXRsYXMuY29tOnBhc3N3b3Jk
+
+'
   response:
     status:
       code: 200
       message: 
     headers:
       date:
-      - Sat, 17 Aug 2013 23:25:56 GMT
+      - Sun, 25 Aug 2013 09:36:55 GMT
       server:
       - Apache/2.2.22 (Unix) DAV/2 PHP/5.3.15 with Suhosin-Patch Phusion_Passenger/3.0.19
         mod_ssl/2.2.22 OpenSSL/0.9.8x
       x-powered-by:
       - Phusion Passenger (mod_rails/mod_rack) 3.0.19
       etag:
-      - ! '"764046293dc88f64aae212ae5209a853"'
+      - ! '"db1ce8272f39334ee6eb6a417dd5ef5a"'
       cache-control:
       - max-age=0, private, must-revalidate
       x-request-id:
-      - 55231349-18ee-45c8-a997-2261d0fb7ac9
+      - 82f79b9c-23d6-4566-aa65-ac169a6ab901
       x-runtime:
-      - '0.015705'
+      - '0.113698'
       content-length:
-      - '537'
+      - '419'
       status:
       - '200'
       connection:
@@ -41,51 +45,7 @@ http_interactions:
       - application/json
     body:
       encoding: US-ASCII
-      string: ! '{"interface":{"id":1,"label":"foo","description":"bar","state":"unknown","device_id":null,"snmp_index":null,"snmp_attributes":null,"last_scan":null,"creator_id":null,"updater_id":null,"deleter_id":null,"created_at":"2013-08-17T16:25:35.271Z","updated_at":"2013-08-17T16:25:35.271Z","deleted_at":null,"ip_address":"192.168.0.1","hostname":null,"if_speed":null,"if_type":null,"if_name":null,"if_alias":null,"if_descr":null,"if_promiscuous":null,"if_high_speed":null,"if_admin_status":null,"physical_address":null,"mtu":null,"duplex":null}}'
+      string: ! '{"interface":{"id":1,"label":"foo","description":"bar","state":"unknown","device_id":null,"snmp_index":null,"snmp_attributes":{},"last_scan":null,"creator_id":null,"updater_id":null,"deleter_id":null,"created_at":"2013-08-25T02:36:32.172Z","updated_at":"2013-08-25T02:36:32.172Z","deleted_at":null,"ip_address":"192.168.0.1","hostname":null,"physical_address":null,"mtu":null,"duplex":null,"speed":null,"if_type":null}}'
     http_version: 
-  recorded_at: Sat, 17 Aug 2013 23:25:56 GMT
-- request:
-    method: get
-    uri: http://test.netatlas.lvh.me/api/interfaces
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      User-Agent:
-      - Faraday v0.8.8
-      Accept:
-      - application/json
-  response:
-    status:
-      code: 200
-      message: 
-    headers:
-      date:
-      - Sat, 17 Aug 2013 23:25:56 GMT
-      server:
-      - Apache/2.2.22 (Unix) DAV/2 PHP/5.3.15 with Suhosin-Patch Phusion_Passenger/3.0.19
-        mod_ssl/2.2.22 OpenSSL/0.9.8x
-      x-powered-by:
-      - Phusion Passenger (mod_rails/mod_rack) 3.0.19
-      etag:
-      - ! '"638d7c580f4c0d7726e31af387a854be"'
-      cache-control:
-      - max-age=0, private, must-revalidate
-      x-request-id:
-      - 1b2e4970-1cd2-4470-b3e8-5aa05fc3b170
-      x-runtime:
-      - '0.023725'
-      content-length:
-      - '5403'
-      status:
-      - '200'
-      connection:
-      - close
-      content-type:
-      - application/json
-    body:
-      encoding: US-ASCII
-      string: ! '[{"interface":{"id":222,"label":"foo","description":"bar","state":"unknown","device_id":null,"snmp_index":null,"snmp_attributes":null,"last_scan":null,"creator_id":null,"updater_id":null,"deleter_id":null,"created_at":"2013-08-17T16:25:35.271Z","updated_at":"2013-08-17T16:25:35.271Z","deleted_at":null,"ip_address":"192.168.0.2","hostname":null,"if_speed":null,"if_type":null,"if_name":null,"if_alias":null,"if_descr":null,"if_promiscuous":null,"if_high_speed":null,"if_admin_status":null,"physical_address":null,"mtu":null,"duplex":null}},{"interface":{"id":223,"label":"foo","description":"bar","state":"unknown","device_id":null,"snmp_index":null,"snmp_attributes":null,"last_scan":null,"creator_id":null,"updater_id":null,"deleter_id":null,"created_at":"2013-08-17T16:25:35.271Z","updated_at":"2013-08-17T16:25:35.271Z","deleted_at":null,"ip_address":"192.168.0.3","hostname":null,"if_speed":null,"if_type":null,"if_name":null,"if_alias":null,"if_descr":null,"if_promiscuous":null,"if_high_speed":null,"if_admin_status":null,"physical_address":null,"mtu":null,"duplex":null}},{"interface":{"id":224,"label":"foo","description":"bar","state":"unknown","device_id":null,"snmp_index":null,"snmp_attributes":null,"last_scan":null,"creator_id":null,"updater_id":null,"deleter_id":null,"created_at":"2013-08-17T16:25:35.271Z","updated_at":"2013-08-17T16:25:35.271Z","deleted_at":null,"ip_address":"192.168.0.4","hostname":null,"if_speed":null,"if_type":null,"if_name":null,"if_alias":null,"if_descr":null,"if_promiscuous":null,"if_high_speed":null,"if_admin_status":null,"physical_address":null,"mtu":null,"duplex":null}},{"interface":{"id":225,"label":"foo","description":"bar","state":"unknown","device_id":null,"snmp_index":null,"snmp_attributes":null,"last_scan":null,"creator_id":null,"updater_id":null,"deleter_id":null,"created_at":"2013-08-17T16:25:35.271Z","updated_at":"2013-08-17T16:25:35.271Z","deleted_at":null,"ip_address":"192.168.0.5","hostname":null,"if_speed":null,"if_type":null,"if_name":null,"if_alias":null,"if_descr":null,"if_promiscuous":null,"if_high_speed":null,"if_admin_status":null,"physical_address":null,"mtu":null,"duplex":null}},{"interface":{"id":226,"label":"foo","description":"bar","state":"unknown","device_id":null,"snmp_index":null,"snmp_attributes":null,"last_scan":null,"creator_id":null,"updater_id":null,"deleter_id":null,"created_at":"2013-08-17T16:25:35.271Z","updated_at":"2013-08-17T16:25:35.271Z","deleted_at":null,"ip_address":"192.168.0.6","hostname":null,"if_speed":null,"if_type":null,"if_name":null,"if_alias":null,"if_descr":null,"if_promiscuous":null,"if_high_speed":null,"if_admin_status":null,"physical_address":null,"mtu":null,"duplex":null}},{"interface":{"id":227,"label":"foo","description":"bar","state":"unknown","device_id":null,"snmp_index":null,"snmp_attributes":null,"last_scan":null,"creator_id":null,"updater_id":null,"deleter_id":null,"created_at":"2013-08-17T16:25:35.271Z","updated_at":"2013-08-17T16:25:35.271Z","deleted_at":null,"ip_address":"192.168.0.7","hostname":null,"if_speed":null,"if_type":null,"if_name":null,"if_alias":null,"if_descr":null,"if_promiscuous":null,"if_high_speed":null,"if_admin_status":null,"physical_address":null,"mtu":null,"duplex":null}},{"interface":{"id":228,"label":"foo","description":"bar","state":"unknown","device_id":null,"snmp_index":null,"snmp_attributes":null,"last_scan":null,"creator_id":null,"updater_id":null,"deleter_id":null,"created_at":"2013-08-17T16:25:35.271Z","updated_at":"2013-08-17T16:25:35.271Z","deleted_at":null,"ip_address":"192.168.0.8","hostname":null,"if_speed":null,"if_type":null,"if_name":null,"if_alias":null,"if_descr":null,"if_promiscuous":null,"if_high_speed":null,"if_admin_status":null,"physical_address":null,"mtu":null,"duplex":null}},{"interface":{"id":229,"label":"foo","description":"bar","state":"unknown","device_id":null,"snmp_index":null,"snmp_attributes":null,"last_scan":null,"creator_id":null,"updater_id":null,"deleter_id":null,"created_at":"2013-08-17T16:25:35.271Z","updated_at":"2013-08-17T16:25:35.271Z","deleted_at":null,"ip_address":"192.168.0.9","hostname":null,"if_speed":null,"if_type":null,"if_name":null,"if_alias":null,"if_descr":null,"if_promiscuous":null,"if_high_speed":null,"if_admin_status":null,"physical_address":null,"mtu":null,"duplex":null}},{"interface":{"id":230,"label":"foo","description":"bar","state":"unknown","device_id":null,"snmp_index":null,"snmp_attributes":null,"last_scan":null,"creator_id":null,"updater_id":null,"deleter_id":null,"created_at":"2013-08-17T16:25:35.271Z","updated_at":"2013-08-17T16:25:35.271Z","deleted_at":null,"ip_address":"192.168.0.10","hostname":null,"if_speed":null,"if_type":null,"if_name":null,"if_alias":null,"if_descr":null,"if_promiscuous":null,"if_high_speed":null,"if_admin_status":null,"physical_address":null,"mtu":null,"duplex":null}},{"interface":{"id":231,"label":"foo","description":"bar","state":"unknown","device_id":null,"snmp_index":null,"snmp_attributes":null,"last_scan":null,"creator_id":null,"updater_id":null,"deleter_id":null,"created_at":"2013-08-17T16:25:35.271Z","updated_at":"2013-08-17T16:25:35.271Z","deleted_at":null,"ip_address":"192.168.0.11","hostname":null,"if_speed":null,"if_type":null,"if_name":null,"if_alias":null,"if_descr":null,"if_promiscuous":null,"if_high_speed":null,"if_admin_status":null,"physical_address":null,"mtu":null,"duplex":null}}]'
-    http_version: 
-  recorded_at: Sat, 17 Aug 2013 23:25:56 GMT
+  recorded_at: Sun, 25 Aug 2013 09:36:55 GMT
 recorded_with: VCR 2.5.0

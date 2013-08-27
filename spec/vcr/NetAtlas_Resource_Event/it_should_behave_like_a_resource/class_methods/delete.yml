@@ -13,28 +13,32 @@ http_interactions:
       - application/json
       Content-Type:
       - application/json
+      Authorization:
+      - ! 'Basic YWRtaW5AbmV0YXRsYXMuY29tOnBhc3N3b3Jk
+
+'
   response:
     status:
       code: 200
       message: 
     headers:
       date:
-      - Sat, 17 Aug 2013 23:25:55 GMT
+      - Sun, 25 Aug 2013 09:36:53 GMT
       server:
       - Apache/2.2.22 (Unix) DAV/2 PHP/5.3.15 with Suhosin-Patch Phusion_Passenger/3.0.19
         mod_ssl/2.2.22 OpenSSL/0.9.8x
       x-powered-by:
       - Phusion Passenger (mod_rails/mod_rack) 3.0.19
       etag:
-      - ! '"db2e8e6250c87af2a99eaff4447b33ca"'
+      - ! '"563421b2633e5d0a078f1da58ecf6c02"'
       cache-control:
       - max-age=0, private, must-revalidate
       x-request-id:
-      - fca2f7a1-66c6-4217-9d21-c5e0366f3207
+      - 811a0c9d-adf3-4601-93eb-945053d99000
       x-runtime:
-      - '0.019186'
+      - '0.095384'
       content-length:
-      - '404'
+      - '400'
       status:
       - '200'
       connection:
@@ -43,9 +47,9 @@ http_interactions:
       - application/json
     body:
       encoding: US-ASCII
-      string: ! '{"event":{"id":1,"poller_id":null,"node_id":null,"data_source_id":null,"state":null,"repeats":0,"severity":null,"description":null,"additional":null,"notes":null,"arguments":null,"acknowledged_by_id":null,"resolved_by_id":null,"acknowledged_at":null,"resolved_at":null,"created_at":"2013-08-17T16:25:35.272Z","updated_at":"2013-08-17T16:25:35.272Z","deleted_at":null,"creator_id":null,"updater_id":null}}'
+      string: ! '{"event":{"id":1,"poller_id":null,"node_id":null,"data_source_id":null,"state":null,"repeats":0,"severity":null,"description":null,"additional":{},"notes":null,"arguments":{},"acknowledged_by_id":null,"resolved_by_id":null,"acknowledged_at":null,"resolved_at":null,"created_at":"2013-08-25T02:36:32.172Z","updated_at":"2013-08-25T02:36:32.172Z","deleted_at":null,"creator_id":null,"updater_id":null}}'
     http_version: 
-  recorded_at: Sat, 17 Aug 2013 23:25:55 GMT
+  recorded_at: Sun, 25 Aug 2013 09:36:53 GMT
 - request:
     method: get
     uri: http://test.netatlas.lvh.me/api/events/1
@@ -57,13 +61,17 @@ http_interactions:
       - Faraday v0.8.8
       Accept:
       - application/json
+      Authorization:
+      - ! 'Basic YWRtaW5AbmV0YXRsYXMuY29tOnBhc3N3b3Jk
+
+'
   response:
     status:
       code: 404
       message: 
     headers:
       date:
-      - Sat, 17 Aug 2013 23:25:55 GMT
+      - Sun, 25 Aug 2013 09:36:53 GMT
       server:
       - Apache/2.2.22 (Unix) DAV/2 PHP/5.3.15 with Suhosin-Patch Phusion_Passenger/3.0.19
         mod_ssl/2.2.22 OpenSSL/0.9.8x
@@ -72,9 +80,9 @@ http_interactions:
       cache-control:
       - no-cache
       x-request-id:
-      - f541ca38-6ec3-4494-abb8-92d0ca4218a0
+      - 1e60031d-fb38-4790-94b4-e1f77db8566f
       x-runtime:
-      - '0.013673'
+      - '0.079380'
       content-length:
       - '31'
       status:
@@ -87,5 +95,5 @@ http_interactions:
       encoding: US-ASCII
       string: ! '{"error":"Resource not found!"}'
     http_version: 
-  recorded_at: Sat, 17 Aug 2013 23:25:55 GMT
+  recorded_at: Sun, 25 Aug 2013 09:36:53 GMT
 recorded_with: VCR 2.5.0

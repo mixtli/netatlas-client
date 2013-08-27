@@ -13,26 +13,30 @@ http_interactions:
       - application/json
       Content-Type:
       - application/json
+      Authorization:
+      - ! 'Basic YWRtaW5AbmV0YXRsYXMuY29tOnBhc3N3b3Jk
+
+'
   response:
     status:
       code: 200
       message: 
     headers:
       date:
-      - Sat, 17 Aug 2013 23:26:00 GMT
+      - Sun, 25 Aug 2013 09:37:04 GMT
       server:
       - Apache/2.2.22 (Unix) DAV/2 PHP/5.3.15 with Suhosin-Patch Phusion_Passenger/3.0.19
         mod_ssl/2.2.22 OpenSSL/0.9.8x
       x-powered-by:
       - Phusion Passenger (mod_rails/mod_rack) 3.0.19
       etag:
-      - ! '"6d671bb48a0bb9b0067453eac6c26bd7"'
+      - ! '"a16230e212af3c46f36d2929f79bed6a"'
       cache-control:
       - max-age=0, private, must-revalidate
       x-request-id:
-      - 828d8e03-5c40-4e02-9214-e6f8e92cfc70
+      - 02f66b69-1561-4fb9-948b-8296188b1f37
       x-runtime:
-      - '0.018720'
+      - '0.098582'
       content-length:
       - '280'
       status:
@@ -43,9 +47,9 @@ http_interactions:
       - application/json
     body:
       encoding: US-ASCII
-      string: ! '{"poller":{"id":1,"hostname":"host12.lvh.me","port":null,"state":"unknown","queue_username":"user12","queue_password":"pass12","creator_id":null,"updater_id":null,"deleter_id":null,"created_at":"2013-08-17T16:25:35.272Z","updated_at":"2013-08-17T16:25:35.272Z","deleted_at":null}}'
+      string: ! '{"poller":{"id":1,"hostname":"host12.lvh.me","port":null,"state":"unknown","queue_username":"user12","queue_password":"pass12","creator_id":null,"updater_id":null,"deleter_id":null,"created_at":"2013-08-25T02:36:32.172Z","updated_at":"2013-08-25T02:36:32.172Z","deleted_at":null}}'
     http_version: 
-  recorded_at: Sat, 17 Aug 2013 23:26:00 GMT
+  recorded_at: Sun, 25 Aug 2013 09:37:04 GMT
 - request:
     method: get
     uri: http://test.netatlas.lvh.me/api/pollers/1
@@ -57,13 +61,17 @@ http_interactions:
       - Faraday v0.8.8
       Accept:
       - application/json
+      Authorization:
+      - ! 'Basic YWRtaW5AbmV0YXRsYXMuY29tOnBhc3N3b3Jk
+
+'
   response:
     status:
       code: 404
       message: 
     headers:
       date:
-      - Sat, 17 Aug 2013 23:26:00 GMT
+      - Sun, 25 Aug 2013 09:37:04 GMT
       server:
       - Apache/2.2.22 (Unix) DAV/2 PHP/5.3.15 with Suhosin-Patch Phusion_Passenger/3.0.19
         mod_ssl/2.2.22 OpenSSL/0.9.8x
@@ -72,9 +80,9 @@ http_interactions:
       cache-control:
       - no-cache
       x-request-id:
-      - 1ce68d5c-377b-47be-90cd-e41dfdd8c665
+      - f0d74a53-ed06-43ae-8a3d-f35f7d790e21
       x-runtime:
-      - '0.015241'
+      - '0.195627'
       content-length:
       - '31'
       status:
@@ -87,5 +95,5 @@ http_interactions:
       encoding: US-ASCII
       string: ! '{"error":"Resource not found!"}'
     http_version: 
-  recorded_at: Sat, 17 Aug 2013 23:26:00 GMT
+  recorded_at: Sun, 25 Aug 2013 09:37:04 GMT
 recorded_with: VCR 2.5.0

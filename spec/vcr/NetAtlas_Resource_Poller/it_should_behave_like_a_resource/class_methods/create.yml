@@ -5,7 +5,7 @@ http_interactions:
     uri: http://test.netatlas.lvh.me/api/pollers
     body:
       encoding: UTF-8
-      string: ! '{"poller":{"hostname":"host0.lvh.me","queue_username":"user0","queue_password":"pass0","created_at":"2013-08-17T16:25:35-07:00","updated_at":"2013-08-17T16:25:35-07:00","state":"unknown"}}'
+      string: ! '{"poller":{"hostname":"host0.lvh.me","queue_username":"user0","queue_password":"pass0","created_at":"2013-08-25T02:36:32-07:00","updated_at":"2013-08-25T02:36:32-07:00","state":"unknown"}}'
     headers:
       User-Agent:
       - Faraday v0.8.8
@@ -13,28 +13,32 @@ http_interactions:
       - application/json
       Content-Type:
       - application/json
+      Authorization:
+      - ! 'Basic YWRtaW5AbmV0YXRsYXMuY29tOnBhc3N3b3Jk
+
+'
   response:
     status:
       code: 201
       message: 
     headers:
       date:
-      - Sat, 17 Aug 2013 23:25:59 GMT
+      - Sun, 25 Aug 2013 09:37:03 GMT
       server:
       - Apache/2.2.22 (Unix) DAV/2 PHP/5.3.15 with Suhosin-Patch Phusion_Passenger/3.0.19
         mod_ssl/2.2.22 OpenSSL/0.9.8x
       x-powered-by:
       - Phusion Passenger (mod_rails/mod_rack) 3.0.19
       etag:
-      - ! '"6aa6fa6263385993c83767ef775d565d"'
+      - ! '"5952e3c70e0b95051e32ebc5ccb5eec8"'
       cache-control:
       - max-age=0, private, must-revalidate
       x-request-id:
-      - e4fd044e-e86b-400b-b1ec-afd36cc4e6e5
+      - 67c570b7-0bac-4520-87aa-892ee5d761ee
       x-runtime:
-      - '0.023505'
+      - '0.140540'
       content-length:
-      - '278'
+      - '276'
       status:
       - '201'
       connection:
@@ -43,7 +47,7 @@ http_interactions:
       - application/json
     body:
       encoding: US-ASCII
-      string: ! '{"poller":{"id":12,"hostname":"host0.lvh.me","port":null,"state":"unknown","queue_username":"user0","queue_password":"pass0","creator_id":null,"updater_id":null,"deleter_id":null,"created_at":"2013-08-17T23:25:59.653Z","updated_at":"2013-08-17T23:25:59.653Z","deleted_at":null}}'
+      string: ! '{"poller":{"id":24,"hostname":"host0.lvh.me","port":null,"state":"unknown","queue_username":"user0","queue_password":"pass0","creator_id":273,"updater_id":273,"deleter_id":null,"created_at":"2013-08-25T09:37:03.901Z","updated_at":"2013-08-25T09:37:03.901Z","deleted_at":null}}'
     http_version: 
-  recorded_at: Sat, 17 Aug 2013 23:25:59 GMT
+  recorded_at: Sun, 25 Aug 2013 09:37:03 GMT
 recorded_with: VCR 2.5.0

@@ -5,7 +5,7 @@ http_interactions:
     uri: http://test.netatlas.lvh.me/api/nodes
     body:
       encoding: UTF-8
-      string: ! '{"node":{"label":"foo","description":"bar","state":"unknown","created_at":"2013-08-17T16:25:35-07:00","updated_at":"2013-08-17T16:25:35-07:00"}}'
+      string: ! '{"node":{"label":"foo","description":"bar","state":"unknown","created_at":"2013-08-25T02:36:32-07:00","updated_at":"2013-08-25T02:36:32-07:00"}}'
     headers:
       User-Agent:
       - Faraday v0.8.8
@@ -13,28 +13,32 @@ http_interactions:
       - application/json
       Content-Type:
       - application/json
+      Authorization:
+      - ! 'Basic YWRtaW5AbmV0YXRsYXMuY29tOnBhc3N3b3Jk
+
+'
   response:
     status:
       code: 201
       message: 
     headers:
       date:
-      - Sat, 17 Aug 2013 23:25:57 GMT
+      - Sun, 25 Aug 2013 09:36:57 GMT
       server:
       - Apache/2.2.22 (Unix) DAV/2 PHP/5.3.15 with Suhosin-Patch Phusion_Passenger/3.0.19
         mod_ssl/2.2.22 OpenSSL/0.9.8x
       x-powered-by:
       - Phusion Passenger (mod_rails/mod_rack) 3.0.19
       etag:
-      - ! '"1ce769603915af47fdd4c0cbed925262"'
+      - ! '"c8b72978d9cf6d35e6cf450554813cfc"'
       cache-control:
       - max-age=0, private, must-revalidate
       x-request-id:
-      - 21f97413-f1bc-4425-a186-e360137b4a3d
+      - 45c95832-4170-43b1-b1a5-c773a6f5624b
       x-runtime:
-      - '0.018364'
+      - '0.127006'
       content-length:
-      - '298'
+      - '294'
       status:
       - '201'
       connection:
@@ -43,7 +47,7 @@ http_interactions:
       - application/json
     body:
       encoding: US-ASCII
-      string: ! '{"node":{"id":232,"label":"foo","description":"bar","state":"unknown","device_id":null,"snmp_index":null,"snmp_attributes":null,"last_scan":null,"creator_id":null,"updater_id":null,"deleter_id":null,"created_at":"2013-08-17T23:25:57.216Z","updated_at":"2013-08-17T23:25:57.216Z","deleted_at":null}}'
+      string: ! '{"node":{"id":339,"label":"foo","description":"bar","state":"unknown","device_id":null,"snmp_index":null,"snmp_attributes":{},"last_scan":null,"creator_id":258,"updater_id":258,"deleter_id":null,"created_at":"2013-08-25T09:36:57.703Z","updated_at":"2013-08-25T09:36:57.703Z","deleted_at":null}}'
     http_version: 
-  recorded_at: Sat, 17 Aug 2013 23:25:57 GMT
+  recorded_at: Sun, 25 Aug 2013 09:36:57 GMT
 recorded_with: VCR 2.5.0

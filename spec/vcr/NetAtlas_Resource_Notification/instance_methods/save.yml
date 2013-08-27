@@ -11,26 +11,30 @@ http_interactions:
       - Faraday v0.8.8
       Accept:
       - application/json
+      Authorization:
+      - ! 'Basic YWRtaW5AbmV0YXRsYXMuY29tOnBhc3N3b3Jk
+
+'
   response:
     status:
       code: 200
       message: 
     headers:
       date:
-      - Sat, 17 Aug 2013 23:25:59 GMT
+      - Sun, 25 Aug 2013 09:40:37 GMT
       server:
       - Apache/2.2.22 (Unix) DAV/2 PHP/5.3.15 with Suhosin-Patch Phusion_Passenger/3.0.19
         mod_ssl/2.2.22 OpenSSL/0.9.8x
       x-powered-by:
       - Phusion Passenger (mod_rails/mod_rack) 3.0.19
       etag:
-      - ! '"793c8517b68eb72827488bd6f660222a"'
+      - ! '"01a072ecebe56a000653dd9b87aa1079"'
       cache-control:
       - max-age=0, private, must-revalidate
       x-request-id:
-      - 7e3bd8cc-2ba7-405e-9d3f-242d126b6932
+      - bb256fab-fa99-468a-85fe-ed426b1b001a
       x-runtime:
-      - '0.039147'
+      - '0.132511'
       content-length:
       - '254'
       status:
@@ -42,16 +46,16 @@ http_interactions:
     body:
       encoding: US-ASCII
       string: ! '{"notification":{"id":1,"event_id":null,"contact_id":null,"event_filter_id":null,"state":null,"message":"Test
-        Message","creator_id":null,"updater_id":null,"created_at":"2013-08-17T16:25:35.272Z","updated_at":"2013-08-17T16:25:35.272Z","deleted_at":null}}'
+        Message","creator_id":null,"updater_id":null,"created_at":"2013-08-25T02:40:06.128Z","updated_at":"2013-08-25T02:40:06.128Z","deleted_at":null}}'
     http_version: 
-  recorded_at: Sat, 17 Aug 2013 23:25:59 GMT
+  recorded_at: Sun, 25 Aug 2013 09:40:37 GMT
 - request:
     method: put
     uri: http://test.netatlas.lvh.me/api/notifications/1
     body:
       encoding: UTF-8
       string: ! '{"notification":{"id":1,"event_id":null,"contact_id":null,"event_filter_id":null,"state":null,"message":"Test
-        Message","creator_id":null,"updater_id":null,"created_at":"2013-08-17T16:25:35.272Z","updated_at":"2013-08-17T16:25:35.272Z","deleted_at":null}}'
+        Message","creator_id":null,"updater_id":null,"created_at":"2013-08-25T02:40:06.128Z","updated_at":"2013-08-25T02:40:06.128Z","deleted_at":null}}'
     headers:
       User-Agent:
       - Faraday v0.8.8
@@ -59,26 +63,30 @@ http_interactions:
       - application/json
       Content-Type:
       - application/json
+      Authorization:
+      - ! 'Basic YWRtaW5AbmV0YXRsYXMuY29tOnBhc3N3b3Jk
+
+'
   response:
     status:
       code: 200
       message: 
     headers:
       date:
-      - Sat, 17 Aug 2013 23:25:59 GMT
+      - Sun, 25 Aug 2013 09:40:37 GMT
       server:
       - Apache/2.2.22 (Unix) DAV/2 PHP/5.3.15 with Suhosin-Patch Phusion_Passenger/3.0.19
         mod_ssl/2.2.22 OpenSSL/0.9.8x
       x-powered-by:
       - Phusion Passenger (mod_rails/mod_rack) 3.0.19
       etag:
-      - ! '"793c8517b68eb72827488bd6f660222a"'
+      - ! '"01a072ecebe56a000653dd9b87aa1079"'
       cache-control:
       - max-age=0, private, must-revalidate
       x-request-id:
-      - 9b878c44-b086-4fe7-8c43-e448c92a2c64
+      - 7ee79f4c-4ee7-49f6-9790-e0da80a26052
       x-runtime:
-      - '0.042747'
+      - '0.150324'
       content-length:
       - '254'
       status:
@@ -90,7 +98,7 @@ http_interactions:
     body:
       encoding: US-ASCII
       string: ! '{"notification":{"id":1,"event_id":null,"contact_id":null,"event_filter_id":null,"state":null,"message":"Test
-        Message","creator_id":null,"updater_id":null,"created_at":"2013-08-17T16:25:35.272Z","updated_at":"2013-08-17T16:25:35.272Z","deleted_at":null}}'
+        Message","creator_id":null,"updater_id":null,"created_at":"2013-08-25T02:40:06.128Z","updated_at":"2013-08-25T02:40:06.128Z","deleted_at":null}}'
     http_version: 
-  recorded_at: Sat, 17 Aug 2013 23:25:59 GMT
+  recorded_at: Sun, 25 Aug 2013 09:40:37 GMT
 recorded_with: VCR 2.5.0

@@ -11,26 +11,30 @@ http_interactions:
       - Faraday v0.8.8
       Accept:
       - application/json
+      Authorization:
+      - ! 'Basic YWRtaW5AbmV0YXRsYXMuY29tOnBhc3N3b3Jk
+
+'
   response:
     status:
       code: 200
       message: 
     headers:
       date:
-      - Sat, 17 Aug 2013 23:25:58 GMT
+      - Sun, 25 Aug 2013 09:37:01 GMT
       server:
       - Apache/2.2.22 (Unix) DAV/2 PHP/5.3.15 with Suhosin-Patch Phusion_Passenger/3.0.19
         mod_ssl/2.2.22 OpenSSL/0.9.8x
       x-powered-by:
       - Phusion Passenger (mod_rails/mod_rack) 3.0.19
       etag:
-      - ! '"793c8517b68eb72827488bd6f660222a"'
+      - ! '"0f972452a056ed96316743cecede6225"'
       cache-control:
       - max-age=0, private, must-revalidate
       x-request-id:
-      - 6b44a87b-e265-43ad-8496-b474ce0bf874
+      - 8121519c-8409-4213-b38d-f2ffe29b0b63
       x-runtime:
-      - '0.031412'
+      - '0.109960'
       content-length:
       - '254'
       status:
@@ -42,9 +46,9 @@ http_interactions:
     body:
       encoding: US-ASCII
       string: ! '{"notification":{"id":1,"event_id":null,"contact_id":null,"event_filter_id":null,"state":null,"message":"Test
-        Message","creator_id":null,"updater_id":null,"created_at":"2013-08-17T16:25:35.272Z","updated_at":"2013-08-17T16:25:35.272Z","deleted_at":null}}'
+        Message","creator_id":null,"updater_id":null,"created_at":"2013-08-25T02:36:32.172Z","updated_at":"2013-08-25T02:36:32.172Z","deleted_at":null}}'
     http_version: 
-  recorded_at: Sat, 17 Aug 2013 23:25:59 GMT
+  recorded_at: Sun, 25 Aug 2013 09:37:01 GMT
 - request:
     method: delete
     uri: http://test.netatlas.lvh.me/api/notifications/1
@@ -58,26 +62,30 @@ http_interactions:
       - application/json
       Content-Type:
       - application/json
+      Authorization:
+      - ! 'Basic YWRtaW5AbmV0YXRsYXMuY29tOnBhc3N3b3Jk
+
+'
   response:
     status:
       code: 200
       message: 
     headers:
       date:
-      - Sat, 17 Aug 2013 23:25:59 GMT
+      - Sun, 25 Aug 2013 09:37:01 GMT
       server:
       - Apache/2.2.22 (Unix) DAV/2 PHP/5.3.15 with Suhosin-Patch Phusion_Passenger/3.0.19
         mod_ssl/2.2.22 OpenSSL/0.9.8x
       x-powered-by:
       - Phusion Passenger (mod_rails/mod_rack) 3.0.19
       etag:
-      - ! '"793c8517b68eb72827488bd6f660222a"'
+      - ! '"0f972452a056ed96316743cecede6225"'
       cache-control:
       - max-age=0, private, must-revalidate
       x-request-id:
-      - 2d92bdd7-57be-4cf8-9883-b5622e512869
+      - 474f3b57-f121-44cd-b211-cc17bcdfe7df
       x-runtime:
-      - '0.035504'
+      - '0.130162'
       content-length:
       - '254'
       status:
@@ -89,9 +97,9 @@ http_interactions:
     body:
       encoding: US-ASCII
       string: ! '{"notification":{"id":1,"event_id":null,"contact_id":null,"event_filter_id":null,"state":null,"message":"Test
-        Message","creator_id":null,"updater_id":null,"created_at":"2013-08-17T16:25:35.272Z","updated_at":"2013-08-17T16:25:35.272Z","deleted_at":null}}'
+        Message","creator_id":null,"updater_id":null,"created_at":"2013-08-25T02:36:32.172Z","updated_at":"2013-08-25T02:36:32.172Z","deleted_at":null}}'
     http_version: 
-  recorded_at: Sat, 17 Aug 2013 23:25:59 GMT
+  recorded_at: Sun, 25 Aug 2013 09:37:02 GMT
 - request:
     method: get
     uri: http://test.netatlas.lvh.me/api/notifications/1
@@ -103,13 +111,17 @@ http_interactions:
       - Faraday v0.8.8
       Accept:
       - application/json
+      Authorization:
+      - ! 'Basic YWRtaW5AbmV0YXRsYXMuY29tOnBhc3N3b3Jk
+
+'
   response:
     status:
       code: 404
       message: 
     headers:
       date:
-      - Sat, 17 Aug 2013 23:25:59 GMT
+      - Sun, 25 Aug 2013 09:37:02 GMT
       server:
       - Apache/2.2.22 (Unix) DAV/2 PHP/5.3.15 with Suhosin-Patch Phusion_Passenger/3.0.19
         mod_ssl/2.2.22 OpenSSL/0.9.8x
@@ -118,9 +130,9 @@ http_interactions:
       cache-control:
       - no-cache
       x-request-id:
-      - fef16948-8be7-40ac-acec-e8e5ccd5477e
+      - 4f7bb526-6dff-4c9e-a9a5-452aca039f0c
       x-runtime:
-      - '0.016311'
+      - '0.100965'
       content-length:
       - '31'
       status:
@@ -133,5 +145,5 @@ http_interactions:
       encoding: US-ASCII
       string: ! '{"error":"Resource not found!"}'
     http_version: 
-  recorded_at: Sat, 17 Aug 2013 23:25:59 GMT
+  recorded_at: Sun, 25 Aug 2013 09:37:02 GMT
 recorded_with: VCR 2.5.0

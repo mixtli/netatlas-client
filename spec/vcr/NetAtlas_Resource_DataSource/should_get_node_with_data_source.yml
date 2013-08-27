@@ -28,15 +28,15 @@ http_interactions:
       x-powered-by:
       - Phusion Passenger (mod_rails/mod_rack) 3.0.19
       etag:
-      - ! '"f743ca561b29446873b7115a5948ca69"'
+      - ! '"f95cb77cb3bc0e6aa5cd99a8eb086430"'
       cache-control:
       - max-age=0, private, must-revalidate
       x-request-id:
-      - 53a299d2-9291-4963-bc72-81fb0da1b573
+      - c58340d8-b970-4acb-9416-d808b0585faf
       x-runtime:
-      - '0.083875'
+      - '0.083864'
       content-length:
-      - '755'
+      - '758'
       status:
       - '200'
       connection:
@@ -45,7 +45,7 @@ http_interactions:
       - application/json
     body:
       encoding: US-ASCII
-      string: ! '{"data_source":{"id":1,"node_id":242,"plugin_id":174,"data_template_id":null,"state":"unknown","last_polled_at":null,"interval":300,"description":null,"data_type":null,"arguments":{},"varbinds":{},"warning_threshold":null,"critical_threshold":null,"operator":"\u003E","creator_id":null,"updater_id":null,"deleter_id":null,"created_at":"2013-08-25T02:34:34.757Z","updated_at":"2013-08-25T02:34:34.757Z","deleted_at":null,"node":{"id":242,"label":"foo","description":"bar","state":"unknown","device_id":null,"snmp_index":null,"snmp_attributes":{},"last_scan":null,"creator_id":null,"updater_id":null,"deleter_id":null,"created_at":"2013-08-25T02:34:34.757Z","updated_at":"2013-08-25T02:34:34.757Z","deleted_at":null},"plugin_name":"Plugin","ip_address":""}}'
+      string: ! '{"data_source":{"id":1,"node_id":1,"plugin_id":172,"data_template_id":null,"state":"unknown","last_polled_at":null,"interval":300,"description":"foobar","data_type":null,"arguments":{},"varbinds":{},"warning_threshold":null,"critical_threshold":null,"operator":"\u003E","creator_id":null,"updater_id":null,"deleter_id":null,"created_at":"2013-08-25T02:34:34.757Z","updated_at":"2013-08-25T02:34:34.757Z","deleted_at":null,"node":{"id":1,"label":"foobar","description":"bar","state":"unknown","device_id":null,"snmp_index":null,"snmp_attributes":{},"last_scan":null,"creator_id":null,"updater_id":null,"deleter_id":null,"created_at":"2013-08-25T02:34:34.757Z","updated_at":"2013-08-25T02:34:34.757Z","deleted_at":null},"plugin_name":"Plugin","ip_address":""}}'
     http_version: 
   recorded_at: Sun, 25 Aug 2013 09:34:35 GMT
 recorded_with: VCR 2.5.0

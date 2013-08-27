@@ -11,28 +11,32 @@ http_interactions:
       - Faraday v0.8.8
       Accept:
       - application/json
+      Authorization:
+      - ! 'Basic YWRtaW5AbmV0YXRsYXMuY29tOnBhc3N3b3Jk
+
+'
   response:
     status:
       code: 200
       message: 
     headers:
       date:
-      - Sat, 17 Aug 2013 23:25:55 GMT
+      - Sun, 25 Aug 2013 09:40:29 GMT
       server:
       - Apache/2.2.22 (Unix) DAV/2 PHP/5.3.15 with Suhosin-Patch Phusion_Passenger/3.0.19
         mod_ssl/2.2.22 OpenSSL/0.9.8x
       x-powered-by:
       - Phusion Passenger (mod_rails/mod_rack) 3.0.19
       etag:
-      - ! '"796eb69640cef9f70bf384a5b846a27e"'
+      - ! '"0905e13129476b0bdc898b9c16bac0cb"'
       cache-control:
       - max-age=0, private, must-revalidate
       x-request-id:
-      - ce197f10-5e95-4a4b-a6c4-b6750d3a2f3c
+      - e65d0d99-9c8f-4a68-a58a-ee569f25ad3f
       x-runtime:
-      - '0.014413'
+      - '0.084955'
       content-length:
-      - '406'
+      - '402'
       status:
       - '200'
       connection:
@@ -41,16 +45,16 @@ http_interactions:
       - application/json
     body:
       encoding: US-ASCII
-      string: ! '{"event":{"id":1,"poller_id":null,"node_id":null,"data_source_id":null,"state":"open","repeats":0,"severity":null,"description":null,"additional":null,"notes":null,"arguments":null,"acknowledged_by_id":null,"resolved_by_id":null,"acknowledged_at":null,"resolved_at":null,"created_at":"2013-08-17T16:25:35.272Z","updated_at":"2013-08-17T16:25:35.272Z","deleted_at":null,"creator_id":null,"updater_id":null}}'
+      string: ! '{"event":{"id":1,"poller_id":null,"node_id":null,"data_source_id":null,"state":"open","repeats":0,"severity":null,"description":null,"additional":{},"notes":null,"arguments":{},"acknowledged_by_id":null,"resolved_by_id":null,"acknowledged_at":null,"resolved_at":null,"created_at":"2013-08-25T02:40:06.128Z","updated_at":"2013-08-25T02:40:06.128Z","deleted_at":null,"creator_id":null,"updater_id":null}}'
     http_version: 
-  recorded_at: Sat, 17 Aug 2013 23:25:55 GMT
+  recorded_at: Sun, 25 Aug 2013 09:40:29 GMT
 - request:
     method: put
     uri: http://test.netatlas.lvh.me/api/events/1
     body:
       encoding: UTF-8
-      string: ! '{"event":{"id":1,"poller_id":null,"node_id":null,"data_source_id":null,"state":"open","repeats":0,"severity":null,"description":null,"additional":null,"notes":"New
-        Note","arguments":null,"acknowledged_by_id":null,"resolved_by_id":null,"acknowledged_at":null,"resolved_at":null,"created_at":"2013-08-17T16:25:35.272Z","updated_at":"2013-08-17T16:25:35.272Z","deleted_at":null,"creator_id":null,"updater_id":null}}'
+      string: ! '{"event":{"id":1,"poller_id":null,"node_id":null,"data_source_id":null,"state":"open","repeats":0,"severity":null,"description":null,"additional":{},"notes":"New
+        Note","arguments":{},"acknowledged_by_id":null,"resolved_by_id":null,"acknowledged_at":null,"resolved_at":null,"created_at":"2013-08-25T02:40:06.128Z","updated_at":"2013-08-25T02:40:06.128Z","deleted_at":null,"creator_id":null,"updater_id":null}}'
     headers:
       User-Agent:
       - Faraday v0.8.8
@@ -58,28 +62,32 @@ http_interactions:
       - application/json
       Content-Type:
       - application/json
+      Authorization:
+      - ! 'Basic YWRtaW5AbmV0YXRsYXMuY29tOnBhc3N3b3Jk
+
+'
   response:
     status:
       code: 200
       message: 
     headers:
       date:
-      - Sat, 17 Aug 2013 23:25:55 GMT
+      - Sun, 25 Aug 2013 09:40:29 GMT
       server:
       - Apache/2.2.22 (Unix) DAV/2 PHP/5.3.15 with Suhosin-Patch Phusion_Passenger/3.0.19
         mod_ssl/2.2.22 OpenSSL/0.9.8x
       x-powered-by:
       - Phusion Passenger (mod_rails/mod_rack) 3.0.19
       etag:
-      - ! '"9c8c3eaf43fc7db97295a91104fb7b0c"'
+      - ! '"59b02a3bd18d261cf630bd011fc35ccb"'
       cache-control:
       - max-age=0, private, must-revalidate
       x-request-id:
-      - 94de9444-004b-48b8-92b4-405f94036c54
+      - c96ab61d-b60e-4399-b754-55289d1c0f99
       x-runtime:
-      - '0.019145'
+      - '0.102360'
       content-length:
-      - '412'
+      - '407'
       status:
       - '200'
       connection:
@@ -88,8 +96,8 @@ http_interactions:
       - application/json
     body:
       encoding: US-ASCII
-      string: ! '{"event":{"id":1,"poller_id":null,"node_id":null,"data_source_id":null,"state":"open","repeats":0,"severity":null,"description":null,"additional":null,"notes":"New
-        Note","arguments":null,"acknowledged_by_id":null,"resolved_by_id":null,"acknowledged_at":null,"resolved_at":null,"created_at":"2013-08-17T16:25:35.272Z","updated_at":"2013-08-17T23:25:55.882Z","deleted_at":null,"creator_id":null,"updater_id":null}}'
+      string: ! '{"event":{"id":1,"poller_id":null,"node_id":null,"data_source_id":null,"state":"open","repeats":0,"severity":null,"description":null,"additional":{},"notes":"New
+        Note","arguments":{},"acknowledged_by_id":null,"resolved_by_id":null,"acknowledged_at":null,"resolved_at":null,"created_at":"2013-08-25T02:40:06.128Z","updated_at":"2013-08-25T09:40:29.756Z","deleted_at":null,"creator_id":null,"updater_id":335}}'
     http_version: 
-  recorded_at: Sat, 17 Aug 2013 23:25:55 GMT
+  recorded_at: Sun, 25 Aug 2013 09:40:29 GMT
 recorded_with: VCR 2.5.0
